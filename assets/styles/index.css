@@ -1,0 +1,59 @@
+header {
+    background: #003580;
+    /* background: red; */
+    color: #fff;
+    height: 120px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+header img {
+    height: 40px;
+    width: 40px;
+}
+
+#headerTop {
+    margin-left: 200px;
+    width: 100%;
+}
+
+#headerBottom {
+    margin-left: 200px;
+    width: 100%;
+}
+
+#main-logo {
+    width: 150px;
+    height: 60px;
+    margin-right: 150px;
+}
+
+a {
+    text-decoration: none;
+}
+/* 
+#headerTop button {
+    height: 43px;
+    width: 43px;
+    margin: 3px;
+} */
+
+.registerButton {
+    border: 1px solid white;
+    padding: 4px;
+    font-size: 17px;
+    color: white;
+}
+/* 
+.registerButton:hover{
+
+} */
+
+.createProfileButton, .loginButton {
+    font-size: 17px;
+    border: 1px solid #0071c2;
+    background: #fff;
+    color: #0071c2;
+    padding: 3px 5px;    
+}
