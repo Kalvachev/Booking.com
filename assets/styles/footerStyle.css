@@ -86,3 +86,34 @@
     border: 1px solid white;
 }
 
+#subscriptionFooterContainer {
+    display: flex;
+    flex-direction: column;
+    background: #00224f;
+    padding: 20px 210px;
+    align-content: center;
+}
+
+#subscriptionFooterContainer h2{
+    color: white;
+    font-size: 20px;
+    margin-left: 40%;
+}
+
+#subscriptionFooterContainer p {
+    color: white;
+    font-size: 16px;
+    margin-left: 33%;
+}
+
+#emailFooterContainer {
+    margin-left: 37%;
+}
+
+#footerCheckboxContainer {
+    margin-left: 13%;
+}
+
+#footerCheckboxContainer label {
+    color: white;
+}
