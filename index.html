@@ -7,11 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./assets/styles/reset.css">
-    <link rel="stylesheet" href="./assets/styles/index.css">
+    <link rel="stylesheet" href="./assets/styles/header.css">
+    <link rel="stylesheet" href="./assets/styles/homePage.css">
+
 </head>
 
 <body>
-   
+
     <header>
         <div id="headerTop">
             <img src="assets/images/logo.png" alt="page-logo" id='main-logo'>
@@ -25,7 +27,8 @@
 
         <div id="headerBottom">
             <a href="#home"><img src="assets/images/bed-icon.png" alt=""><span>Престои</span></a>
-            <a href="https://flights-bg.gotogate.com/poleti"><img src="assets/images/plane-icon.png" alt=""><span>Полети</span></a>
+            <a href="https://flights-bg.gotogate.com/poleti"><img src="assets/images/plane-icon.png"
+                    alt=""><span>Полети</span></a>
             <a href="#rent"><img src="assets/images/car-icon.png" alt=""><span>Коли под наем</span></a>
             <a href="#attractions"><img src="assets/images/attraction-icon.png" alt=""><span>Атракции</span></a>
             <a href="#taxis"><img src="assets/images/taxi-icon.png" alt=""><span>Таксита от/до летище</span></a>
@@ -36,10 +39,11 @@
     <main>
         <div id="mainContainer">
             <div class="searchField">
-                <div>
+                <div id="searchFieldTextContainer">
                     <h2>Открийте оферти за хотели, домове и много повече... </h2>
                     <p>От уютни къщи извън града до стилни градски апартаменти</p>
                 </div>
+
                 <form action="#">
                     <div id='searchInput'>
                         <input type="text" name="" id="" placeholder='Накъде отивате?'>
@@ -51,7 +55,8 @@
                     <label for="jobTrip">Пътувам по работа</label>
                 </form>
             </div>
-            <div id='earlyOffers'>
+
+            <!-- <div id='earlyOffers'>
                 <img src="./assets/images/earlyOfferPicture.jpg" alt="earlyOfferPicture">
                 <div>
                     <h2>Ранни оферти за 2021 г.</h2>
@@ -59,21 +64,87 @@
                     <button>Към Офертите</button>
                 </div>
                 <img src="./assets/images/close-icon.png" alt="close">
+            </div> -->
+
+            <div id="mostPopularContainer">
+                <h2>Най-популярните почивки на плажа</h2>
+                <p>Популярни сред пътуващи в района ви.</p>
+
+                <div id='beachDestinations'>
+                    <div class="destinationsContainer">
+                        <img src="assets/images/BulgariaPhoto.jpg" alt="">
+                        <span>България</span>
+                    </div>
+
+                    <div class="destinationsContainer">
+                        <img src="assets/images/GreecePhoto.jpg" alt="">
+                        <span>Гърция</span>
+                    </div>
+
+                    <div class="destinationsContainer">
+                        <img src="assets/images/SpainPhoto.jpg" alt="">
+                        <span>Испания</span>
+                    </div>
+
+                    <div class="destinationsContainer">
+                        <img src="assets/images/ItalyPhoto.jpg" alt="">
+                        <span>Италия</span>
+                    </div>
+                    <!-- <button>Открийте още</button> -->
+                </div>
             </div>
-            <h1>Най-популярните почивки на плажа</h1>
-            <p>Популярни сред пътуващи в района ви.</p>
-            <div id='beachDestinations'>
-                <button>Открийте още</button>
+
+            <div id="knowBulgariaContainer">
+                <h3>Опознайте България</h3>
+                <p>Тези популярни дестинации имат много какво да предложат</p>
+
+                <div id="bulgariaDestinations">
+                    <div class="destinationsInBulgariaContainer">
+                        <img src="assets/images/VelingradPhoto.jpg" alt="">
+                        <p class="destinationsInBulgariaTitles">Велинград</p>
+                        <p class="destinationsInBulgariaFreeRooms">153 места за настаняване</p>
+                    </div>
+
+                    <div class="destinationsInBulgariaContainer">
+                        <img src="assets/images/BanskoPhoto.jpg" alt="">
+                        <p class="destinationsInBulgariaTitles">Банско</p>
+                        <p class="destinationsInBulgariaFreeRooms">707 места за настаняване</p>
+                    </div>
+
+                    <div class="destinationsInBulgariaContainer">
+                        <img src="assets/images/BorovetsPhoto.jpg" alt="">
+                        <p class="destinationsInBulgariaTitles">Боровец</span>
+                        <p class="destinationsInBulgariaFreeRooms">166 места за настаняване</p>
+                    </div>
+
+                    <div class="destinationsInBulgariaContainer">
+                        <img src="assets/images/PamporovoPhoto.jpg" alt="">
+                        <p class="destinationsInBulgariaTitles">Пампорово</span>
+                        <p class="destinationsInBulgariaFreeRooms">195 места за настаняване</p>
+                    </div>
+
+                    <div class="destinationsInBulgariaContainer">
+                        <img src="assets/images/HisaryaPhoto.jpg" alt="">
+                        <p class="destinationsInBulgariaTitles">Хисаря</span>
+                        <p class="destinationsInBulgariaFreeRooms">54 места за настаняване</p>
+                    </div>
+                </div>
             </div>
+
             <div id='doublePicContainer'></div>
             <div id='tripplePicContainer'></div>
-            <h3>Милиони домове – големи или малки... а вие си мислехте, че ние работим само с хотели</h3>
-            <div id='typesOfHomesContainer'></div>
-            <h3>Опознай България</h3>
-            <div id='bulgariaPlacesContainer'></div>
-            <h2>Домове, които гостите много харесват</h2>
-            <div id='likedHomesContainer'></div>
-            <div id='subscriptionContainer'>
+
+            <div id="likedHomes">
+                <h2>Домове, които гостите много харесват</h2>
+
+            </div>
+
+            <div id='typesOfHomesContainer'>
+                <h3>Милиони домове – големи или малки... а вие си мислехте, че ние работим само с хотели</h3>
+
+            </div>
+
+            <!-- <div id='subscriptionContainer'>
                 <img src="assets/images/subscribeSecret.png" alt="">
                 <h2>Абонирайте се, за да виждате Тайни оферти</h2>
                 <p>Цените се понижават в момента, в който създадете профил!</p>
@@ -81,7 +152,7 @@
                     <input type="email" name="" id="">
                     <button>Регистрирай ме!</button>
                 </div>
-            </div>
+            </div> -->
         </div>
 
         <div id="rentCarContainer">
