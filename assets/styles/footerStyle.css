@@ -1,0 +1,88 @@
+#footerPicturesContainer {
+    display: flex;    
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.footerLogos {
+    margin: 20px;
+    width: 91px;
+    height: 26px;
+}
+
+#lastFooterContainer p{
+    margin-left: 28.5%;
+    margin-right: auto;
+    width: 50%;
+    margin-bottom: 10px;
+    color: #6b6b6b;
+    font-size: 14px;
+}
+
+#copyrightContainer {
+    color: #6b6b6b;
+    font-size: 14px;
+    margin: 10px 0;
+    margin-left: 37%;
+}
+
+#extranetContainer {
+    font-size: 16px;
+    color: #0071c2;
+    font-weight: bold;
+    margin: 10px 0;
+    margin-left: 45%;
+}
+
+#footerBottomOffices {
+    width: 50%;
+    color: #6b6b6b;
+    font-size: 14px;
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#footerBottomLinks {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 210px;
+}
+
+#footerBottomLinks ul{
+    margin: 15px;
+    margin-right: 30px;
+}
+
+#footerBottomLinks ul a {
+    color: #0071c2;
+    font-size: 13px;
+}
+
+#registerFooterLinks {
+    padding: 10px 210px;
+    background: #003580;
+}
+
+#registerFooterLinks a {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: underline;
+    padding: 15px 10px;
+    font-size: 13px;
+}
+
+#registerFooterContainer {
+    background: #003580;
+    padding: 10px 210px;
+    align-content: center;
+
+}
+
+#registerButton{
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid white;
+}
+
