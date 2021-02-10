@@ -11,6 +11,11 @@
     <link rel="stylesheet" href="./assets/styles/header.css">
     <link rel="stylesheet" href="./assets/styles/homePage.css">
 
+    <style>
+        * {
+            font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+        }
+    </style>
 </head>
 
 <body>
@@ -168,17 +173,20 @@
     </main>
 
     <footer>
-        <div id="subscriptionFooterContainer">
-            <h2>Спестете време и пари!</h2>
-            <p>Регистрирайте се и ще ви изпращаме най-добрите оферти</p>
-            <div id="emailFooterContainer">
-                <input type="email" placeholder="Вашия имейл">
-                <button>Абонирай се</button>
+        <div>
+            <div id="subscriptionFooterContainer">
+                <h2>Спестете време и пари!</h2>
+                <p>Регистрирайте се и ще ви изпращаме най-добрите оферти</p>
+                <div id="emailFooterContainer">
+                    <input type="email" placeholder="Вашия имейл">
+                    <button>Абонирай се</button>
+                </div>
+                <div>
+                    <input type="checkbox" value='sendLink' id='jobTrip'>
+                    <label for="sendLink">Изпратете ми линк за БЕЗПЛАТНО изтегляне на мобилното приложение
+                        Booking.com!</label>
+                </div>
             </div>
-
-            <input type="checkbox" value='sendLink' id='jobTrip'>
-            <label for="sendLink">Изпратете ми линк за БЕЗПЛАТНО изтегляне на мобилното приложение Booking.com!</label>
-
             <div id="registerFooterContainer">
                 <a href="#">Регистрирайте мястото си за настаняване</a>
 
