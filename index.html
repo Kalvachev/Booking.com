@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Booking.com | Официален сайт | Най-добрите хотели и места за настаняване</title>
     <link rel="stylesheet" href="./assets/styles/reset.css">
     <link rel="stylesheet" href="./assets/styles/footerStyle.css">
     <link rel="stylesheet" href="./assets/styles/header.css">
     <link rel="stylesheet" href="./assets/styles/homePage.css">
+    <link rel="icon" href="./assets/images/BookingIcon.png">
 
     <style>
         * {
@@ -31,14 +32,17 @@
                 <a href="#"><span class='createProfileButton'>Създайте личен профил</span></a>
                 <a href="#"><span class='loginButton'>Вход</span></a>
             </div>
-    
+
             <div id="headerBottom">
                 <a href="#home"><img src="assets/images/bed-icon.png" id="bedIcon" alt=""><span>Престои</span></a>
-                <a href="https://flights-bg.gotogate.com/poleti"><img src="assets/images/plane-icon.png" id="flightsIcon"
-                        alt=""><span>Полети</span></a>
-                <a href="#rent"><img src="assets/images/car-icon.png" id="rentIcon" alt=""><span>Коли под наем</span></a>
-                <a href="#attractions"><img src="assets/images/attraction-icon.png" id="attractionsIcon" alt=""><span>Атракции</span></a>
-                <a href="#taxis"><img src="assets/images/taxi-icon.png" id="taxiIcon" alt=""><span>Таксита от/до летище</span></a>
+                <a href="https://flights-bg.gotogate.com/poleti"><img src="assets/images/plane-icon.png"
+                        id="flightsIcon" alt=""><span>Полети</span></a>
+                <a href="#rent"><img src="assets/images/car-icon.png" id="rentIcon" alt=""><span>Коли под
+                        наем</span></a>
+                <a href="#attractions"><img src="assets/images/attraction-icon.png" id="attractionsIcon"
+                        alt=""><span>Атракции</span></a>
+                <a href="#taxis"><img src="assets/images/taxi-icon.png" id="taxiIcon" alt=""><span>Таксита от/до
+                        летище</span></a>
             </div>
         </div>
     </header>
@@ -139,17 +143,58 @@
                 </div>
             </div>
 
-            <div id='doublePicContainer'></div>
-            <div id='tripplePicContainer'></div>
+            <!-- <div id="bigPicturesContainer">
+                <div id='doublePicContainer'>
+                    <img src="/assets/images/BigPictures/Barcelona.png" alt="">
+                    <div id="secondDoublePicture" class="doublePictures"></div>
+                </div>
+
+                <div id='tripplePicContainer'>
+                    <div class="tripplePictures"></div>
+                    <div class="tripplePictures"></div>
+                    <div class="tripplePictures"></div>
+
+                </div>
+            </div> -->
 
             <div id="likedHomes">
                 <h2>Домове, които гостите много харесват</h2>
-
             </div>
 
-            <div id='typesOfHomesContainer'>
-                <h3>Милиони домове – големи или малки... а вие си мислехте, че ние работим само с хотели</h3>
+            <div id="typesOfHomesContainer">
+                <h2>Търсете по тип място за настаняване</h2>
 
+                <div id="accomodationType">
+                    <div class="accomodationTypeContainer">
+                        <img src="assets/images/TypeAccomodation/hotels.png" alt="">
+                        <p class="accomodationTitles">Хотели</p>
+                        <p class="accomodationNumber">756 043 хотела</p>
+                    </div>
+
+                    <div class="accomodationTypeContainer">
+                        <img src="assets/images/TypeAccomodation/apartments.png" alt="">
+                        <p class="accomodationTitles">Апартаменти</p>
+                        <p class="accomodationNumber">677 364 апартаменти</p>
+                    </div>
+
+                    <div class="accomodationTypeContainer">
+                        <img src="assets/images/TypeAccomodation/hotelComplexes.png" alt="">
+                        <p class="accomodationTitles">Хотелски Комплекси</span>
+                        <p class="accomodationNumber">17 965 хотелски комплекса</p>
+                    </div>
+
+                    <div class="accomodationTypeContainer">
+                        <img src="assets/images/TypeAccomodation/villas.png" alt="">
+                        <p class="accomodationTitles">Вили</span>
+                        <p class="accomodationNumber">367 236 луксозни вили</p>
+                    </div>
+
+                    <div class="accomodationTypeContainer">
+                        <img src="assets/images/TypeAccomodation/chalets.png" alt="">
+                        <p class="accomodationTitles">Шалети</span>
+                        <p class="accomodationNumber">29 067 шалети</p>
+                    </div>
+                </div>
             </div>
 
             <!-- <div id='subscriptionContainer'>
@@ -281,6 +326,7 @@
 
     <script src="index.js"></script>
     <script src="assets/js/constants.js"></script>
+    <script src="assets/js/utils.js"></script>
 </body>
 
 </html>
