@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Booking.com | Официален сайт | Най-добрите хотели и места за настаняване</title>
+    <title>Booking.com</title>
     <link rel="stylesheet" href="./assets/styles/reset.css">
     <link rel="stylesheet" href="./assets/styles/footerStyle.css">
     <link rel="stylesheet" href="./assets/styles/header.css">
     <link rel="stylesheet" href="./assets/styles/homePage.css">
+    <link rel="stylesheet" href="assets/styles/carousels.css">
     <link rel="icon" href="./assets/images/BookingIcon.png">
 
     <style>
@@ -25,12 +26,17 @@
         <div id="headerContainer">
             <div id="headerTop">
                 <img src="assets/images/logo.png" alt="page-logo" id='main-logo'>
-                <button id="language-button">BGN</button>
-                <button id="bulgarian-flag"><img src="assets/images/bulgarian-flag.png" alt="bulgarian-flag"></button>
-                <button id="help-logo"><img src="assets/images/help.png" alt="help-logo"></button>
-                <a href="#"><span class='registerButton'>Регистрирайте мястото си за настаняване</span></a>
-                <a href="#"><span class='createProfileButton'>Създайте личен профил</span></a>
-                <a href="#"><span class='loginButton'>Вход</span></a>
+
+                <div id="headerButtons">
+                    <button id="language-button">BGN</button>
+                    <button id="bulgarian-flag"><img src="assets/images/bulgarian-flag.png"
+                            alt="bulgarian-flag"></button>
+                    <button id="help-logo"><img src="assets/images/help.png" alt="help-logo"></button>
+
+                    <a href="#"><span class='registerButton'>Регистрирайте мястото си за настаняване</span></a>
+                    <a href="#"><span class='createProfileButton'>Създайте личен профил</span></a>
+                    <a href="#"><span class='loginButton'>Вход</span></a>
+                </div>
             </div>
 
             <div id="headerBottom">
@@ -58,13 +64,16 @@
 
                 <form action="#">
                     <div id='searchInput'>
-                        <input type="text" name="" id="" placeholder='Накъде отивате?'>
-                        <input type="date" name="" id="">
-                        <input type="text">
-                        <button>Търсене</button>
+                        <input type="text" name="" id="search-box" placeholder='Накъде отивате?'>
+                        <!-- <input type="date" name="" id="arrive-date">
+                        <input type="date" name="" id="leave-date"> -->
+                        <button id="homepageSearchButton">Търсене</button>
                     </div>
-                    <input type="checkbox" value='workTravel' id='jobTrip'>
-                    <label for="jobTrip">Пътувам по работа</label>
+
+                    <div id="jobTripContainer">
+                        <input type="checkbox" value='workTravel' id='jobTrip'>
+                        <label for="jobTrip" id="jobTripLabel">Пътувам по работа</label>
+                    </div>
                 </form>
             </div>
 
@@ -82,28 +91,56 @@
                 <h2>Най-популярните почивки на плажа</h2>
                 <p>Популярни сред пътуващи в района ви.</p>
 
-                <div id='beachDestinations'>
-                    <div class="destinationsContainer">
-                        <img src="assets/images/BulgariaPhoto.jpg" alt="">
-                        <span>България</span>
-                    </div>
+                <div id="beachDestinations">
+                    <div id="destinationsContainer">
+                        <div>
+                            <img class="destinationItems" src="./assets/images/BulgariaPhoto.jpg" />
+                            <span>България</span>
+                        </div>
+                        <div>
+                            <img src="./assets/images/GreecePhoto.jpg" class="destinationItems" />
+                            <span>Гърция</span>
+                        </div>
 
-                    <div class="destinationsContainer">
-                        <img src="assets/images/GreecePhoto.jpg" alt="">
-                        <span>Гърция</span>
-                    </div>
+                        <div>
+                            <img src="./assets/images/SpainPhoto.jpg" class="destinationItems" />
+                            <span>Испания</span>
+                        </div>
 
-                    <div class="destinationsContainer">
-                        <img src="assets/images/SpainPhoto.jpg" alt="">
-                        <span>Испания</span>
-                    </div>
+                        <div>
+                            <img src="./assets/images/ItalyPhoto.jpg" class="destinationItems" />
+                            <span>Италия</span>
+                        </div>
 
-                    <div class="destinationsContainer">
-                        <img src="assets/images/ItalyPhoto.jpg" alt="">
-                        <span>Италия</span>
+                        <div>
+                            <img src="./assets/images/TurkeyPhoto.jpg" class="destinationItems" />
+                            <span>Турция</span>
+                        </div>
+
+                        <div>
+                            <img src="./assets/images/USAPhoto.jpg" class="destinationItems" />
+                            <span>САЩ</span>
+                        </div>
+
+                        <div>
+                            <img src="./assets/images/TailandPhoto.jpg" class="destinationItems" />
+                            <span>Тайланд</span>
+                        </div>
                     </div>
-                    <!-- <button>Открийте още</button> -->
                 </div>
+                
+                <button id="prev">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path fill="none" d="M0 0h24v24H0V0z" />
+                        <path d="M15.61 7.41L14.2 6l-6 6 6 6 1.41-1.41L11.03 12l4.58-4.59z" />
+                    </svg>
+                </button>
+                <button id="next">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path fill="none" d="M0 0h24v24H0V0z" />
+                        <path d="M10.02 6L8.61 7.41 13.19 12l-4.58 4.59L10.02 18l6-6-6-6z" />
+                    </svg>
+                </button>
             </div>
 
             <div id="knowBulgariaContainer">
@@ -332,6 +369,7 @@
     <script src="index.js"></script>
     <script src="assets/js/constants.js"></script>
     <script src="assets/js/utils.js"></script>
+    <script src="assets/js/carousels.js"></script>
 </body>
 
 </html>

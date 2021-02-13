@@ -13,13 +13,18 @@ header img {
 }
 
 #headerContainer {
-    margin: 0 200px;
+    margin: 0 190px;
     font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
 }
 
 #headerTop {
+    display: flex;
     width: 100%;
-    margin: 18px 0 20px 0;
+    margin: 12px 0 20px 0;
+}
+
+#headerButtons {
+    line-height: 1px;
 }
 
 #headerBottom {
@@ -27,6 +32,7 @@ header img {
 }
 
 #main-logo {
+    margin-top: 12px;
     width: 144px;
     height: 24px;
     margin-right: 218px;
@@ -43,6 +49,7 @@ a {
     font-weight: bold;
     font-size: 16px;
     padding: 11px;
+    height: 48px;
 }
 
 #language-button:hover {
@@ -52,11 +59,11 @@ a {
     padding-right: 11px;
 }
 
-
 #bulgarian-flag {
     background-color: transparent;
     border-color: transparent;
     padding: 11px;
+    height: 48px;
 }
 
 #bulgarian-flag:hover {
@@ -66,16 +73,17 @@ a {
     padding-right: 11px;
 }
 
-/* #bulgarian-flag img{
+#bulgarian-flag img {
     width: 24px;
     height: 24px;
     border-radius: 50%;
-}  */
+}
 
 #help-logo {
     background-color: transparent;
     border-color: transparent;
     padding: 11px;
+    height: 48px;
 }
 
 #help-logo:hover {
@@ -85,11 +93,10 @@ a {
     padding-right: 11px;
 }
 
-/* #help-logo img {
+#help-logo img {
     width: 24px;
     height: 24px;
-} */
-
+}
 
 /* 
 #headerTop button {

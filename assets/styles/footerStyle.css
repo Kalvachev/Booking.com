@@ -163,13 +163,19 @@ footer {
 }
 
 #footerCheckboxContainer {
-    margin-left: 25.5%
+    margin-left: 25.5%;
+    display: flex;
 }
 
 #footerCheckboxContainer label {
     color: white;
     font-size: 13px;
     font-weight: 400;
+}
+
+#footerCheckboxContainer input {
+    width: 12.8px;
+    height: 12.8px;
 }
 
 #registerFooterButtonContainer {

@@ -1,0 +1,55 @@
+#mostPopularContainer {
+    width: 100%;
+    max-width: 1100px;
+    position: relative;
+}
+
+#beachDestinations {
+    overflow: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+
+#beachDestinations::-webkit-scrollbar {
+    height: 0;
+}
+
+#prev, #next {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background: white;
+    border: none;
+    padding: 8px;
+    border-radius: 50%;
+    outline: 0;
+    cursor: pointer;
+    position: absolute;
+}
+
+#prev {
+    top: 60%;
+    left: 0;
+    transform: translate(50%, -50%);
+    display: none;
+}
+
+#next {
+    top: 60%;
+    right: 0;
+    transform: translate(-50%, -50%);
+}
+
+#destinationsContainer {
+    display: grid;
+    grid-gap: 16px;
+    grid-auto-flow: column;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+.destinationItems {
+    width: 260px;
+    height: 175px;
+    background: green;
+}
