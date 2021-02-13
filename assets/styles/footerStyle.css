@@ -1,6 +1,5 @@
 footer {
     font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-
 }
 
 #footerPicturesContainer {
@@ -60,7 +59,6 @@ footer {
     margin: 15px;
     margin-right: 30px;
     margin: 0 0 5px 0;
-
 }
 
 #footerBottomLinks ul a {
@@ -75,21 +73,27 @@ footer {
 #registerFooterLinks {
     padding: 10px 210px;
     background: #003580;
+    border-top: 0.5px solid white;
 }
 
 #registerFooterLinks a {
     color: #fff;
     font-weight: bold;
     text-decoration: underline;
-    padding: 15px 10px;
+    padding: 8px 10px;
     font-size: 13px;
+    background: 0;
+    border: 0;
+    cursor: pointer;
+    display: inline-block;
+    line-height: 1em;
+    height: 1em;
 }
 
 #registerFooterContainer {
     background: #003580;
     padding: 10px 210px;
     align-content: center;
-
 }
 
 #registerButton{
@@ -100,32 +104,83 @@ footer {
 
 #subscriptionFooterContainer {
     display: flex;
+    justify-content: center;
     flex-direction: column;
     background: #00224f;
-    padding: 20px 210px;
+    padding: 50px 210px;
     align-content: center;
 }
 
 #subscriptionFooterContainer h2{
     color: white;
-    font-size: 20px;
+    font-size: 24px;
     margin-left: 40%;
+    font-weight: 300;
 }
 
 #subscriptionFooterContainer p {
-    color: white;
+    color: #bdbdbd;
     font-size: 16px;
-    margin-left: 33%;
+    margin-left: 30%;
+    padding: 10px 0;
+    font-weight: 400;
 }
 
 #emailFooterContainer {
-    margin-left: 37%;
+    display: flex;
+    justify-content: center;
+    margin-left: 25%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 547px;
+    height: 48px;
+}
+
+#emailFooterContainer input {
+    font-size: 20px;
+    line-height: 28px;
+    color: #6b6b6b;
+    border: 0;
+    border-radius: 3px;
+    font-weight: 100;
+    padding: 10px;
+    width: 65%;
+    margin: 0 5px;
+}
+
+#emailFooterContainer button {
+    border-radius: 3px;
+    border: 0;
+    padding: 0 15px;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 300;
+    height: 48px;
+    color: #fff;
+    background-color: #0071c2;
+    box-shadow: none;
+    flex: 1;
 }
 
 #footerCheckboxContainer {
-    margin-left: 13%;
+    margin-left: 25.5%
 }
 
 #footerCheckboxContainer label {
     color: white;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+#registerFooterButtonContainer {
+    display: flex;
+    justify-content: center;
+    margin: 7px 10px 14px 10px;
+}
+
+#registerFooterContainer .registerButton {
+    font-weight: normal;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 13px;
 }
