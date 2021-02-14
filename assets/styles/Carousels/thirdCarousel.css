@@ -1,0 +1,55 @@
+.third-wrapper {
+    width: 100%;
+    max-width: 1100px;
+    position: relative;
+}
+
+.third-carousel {
+    overflow: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+
+.third-carousel::-webkit-scrollbar {
+    height: 0;
+}
+
+.third-prev, .third-next {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background: white;
+    border: none;
+    padding: 8px;
+    border-radius: 50%;
+    outline: 0;
+    cursor: pointer;
+    position: absolute;
+}
+
+.third-prev {
+    top: 60%;
+    left: 0;
+    transform: translate(50%, -50%);
+    display: none;
+}
+
+.third-next {
+    top: 60%;
+    right: 0;
+    transform: translate(-50%, -50%);
+}
+
+.third-content {
+    display: grid;
+    grid-gap: 16px;
+    grid-auto-flow: column;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+.third-destinationItems {
+    width: 260px;
+    height: 175px;
+    background: green;
+}

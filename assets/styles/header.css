@@ -1,6 +1,5 @@
 header {
-    /* background: #003580; */
-    background: red;
+    background: #003580;
     color: #fff;
     height: 120px;
     width: 100%;
@@ -9,16 +8,23 @@ header {
 }
 
 header img {
-    height: 40px;
-    width: 40px;
+    height: 18px;
+    width: 22px;
 }
 
 #headerContainer {
-    margin: 0 200px;
+    margin: 0 190px;
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
 }
 
 #headerTop {
+    display: flex;
     width: 100%;
+    margin: 12px 0 20px 0;
+}
+
+#headerButtons {
+    line-height: 1px;
 }
 
 #headerBottom {
@@ -26,14 +32,72 @@ header img {
 }
 
 #main-logo {
-    width: 150px;
-    height: 22px;
-    margin-right: 150px;
+    margin-top: 12px;
+    width: 144px;
+    height: 24px;
+    margin-right: 218px;
 }
 
 a {
     text-decoration: none;
 }
+
+#language-button {
+    background-color: transparent;
+    border-color: transparent;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 11px;
+    height: 48px;
+}
+
+#language-button:hover {
+    border-color: transparent;
+    background-color: rgba(189, 189, 189, 0.12);
+    padding-left: 11px;
+    padding-right: 11px;
+}
+
+#bulgarian-flag {
+    background-color: transparent;
+    border-color: transparent;
+    padding: 11px;
+    height: 48px;
+}
+
+#bulgarian-flag:hover {
+    border-color: transparent;
+    background-color: rgba(189, 189, 189, 0.12);
+    padding-left: 11px;
+    padding-right: 11px;
+}
+
+#bulgarian-flag img {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+}
+
+#help-logo {
+    background-color: transparent;
+    border-color: transparent;
+    padding: 11px;
+    height: 48px;
+}
+
+#help-logo:hover {
+    border-color: transparent;
+    background-color: rgba(189, 189, 189, 0.12);
+    padding-left: 11px;
+    padding-right: 11px;
+}
+
+#help-logo img {
+    width: 24px;
+    height: 24px;
+}
+
 /* 
 #headerTop button {
     height: 43px;
@@ -43,23 +107,34 @@ a {
 
 .registerButton {
     border: 1px solid white;
-    padding: 4px;
-    font-size: 17px;
+    padding: 7px;
+    font-size: 14px;
     color: white;
+    font-weight: bold;
+    margin: 0 2px;
+    background: #003580;
 }
+
 /* 
 .registerButton:hover{
 
 } */
 
 .createProfileButton, .loginButton {
-    font-size: 17px;
+    font-size: 14px;
     border: 1px solid #0071c2;
     background: #fff;
     color: #0071c2;
-    padding: 3px 5px;    
+    padding: 7px 15px;
+    font-weight: bold;
+    margin: 0 0 0 2px;
 }
 
+.registerButton:hover {
+    background: #104a9b;
+}
+
+<<<<<<< HEAD
 #subscribeButton{
     box-sizing: border-box;
     border-radius: 3px;
@@ -71,4 +146,73 @@ a {
     height: 48px;
     color: #fff;
     background-color: #0071c2;
+=======
+.createProfileButton:hover, .loginButton:hover {
+    background: #d5e6ff;
+}
+
+#bedIcon {
+    height: 18px;
+    width: 21px;
+}
+
+#flightsIcon {
+    height: 18px;
+    width: 22px;
+}
+
+#rentIcon {
+    height: 16px;
+    width: 22px;
+}
+
+#attractionsIcon {
+    height: 20px;
+    width: 18px;
+}
+
+#taxiIcon {
+    height: 16px;
+    width: 25px;
+}
+
+#headerBottom a {
+    margin: 0px 30px 20px 0;
+}
+
+#headerBottom span {
+    color: white;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 10px;
+    text-align: center;
+}
+
+*[data-tooltip] {
+    position: relative;
+}
+
+*[data-tooltip]::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    top: 50px;
+    right: -50px;
+    width: 170px;
+    height: 14px;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity .15s ease-in-out;
+    display: block;
+    font-size: 13px;
+    line-height: 16px;
+    background: #2e2e2e;
+    padding: 2px 2px;
+    box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
+    color: white;
+    font-weight: normal;
+}
+
+*[data-tooltip]:hover::after {
+    opacity: 0.75;
+>>>>>>> 3d97005ba9588058fac2379c6cc8be333d7ab90a
 }

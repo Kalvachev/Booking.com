@@ -1,12 +1,13 @@
-/* body {
-    width: 1560px;
-} */
+body {
+    width: 1519px;
+    margin: 0 auto;
+}
 
 #mainContainer {
     margin: 20px 200px 20px 200px;
 }
 
-#searchFieldTextContainer, #mostPopularContainer, #knowBulgariaContainer {
+#searchFieldTextContainer, #mostPopularContainer, #knowBulgariaContainer, #typesOfHomesContainer {
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
@@ -16,18 +17,64 @@
 #searchFieldTextContainer h2, #mostPopularContainer h2 {
     font-size: 24px;
     padding: 5px 0 5px 0;
-    font-weight: bold;
+    font-weight: 500;
+}
+
+#searchFieldTextContainer p, #mostPopularContainer p {
+    font-size: 15px;
+    padding: 5px 0 5px 0;
+    font-weight: 400;
 }
 
 #searchInput {
     margin: 1em 0 1em 0;
+    display: flex;
+}
+
+#search-box {
+    width: 100%;
+    width: 330px;
+    height: 52px;
+    margin: 0;
+    padding: 0 16px 0 50px;
+    border: 4px solid #febb02;
+    border-right: 2px solid #febb02;
+    font-size: 16px;
+    background: url(../images/search.png) no-repeat 8px 12px #fff;
+    background-size: 30px 30px;
+    color: black;
+}
+
+#homepageSearchButton {
+    width: 155px;
+    height: 60px;
+    padding: 5px 32px;
+    border: 4px solid #febb02;
+    border-left: 2px solid #febb02;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    background: #0071c2;
+}
+
+#jobTripContainer {
+    display: flex;
 }
 
 #jobTrip {
-    margin: 0 0 1em 0;
+    margin: 0 0.3em 1em 0;
+    width: 20px;
+    height: 20px;
+    border-color: #bdbdbd;
 }
 
-#beachDestinations, #bulgariaDestinations {
+#jobTripLabel {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+#beachDestinations, #bulgariaDestinations, #accomodationType {
     margin-top: 1em;
     display: flex;
     justify-content: space-between;
@@ -51,21 +98,47 @@
 }
 
 #bulgariaDestinations img {
-    width: 200px;
+    width: 207px;
     margin: 0.5em 0 0.5em 0;
 }
 
-#bulgariaDestinations img {
-    width: 200px;
-    margin: 0.5em 0 0.5em 0;
-}
-
-.destinationsInBulgariaTitles {
-    font-size: 18px;
+.destinationsInBulgariaTitles, .accomodationTitles {
+    font-size: 16px;
     font-weight: bolder;
 }
 
-.destinationsInBulgariaFreeRooms {
+.destinationsInBulgariaFreeRooms, .accomodationNumber {
     font-size: 14px;
-    color:rgb(156, 156, 156);
+    color: rgb(156, 156, 156);
+    margin: 5px 0 0 0 ;
+}
+
+#bigPicturesContainer {
+    display: flex;
+}
+
+#firstDoublePicture {
+    background-image: url(/assets/images/BigPictures/Barcelona.png) no-repeat center center;
+    position: relative;
+}
+
+#likedHomes {
+    display: flex;
+    margin-top: 1em;
+}
+
+#likedHomes h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#typesOfHomesContainer h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#accomodationType img {
+    width: 207px;
+    height: 180px;
+    margin: 0.5em 0 0.5em 0;
 }
