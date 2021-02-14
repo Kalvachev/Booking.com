@@ -1,0 +1,55 @@
+.second-wrapper {
+    width: 100%;
+    max-width: 1100px;
+    position: relative;
+}
+
+.second-carousel {
+    overflow: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+
+.second-carousel::-webkit-scrollbar {
+    height: 0;
+}
+
+.second-prev, .second-next {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background: white;
+    border: none;
+    padding: 8px;
+    border-radius: 50%;
+    outline: 0;
+    cursor: pointer;
+    position: absolute;
+}
+
+.second-prev {
+    top: 60%;
+    left: 0;
+    transform: translate(50%, -50%);
+    display: none;
+}
+
+.second-next {
+    top: 60%;
+    right: 0;
+    transform: translate(-50%, -50%);
+}
+
+.second-content {
+    display: grid;
+    grid-gap: 16px;
+    grid-auto-flow: column;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+.second-destinationItems {
+    width: 260px;
+    height: 175px;
+    background: green;
+}

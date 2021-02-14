@@ -1,9 +1,9 @@
 const gap = 16;
 
-const carousel = document.getElementById("beachDestinations"),
-    content = document.getElementById("destinationsContainer"),
-    next = document.getElementById("next"),
-    prev = document.getElementById("prev");
+const carousel = document.querySelector(".carousel"),
+    content = document.querySelector(".content"),
+    next = document.querySelector(".next"),
+    prev = document.querySelector(".prev");
 
 next.addEventListener("click", e => {
     carousel.scrollBy(width + gap, 0);
