@@ -20,7 +20,7 @@ header img {
 #headerTop {
     display: flex;
     width: 100%;
-    margin: 12px 0 20px 0;
+    margin: 12px 0 24px 0;
 }
 
 #headerButtons {
@@ -50,6 +50,7 @@ a {
     font-size: 16px;
     padding: 11px;
     height: 48px;
+    margin-right: 5px;
 }
 
 #language-button:hover {
@@ -64,6 +65,7 @@ a {
     border-color: transparent;
     padding: 11px;
     height: 48px;
+    margin-right: 5px;
 }
 
 #bulgarian-flag:hover {
@@ -84,6 +86,7 @@ a {
     border-color: transparent;
     padding: 11px;
     height: 48px;
+    margin-right: 5px;
 }
 
 #help-logo:hover {
@@ -113,6 +116,7 @@ a {
     font-weight: bold;
     margin: 0 2px;
     background: #003580;
+    margin-right: 10px;
 }
 
 /* 
@@ -127,7 +131,7 @@ a {
     color: #0071c2;
     padding: 7px 15px;
     font-weight: bold;
-    margin: 0 0 0 2px;
+    margin-right: 10px;
 }
 
 .registerButton:hover {
@@ -201,4 +205,9 @@ a {
 
 *[data-tooltip]:hover::after {
     opacity: 0.75;
+}
+
+#headerButtons {
+    display: flex;
+    align-items: center;
 }
