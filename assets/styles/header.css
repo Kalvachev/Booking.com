@@ -165,3 +165,31 @@ a {
     padding: 10px;
     text-align: center;
 }
+
+*[data-tooltip] {
+    position: relative;
+}
+
+*[data-tooltip]::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    top: 50px;
+    right: -50px;
+    width: 170px;
+    height: 14px;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity .15s ease-in-out;
+    display: block;
+    font-size: 13px;
+    line-height: 16px;
+    background: #313131;
+    padding: 2px 2px;
+    box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.4);
+    color: white;
+    font-weight: normal;
+}
+
+*[data-tooltip]:hover::after {
+    opacity: 0.75;
+}
