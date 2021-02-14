@@ -60,3 +60,15 @@ a {
     padding: 3px 5px;    
 }
 
+#subscribeButton{
+    box-sizing: border-box;
+    border-radius: 3px;
+    border: 0;
+    padding: 0 15px;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 300;
+    height: 48px;
+    color: #fff;
+    background-color: #0071c2;
+}
