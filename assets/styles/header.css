@@ -134,19 +134,6 @@ a {
     background: #104a9b;
 }
 
-<<<<<<< HEAD
-#subscribeButton{
-    box-sizing: border-box;
-    border-radius: 3px;
-    border: 0;
-    padding: 0 15px;
-    font-size: 20px;
-    line-height: 28px;
-    font-weight: 300;
-    height: 48px;
-    color: #fff;
-    background-color: #0071c2;
-=======
 .createProfileButton:hover, .loginButton:hover {
     background: #d5e6ff;
 }
@@ -214,5 +201,4 @@ a {
 
 *[data-tooltip]:hover::after {
     opacity: 0.75;
->>>>>>> 3d97005ba9588058fac2379c6cc8be333d7ab90a
 }
