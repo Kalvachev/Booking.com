@@ -112,6 +112,7 @@ a {
     color: white;
     font-weight: bold;
     margin: 0 2px;
+    background: #003580;
 }
 
 /* 
@@ -127,6 +128,14 @@ a {
     padding: 7px 15px;
     font-weight: bold;
     margin: 0 0 0 2px;
+}
+
+.registerButton:hover {
+    background: #104a9b;
+}
+
+.createProfileButton:hover, .loginButton:hover {
+    background: #d5e6ff;
 }
 
 #bedIcon {

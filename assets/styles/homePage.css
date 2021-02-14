@@ -1,6 +1,7 @@
-/* body {
-    width: 1560px;
-} */
+body {
+    width: 1519px;
+    margin: 0 auto;
+}
 
 #mainContainer {
     margin: 20px 200px 20px 200px;
