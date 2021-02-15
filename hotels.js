@@ -21,7 +21,8 @@ const hotels = [
             'https://cf.bstatic.com/images/hotel/max1280x900/666/66613707.jpg'
         ],
         type: 'Hotel',
-        price: 432
+        price: 432,
+        destination: 'Милано'
     },
     {
         name: 'Palazzo Parigi Hotel & Grand Spa - LHW',
@@ -45,7 +46,8 @@ const hotels = [
             'https://cf.bstatic.com/images/hotel/max1280x900/597/59794302.jpg'
         ],
         type: 'Hotel',
-        price: 312
+        price: 312,
+        destination: 'Милано'
     },
     {
         name: 'Armani Hotel Milano',
@@ -71,7 +73,8 @@ const hotels = [
             'https://cf.bstatic.com/images/hotel/max1280x900/133/133231528.jpg'
         ],
         type: 'Hotel',
-        price: 325
+        price: 325,
+        destination: 'Милано'
     },
     {
         name: 'The Corner Duomo Hotel',
@@ -97,7 +100,8 @@ const hotels = [
             'https://cf.bstatic.com/images/hotel/max1280x900/232/232478340.jpg'
         ],
         type: 'Hotel',
-        price: 288
+        price: 288,
+        destination: 'Милано'
     },
     {
         name: 'Hotel VIU Milan',
@@ -122,12 +126,13 @@ const hotels = [
             'https://cf.bstatic.com/images/hotel/max1280x900/103/103015740.jpg'
         ],
         type: 'Hotel',
-        price: 298
+        price: 298,
+        destination: 'Милано'
     },
     {
         name: 'Hotel Dei Cavalieri Milano Duomo',
         address: 'Piazza Giuseppe Missori, 1, Център, 20123 Милано, Италия',
-        rating: 9,
+        rating: 9.0,
         stars: 5,
         facilities: [
             'Parking', 'Free Wi Fi', 'Airport Transfer', 'Pets Allowed', 'Spa Center',
@@ -147,7 +152,8 @@ const hotels = [
             'https://cf.bstatic.com/images/hotel/max1280x900/845/84522061.jpg'
         ],
         type: 'Hotel',
-        price: 263
+        price: 263,
+        destination: 'Милано'
     },
     {
         name: 'Mandarin Oriental, Milan',
@@ -175,7 +181,8 @@ const hotels = [
             'https://cf.bstatic.com/images/hotel/max1280x900/644/64444089.jpg'
         ],
         type: 'Hotel',
-        price: 234
+        price: 234,
+        destination: 'Милано'
     },
     {
         name: 'NH Milano Touring',
@@ -202,7 +209,8 @@ const hotels = [
             'https://cf.bstatic.com/images/hotel/max1280x900/252/252396274.jpg'
         ],
         type: 'Hotel',
-        price: 325
+        price: 325,
+        destination: 'Милано'
     },
     {
         name: 'Park Hyatt Milano',
@@ -230,7 +238,8 @@ const hotels = [
             'https://cf.bstatic.com/images/hotel/max1280x900/154/154282782.jpg'
         ],
         type: 'Hotel',
-        price: 420
+        price: 420,
+        destination: 'Милано'
     },
     {
         name: 'Aphrodite',
@@ -256,7 +265,8 @@ const hotels = [
             'https://cf.bstatic.com/images/hotel/max1280x900/153/153053259.jpg'
         ],
         type: 'Apartments',
-        price: 60
+        price: 60,
+        destination: 'Керамоти'
     },
     {
         name: 'Daniela sunshine pool apartments ',
@@ -284,7 +294,8 @@ const hotels = [
             'https://cf.bstatic.com/images/hotel/max1280x900/257/257972434.jpg'
         ],
         type: 'Apartments',
-        price: 56
+        price: 56,
+        destination: 'Керамоти'
     },
     {
         name: 'Villa Christie',
@@ -312,7 +323,8 @@ const hotels = [
             'https://cf.bstatic.com/images/hotel/max1280x900/189/189037513.jpg'
         ],
         type: 'Villa',
-        price: 58
+        price: 58,
+        destination: 'Керамоти'
     },
     {
         name: 'Kassiani Studios',
@@ -339,7 +351,8 @@ const hotels = [
             'https://cf.bstatic.com/images/hotel/max1280x900/716/71688579.jpg'
         ],
         type: 'Apartments',
-        price: 88
+        price: 88,
+        destination: 'Керамоти'
     },
     {
         name: 'Filippion Hotel',
@@ -365,7 +378,8 @@ const hotels = [
             'https://cf.bstatic.com/images/hotel/max1280x900/494/49455634.jpg'
         ],
         type: 'Hotel',
-        price: 45
+        price: 45,
+        destination: 'Керамоти'
     },
     {
         name: 'Irini Apartments',
@@ -392,7 +406,8 @@ const hotels = [
             'https://cf.bstatic.com/images/hotel/max1280x900/968/96858719.jpg'
         ],
         type: 'Apartments',
-        price: 89
+        price: 89,
+        destination: 'Керамоти'
     },
     {
         name: 'Villa Anna',
@@ -418,7 +433,8 @@ const hotels = [
             'https://cf.bstatic.com/images/hotel/max1280x900/136/136005503.jpg'
         ],
         type: 'Villa',
-        price: 83
+        price: 83,
+        destination: 'Керамоти'
     },
     {
         name: 'Villa Aggeliki',
@@ -442,12 +458,13 @@ const hotels = [
             'https://cf.bstatic.com/images/hotel/max1280x900/256/256482523.jpg'
         ],
         type: 'Villa',
-        price: 150
+        price: 150,
+        destination: 'Керамоти'
     },
     {
         name: 'Santa Catalina, a Royal Hideaway Hotel 5*GL',
         address: 'León y Castillo, 227, 35005 Лас Палмас де Гран Канария, Испания',
-        rating: 9,
+        rating: 9.0,
         stars: 5,
         facilities: [
             '2 Pools', 'Spa Center', 'Non-Smoker Rooms', 'Fitness center',
@@ -468,21 +485,34 @@ const hotels = [
 
         ],
         type: 'Hotel',
-        price: 312
+        price: 312,
+        destination: 'Лас Палмас де Гран Канария'
     },
     {
         name: 'Ático LUXURY vista mar en Las Palmas',
         address: 'Calle Hierro, 35008 Лас Палмас де Гран Канария, Испания',
-        rating: 7,
+        rating: 7.0,
         stars: 3,
         facilities: [
             'Terrace', 'Free Wi Fi', 'Elevator'
         ],
         pictures: [
-
+            'https://cf.bstatic.com/images/hotel/max1280x900/247/247548972.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/247/247548993.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/247/247549011.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/247/247548989.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/243/243839956.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/247/247549015.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/247/247549019.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/247/247549004.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/247/247548982.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/247/247548958.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/247/247548950.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/247/247548995.jpg'
         ],
         type: 'Hotel',
-        price: 135
+        price: 135,
+        destination: 'Лас Палмас де Гран Канария'
     },
     {
         name: 'BULL Reina Isabel & SPA',
@@ -494,10 +524,24 @@ const hotels = [
             'Free Wi Fi', 'Roomservice', 'Breakfast', 'Bar'
         ],
         pictures: [
-
+            'https://cf.bstatic.com/images/hotel/max1280x900/195/195284616.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/195/195284809.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/195/195461614.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/195/195284605.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/195/195284855.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/195/195284779.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/195/195284849.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/195/195284938.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/195/195464991.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/195/195465002.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/195/195464659.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/195/195464661.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/195/195464666.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/195/195462631.jpg'
         ],
         type: 'Hotel',
-        price: 257
+        price: 257,
+        destination: 'Лас Палмас де Гран Канария'
     },
     {
         name: 'AC Hotel Iberia Las Palmas',
@@ -509,10 +553,22 @@ const hotels = [
             'Free Wi Fi', 'Roomservice', 'Breakfast', 'Bar'
         ],
         pictures: [
-
+            'https://cf.bstatic.com/images/hotel/max1280x900/216/216565403.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/216/216565996.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/216/216566003.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/216/216565390.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/216/216564449.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/216/216564393.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/216/216563031.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/216/216557758.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/151/151706788.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/151/151706792.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/151/151706799.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/151/151706811.jpg'
         ],
         type: 'Hotel',
-        price: 280
+        price: 280,
+        destination: 'Лас Палмас де Гран Канария'
     },
     {
         name: 'Apartamentos Colón Playa',
@@ -524,10 +580,21 @@ const hotels = [
             'Free Wi Fi', 'Roomservice', 'Breakfast', 'Bar'
         ],
         pictures: [
-
+            'https://cf.bstatic.com/images/hotel/max1280x900/835/8351085.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/247/247432027.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/247/247431533.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/250/250336980.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/250/250336898.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/250/250336919.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/250/250336938.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/250/250336961.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/250/250335862.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/250/250335766.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/250/250335652.jpg'
         ],
         type: 'Apartments',
-        price: 97
+        price: 97,
+        destination: 'Лас Палмас де Гран Канария'
     },
     {
         name: 'Exe Las Palmas',
@@ -539,10 +606,22 @@ const hotels = [
             'Free Wi Fi', 'Breakfast', 'Bar'
         ],
         pictures: [
-
+            'https://cf.bstatic.com/images/hotel/max1280x900/225/225622243.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/225/225622201.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/225/225622204.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/225/225622207.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/225/225622209.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/225/225622222.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/225/225622225.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/225/225622231.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/225/225622233.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/182/182019431.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/225/225622248.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/225/225622253.jpg'
         ],
         type: 'Hotel',
-        price: 336
+        price: 336,
+        destination: 'Лас Палмас де Гран Канария'
     },
     {
         name: 'Hotel Aloe Canteras',
@@ -554,10 +633,21 @@ const hotels = [
             'Free Wi Fi', 'Airport Trasfer', 'Breakfast', 'Bar'
         ],
         pictures: [
-
+            'https://cf.bstatic.com/images/hotel/max1280x900/280/280457448.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/280/280456463.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/280/280460437.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/280/280460444.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/280/280460450.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/280/280460459.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/280/280460470.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/280/280460493.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/280/280460496.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/280/280460519.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/280/280460526.jpg'
         ],
         type: 'Hotel',
-        price: 420
+        price: 420,
+        destination: 'Лас Палмас де Гран Канария'
     },
     {
         name: 'Bex Holiday Homes',
@@ -569,10 +659,22 @@ const hotels = [
             'Free Wi Fi', 'Family Rooms'
         ],
         pictures: [
-
+            'https://cf.bstatic.com/images/hotel/max1280x900/178/178709623.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/283/283098669.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/178/178709929.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/178/178709643.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/178/178709570.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/178/178709539.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/178/178709581.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/178/178709652.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/178/178709596.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/178/178709771.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/178/178709518.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/178/178709483.jpg'
         ],
         type: 'Apartments',
-        price: 140
+        price: 140,
+        destination: 'Лас Палмас де Гран Канария'
     },
     {
         name: 'Hotel Acuario Boutique',
@@ -583,10 +685,22 @@ const hotels = [
             'Non-Smoker Rooms', 'Free Wi Fi', 'Breakfast', 'Bar'
         ],
         pictures: [
-
+            'https://cf.bstatic.com/images/hotel/max1280x900/172/172838977.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/279/279612058.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/175/175109258.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/279/279611868.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/175/175109433.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/279/279610301.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/173/173127413.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/173/173127427.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/173/173131447.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/173/173131450.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/173/173131442.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/279/279610466.jpg'
         ],
         type: 'Hotel',
-        price: 123
+        price: 123,
+        destination: 'Лас Палмас де Гран Канария'
     },
     {
         name: 'Design Plus Bex Hotel',
@@ -598,25 +712,48 @@ const hotels = [
             'Free Wi Fi', 'Breakfast', 'Bar'
         ],
         pictures: [
-
+            'https://cf.bstatic.com/images/hotel/max1280x900/127/127805658.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/145/145134889.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/203/203322861.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/203/203322878.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/203/203322901.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/203/203322907.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/203/203322920.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/203/203322935.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/203/203322944.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/203/203322958.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/203/203322978.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/203/203322990.jpg'
         ],
         type: 'Hotel',
-        price: 98
+        price: 98,
+        destination: 'Лас Палмас де Гран Канария'
     },
     {
-        name: 'Design Plus Bex Hotel',
-        address: 'Gomera, 6, 35008 Лас Палмас де Гран Канария, Испания',
+        name: 'Occidental Las Palmas',
+        address: 'Calle León y Castillo 244, 35005 Лас Палмас де Гран Канария, Испания',
         rating: 8.4,
-        stars: 5,
+        stars: 4,
         facilities: [
-            'Pool', 'Fitness', 'Terrace', 'Non-Smoker Rooms', 'Roomservice',
+            'Fitness', 'Terrace', 'Non-Smoker Rooms', 'Roomservice',
             'Free Wi Fi', 'Breakfast', 'Bar'
         ],
         pictures: [
-
+            'https://cf.bstatic.com/images/hotel/max1280x900/271/271482301.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/271/271482514.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/233/233046337.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/271/271483017.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/271/271482394.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/271/271482994.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/271/271482521.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/271/271484561.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/271/271846967.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/249/249511836.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/249/249511823.jpg'
         ],
         type: 'Hotel',
-        price: 260
+        price: 260,
+        destination: 'Лас Палмас де Гран Канария'
     },
     {
         name: 'Hotel Atlântico Rio',
@@ -628,10 +765,22 @@ const hotels = [
             'Free Wi Fi', 'Breakfast', 'Bar'
         ],
         pictures: [
-
+            'https://cf.bstatic.com/images/hotel/max1280x900/265/26544702.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/255/255972385.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/255/255971781.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/249/24962361.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/249/24961042.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/249/24973240.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/123/123090575.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/380/38092713.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/290/29062611.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/290/29062546.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/265/26544700.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/249/24961077.jpg'
         ],
         type: 'Hotel',
-        price: 170
+        price: 170,
+        destination: 'Рио де Жанейро'
     },
     {
         name: 'Argentina Hotel',
@@ -646,7 +795,8 @@ const hotels = [
 
         ],
         type: 'Hotel',
-        price: 120
+        price: 120,
+        destination: 'Рио де Жанейро'
     },
     {
         name: 'Hotel Atlantico Tower',
@@ -661,7 +811,8 @@ const hotels = [
 
         ],
         type: 'Hotel',
-        price: 109
+        price: 109,
+        destination: 'Рио де Жанейро'
     },
     {
         name: 'Ibis Budget RJ Copacabana',
@@ -676,7 +827,8 @@ const hotels = [
 
         ],
         type: 'Hotel',
-        price: 80
+        price: 80,
+        destination: 'Рио де Жанейро'
     },
     {
         name: 'Hotel Atlantico Prime',
@@ -691,7 +843,8 @@ const hotels = [
 
         ],
         type: 'Hotel',
-        price: 129
+        price: 129,
+        destination: 'Рио де Жанейро'
     },
     {
         name: 'Hotel Astoria Palace',
@@ -706,7 +859,8 @@ const hotels = [
 
         ],
         type: 'Hotel',
-        price: 118
+        price: 118,
+        destination: 'Рио де Жанейро'
     },
     {
         name: 'Hotel Astoria Palace',
@@ -721,7 +875,8 @@ const hotels = [
 
         ],
         type: 'Hotel',
-        price: 197
+        price: 197,
+        destination: 'Рио де Жанейро'
     },
     {
         name: 'Hilton Copacabana Rio de Janeiro',
@@ -736,7 +891,8 @@ const hotels = [
 
         ],
         type: 'Hotel',
-        price: 260
+        price: 260,
+        destination: 'Рио де Жанейро'
     },
     {
         name: 'Grand Hyatt Rio de Janeiro',
@@ -751,7 +907,8 @@ const hotels = [
 
         ],
         type: 'Hotel',
-        price: 420
+        price: 420,
+        destination: 'Рио де Жанейро'
     },
     {
         name: 'Mirador Rio Copacabana Hotel',
@@ -766,7 +923,8 @@ const hotels = [
 
         ],
         type: 'Hotel',
-        price: 326
+        price: 326,
+        destination: 'Рио де Жанейро'
     },
     {
         name: 'Sheraton Grand Rio Hotel & Resort',
@@ -781,7 +939,8 @@ const hotels = [
 
         ],
         type: 'Hotel',
-        price: 280
+        price: 280,
+        destination: 'Рио де Жанейро'
     },
     {
         name: 'The Westin Siray Bay Resort & Spa, Phuket',
@@ -796,7 +955,8 @@ const hotels = [
 
         ],
         type: 'Hotel',
-        price: 179
+        price: 179,
+        destination: 'Пукет'
     },
     {
         name: 'Novotel Phuket City Phokeethra',
@@ -811,7 +971,8 @@ const hotels = [
 
         ],
         type: 'Hotel',
-        price: 190
+        price: 190,
+        destination: 'Пукет'
     },
     {
         name: 'Blu Monkey Hub and Hotel Phuket',
@@ -826,7 +987,8 @@ const hotels = [
 
         ],
         type: 'Hotel',
-        price: 80
+        price: 80,
+        destination: 'Пукет'
     },
     {
         name: 'Koh Sirey Beachfront Pool Villa',
@@ -840,7 +1002,8 @@ const hotels = [
 
         ],
         type: 'Villa',
-        price: 289
+        price: 289,
+        destination: 'Пукет'
     },
     {
         name: 'Little Nyonya Hotel',
@@ -855,7 +1018,8 @@ const hotels = [
 
         ],
         type: 'Hotel',
-        price: 36
+        price: 36,
+        destination: 'Пукет'
     },
     {
         name: 'Casa Blanca Boutique Hotel',
@@ -870,7 +1034,8 @@ const hotels = [
 
         ],
         type: 'Hotel',
-        price: 40
+        price: 40,
+        destination: 'Пукет'
     },
     {
         name: 'Ramada Plaza ChaoFah, Phuket',
@@ -885,7 +1050,8 @@ const hotels = [
 
         ],
         type: 'Hotel',
-        price: 180
+        price: 180,
+        destination: 'Пукет'
     },
     {
         name: 'Peranakan House ',
@@ -900,7 +1066,8 @@ const hotels = [
 
         ],
         type: 'Hotel',
-        price: 49
+        price: 49,
+        destination: 'Пукет'
     },
     {
         name: 'La Moon @ Phuket',
@@ -915,7 +1082,8 @@ const hotels = [
 
         ],
         type: 'Hotel',
-        price: 33
+        price: 33,
+        destination: 'Пукет'
     },
     {
         name: 'The Tide Beachfront Siray Phuket',
@@ -930,7 +1098,8 @@ const hotels = [
 
         ],
         type: 'Hotel',
-        price: 120
+        price: 120,
+        destination: 'Пукет'
     },
     {
         name: 'Chinotel ',
@@ -945,7 +1114,8 @@ const hotels = [
 
         ],
         type: 'Hotel',
-        price: 42
+        price: 42,
+        destination: 'Пукет'
     },
     {
         name: 'Hilton Vienna Plaza',
@@ -960,7 +1130,8 @@ const hotels = [
 
         ],
         type: 'Hotel',
-        price: 380
+        price: 380,
+        destination: 'Виена'
     },
     {
         name: 'SO/ Vienna',
@@ -975,7 +1146,8 @@ const hotels = [
 
         ],
         type: 'Hotel',
-        price: 620
+        price: 620,
+        destination: 'Виена'
     },
     {
         name: 'Hilton Vienna Park',
@@ -990,7 +1162,8 @@ const hotels = [
 
         ],
         type: 'Hotel',
-        price: 223
+        price: 223,
+        destination: 'Виена'
     },
     {
         name: 'Hampton By Hilton Vienna Messe',
@@ -1005,7 +1178,8 @@ const hotels = [
 
         ],
         type: 'Hotel',
-        price: 130
+        price: 130,
+        destination: 'Виена'
     },
     {
         name: 'Radisson Blu Park Royal Palace Hotel Vienna',
@@ -1020,7 +1194,8 @@ const hotels = [
 
         ],
         type: 'Hotel',
-        price: 180
+        price: 180,
+        destination: 'Виена'
     },
     {
         name: 'The Ritz-Carlton, Vienna',
@@ -1035,7 +1210,8 @@ const hotels = [
 
         ],
         type: 'Hotel',
-        price: 629
+        price: 629,
+        destination: 'Виена'
     },
     {
         name: 'Park Hyatt Vienna',
@@ -1050,7 +1226,8 @@ const hotels = [
 
         ],
         type: 'Hotel',
-        price: 669
+        price: 669,
+        destination: 'Виена'
     },
     {
         name: 'Vienna Marriott Hotel',
@@ -1065,7 +1242,8 @@ const hotels = [
 
         ],
         type: 'Hotel',
-        price: 640
+        price: 640,
+        destination: 'Виена'
     },
     {
         name: 'Radisson Blu Park Royal Palace Hotel Vienna',
@@ -1080,7 +1258,8 @@ const hotels = [
 
         ],
         type: 'Hotel',
-        price: 140
+        price: 140,
+        destination: 'Виена'
     },
     {
         name: 'Fitzrovia Hotel',
@@ -1095,7 +1274,8 @@ const hotels = [
 
         ],
         type: 'Hotel',
-        price: 190
+        price: 190,
+        destination: 'Лондон'
     },
     {
         name: 'JW Marriott Grosvenor House London',
@@ -1110,7 +1290,8 @@ const hotels = [
 
         ],
         type: 'Hotel',
-        price: 544
+        price: 544,
+        destination: 'Лондон'
     },
     {
         name: 'The Park Tower Knightsbridge, a Luxury Collection Hotel',
@@ -1125,7 +1306,8 @@ const hotels = [
 
         ],
         type: 'Hotel',
-        price: 560
+        price: 560,
+        destination: 'Лондон'
     },
     {
         name: 'Radisson Blu Edwardian Berkshire Hotel, London',
@@ -1140,7 +1322,8 @@ const hotels = [
 
         ],
         type: 'Hotel',
-        price: 276
+        price: 276,
+        destination: 'Лондон'
     },
     {
         name: 'Hard Rock Hotel London',
@@ -1155,7 +1338,8 @@ const hotels = [
 
         ],
         type: 'Hotel',
-        price: 223
+        price: 223,
+        destination: 'Лондон'
     },
     {
         name: 'London Hilton on Park Lane',
@@ -1170,7 +1354,8 @@ const hotels = [
 
         ],
         type: 'Hotel',
-        price: 559
+        price: 559,
+        destination: 'Лондон'
     },
     {
         name: 'The Cavendish London',
@@ -1185,7 +1370,8 @@ const hotels = [
 
         ],
         type: 'Hotel',
-        price: 354
+        price: 354,
+        destination: 'Лондон'
     },
     {
         name: 'Amba Hotel Marble Arch',
@@ -1200,7 +1386,8 @@ const hotels = [
 
         ],
         type: 'Hotel',
-        price: 354
+        price: 354,
+        destination: 'Лондон'
     },
     {
         name: 'Radisson Blu Edwardian Grafton Hotel, London',
@@ -1215,7 +1402,8 @@ const hotels = [
 
         ],
         type: 'Hotel',
-        price: 256
+        price: 256,
+        destination: 'Лондон'
     },
     {
         name: 'Hyatt Regency London - The Churchill',
@@ -1230,7 +1418,8 @@ const hotels = [
 
         ],
         type: 'Hotel',
-        price: 509
+        price: 509,
+        destination: 'Лондон'
     },
     {
         name: 'Park Plaza County Hall London',
@@ -1245,7 +1434,8 @@ const hotels = [
 
         ],
         type: 'Hotel',
-        price: 332
+        price: 332,
+        destination: 'Лондон'
     },
     {
         name: 'Hyatt Regency Paris Etoile',
@@ -1260,7 +1450,8 @@ const hotels = [
 
         ],
         type: 'Hotel',
-        price: 427
+        price: 427,
+        destination: 'Париж'
     },
     {
         name: 'Hotel Lutetia',
@@ -1275,7 +1466,8 @@ const hotels = [
 
         ],
         type: 'Hotel',
-        price: 1230
+        price: 1230,
+        destination: 'Париж'
     },
     {
         name: 'Sofitel Paris Arc De Triomphe',
@@ -1290,7 +1482,8 @@ const hotels = [
 
         ],
         type: 'Hotel',
-        price: 732
+        price: 732,
+        destination: 'Париж'
     },
     {
         name: 'Citadines Saint-Germain-des-Prés Paris',
@@ -1305,7 +1498,8 @@ const hotels = [
 
         ],
         type: 'Hotel',
-        price: 346
+        price: 346,
+        destination: 'Париж'
     },
     {
         name: 'Pullman Paris Tour Eiffel',
@@ -1320,7 +1514,8 @@ const hotels = [
 
         ],
         type: 'Hotel',
-        price: 572
+        price: 572,
+        destination: 'Париж'
     },
     {
         name: 'Le Meurice – Dorchester Collection',
@@ -1335,7 +1530,8 @@ const hotels = [
 
         ],
         type: 'Hotel',
-        price: 1303
+        price: 1303,
+        destination: 'Париж'
     },
     {
         name: 'Maison Bréguet',
@@ -1350,7 +1546,8 @@ const hotels = [
 
         ],
         type: 'Hotel',
-        price: 477
+        price: 477,
+        destination: 'Париж'
     },
     {
         name: 'Brach Paris',
@@ -1365,7 +1562,8 @@ const hotels = [
 
         ],
         type: 'Hotel',
-        price: 834
+        price: 834,
+        destination: 'Париж'
     },
     {
         name: 'Elysées Ceramic',
@@ -1380,7 +1578,8 @@ const hotels = [
 
         ],
         type: 'Hotel',
-        price: 260
+        price: 260,
+        destination: 'Париж'
     },
     {
         name: 'Hotel du Louvre in the Unbound Collection by Hyatt',
@@ -1395,7 +1594,8 @@ const hotels = [
 
         ],
         type: 'Hotel',
-        price: 769
+        price: 769,
+        destination: 'Париж'
     },
     {
         name: 'Montfleuri',
@@ -1410,7 +1610,8 @@ const hotels = [
 
         ],
         type: 'Hotel',
-        price: 572
+        price: 572,
+        destination: 'Париж'
     },
     {
         name: 'Art Complex Anel',
@@ -1425,7 +1626,8 @@ const hotels = [
 
         ],
         type: 'Hotel',
-        price: 176
+        price: 176,
+        destination: 'Созопол'
     },
     {
         name: 'Sozopol Homes',
@@ -1440,7 +1642,8 @@ const hotels = [
 
         ],
         type: 'Apartments',
-        price: 60
+        price: 60,
+        destination: 'Созопол'
     },
     {
         name: 'Diamanti',
@@ -1455,7 +1658,8 @@ const hotels = [
 
         ],
         type: 'Hotel',
-        price: 61
+        price: 61,
+        destination: 'Созопол'
     },
     {
         name: 'Полина Бийч',
@@ -1470,7 +1674,8 @@ const hotels = [
 
         ],
         type: 'Hotel',
-        price: 62
+        price: 62,
+        destination: 'Созопол'
     },
     {
         name: 'Апартамент Белия делфин Greenlife',
@@ -1485,7 +1690,8 @@ const hotels = [
 
         ],
         type: 'Apartments',
-        price: 120
+        price: 120,
+        destination: 'Созопол'
     },
     {
         name: 'Апартамент Белия делфин Greenlife',
@@ -1500,7 +1706,8 @@ const hotels = [
 
         ],
         type: 'Apartments',
-        price: 300
+        price: 300,
+        destination: 'Созопол'
     },
     {
         name: 'Casa de oro Aparthotel',
@@ -1515,7 +1722,8 @@ const hotels = [
 
         ],
         type: 'Aparthotel',
-        price: 150
+        price: 150,
+        destination: 'Созопол'
     },
     {
         name: 'Hotel Silver',
@@ -1530,7 +1738,8 @@ const hotels = [
 
         ],
         type: 'Hotel',
-        price: 35
+        price: 35,
+        destination: 'Созопол'
     },
     {
         name: 'Electra Metropolis',
@@ -1545,7 +1754,8 @@ const hotels = [
 
         ],
         type: 'Hotel',
-        price: 368
+        price: 368,
+        destination: 'Атина'
     },
     {
         name: 'Grand Hyatt Athens',
@@ -1560,7 +1770,8 @@ const hotels = [
 
         ],
         type: 'Hotel',
-        price: 210
+        price: 210,
+        destination: 'Атина'
     },
     {
         name: 'Four Seasons Astir Palace Hotel Athens',
@@ -1575,7 +1786,8 @@ const hotels = [
 
         ],
         type: 'Hotel',
-        price: 998
+        price: 998,
+        destination: 'Атина'
     },
     {
         name: 'Elia Ermou Athens Hotel',
@@ -1590,7 +1802,8 @@ const hotels = [
 
         ],
         type: 'Hotel',
-        price: 196
+        price: 196,
+        destination: 'Атина'
     },
     {
         name: 'Divani Apollon Palace & Thalasso',
@@ -1605,7 +1818,8 @@ const hotels = [
 
         ],
         type: 'Hotel',
-        price: 326
+        price: 326,
+        destination: 'Атина'
     },
     {
         name: 'The Stanley',
@@ -1620,7 +1834,8 @@ const hotels = [
 
         ],
         type: 'Hotel',
-        price: 190
+        price: 190,
+        destination: 'Атина'
     },
     {
         name: 'Crystal City Hotel',
@@ -1635,7 +1850,8 @@ const hotels = [
 
         ],
         type: 'Hotel',
-        price: 100
+        price: 100,
+        destination: 'Атина'
     },
     {
         name: 'Hotel Grande Bretagne, a Luxury Collection Hotel',
@@ -1650,7 +1866,8 @@ const hotels = [
 
         ],
         type: 'Hotel',
-        price: 809
+        price: 809,
+        destination: 'Атина'
     },
     {
         name: 'The Margi',
@@ -1665,7 +1882,8 @@ const hotels = [
 
         ],
         type: 'Hotel',
-        price: 410
+        price: 410,
+        destination: 'Атина'
     },
     {
         name: 'Palmyra Beach Hotel',
@@ -1680,7 +1898,8 @@ const hotels = [
 
         ],
         type: 'Hotel',
-        price: 118
+        price: 118,
+        destination: 'Атина'
     }
 ]
 
