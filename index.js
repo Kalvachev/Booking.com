@@ -58,38 +58,56 @@
 
     function printLikedHomes() {
         let favouriteHotels = hotels.map(function (el) {
-            if (el.rating > 9) {
+            if (el.rating > 7.8) {
                 return el
             }
         }).filter(el => el !== undefined);
 
         for (let i = 0; i < 4; i++) {
-            console.log(favouriteHotels[0])
             let randomNumber = Math.floor(Math.random() * favouriteHotels.length);
             let currentElement = favouriteHotels[randomNumber];
 
             let hotelCard = document.createElement('div');
+            hotelCard.setAttribute('class', 'hotelCard');
 
             let hotelPictureContainer = document.createElement('div');
             let hotelPicture = document.createElement('img');
             hotelPicture.src = currentElement.pictures[0];
             hotelPicture.alt = currentElement.name + "'s picture";
+            hotelPictureContainer.setAttribute('class', 'hotelPictureContainer');
 
             let hotelNameAndDestination = document.createElement('div');
             let hotelName = document.createElement('h3');
             hotelName.innerText = currentElement.name;
             let hotelDestination = document.createElement('p');
-            hotelDestination.innerText = currentElement.address;
+            hotelDestination.innerText = currentElement.address.split(', ')[2];
+            hotelNameAndDestination.setAttribute('class', 'hotelNameAndDestination');
 
             let hotelPriceContainer = document.createElement('div');
             let hotelPrice = document.createElement('p')
-            hotelPrice.innerText = currentElement.price;
+            hotelPrice.innerText = 'BGN ' + currentElement.price;
+            hotelPriceContainer.setAttribute('class', 'hotelPriceContainer');
 
             let hotelRatingsContainer = document.createElement('div');
+            hotelRatingsContainer.setAttribute('class', 'hotelRatingsContainer');
             let hotelRating = document.createElement('div');
             hotelRating.innerText = currentElement.rating;
+            hotelRating.setAttribute('class', 'hotelRating');
             let hotelRatingWord = document.createElement('div');
-            hotelRatingWord.innerText = `Превъзходен`;
+
+            if (currentElement.rating >= 7.8 && currentElement.rating < 8.2) {
+                hotelRatingWord.innerText = `Добър`;
+            } if (currentElement.rating >= 8.2 && currentElement.rating <= 8.6) {
+                hotelRatingWord.innerText = `Много добър`;
+            } else if (currentElement.rating >= 8.7 && currentElement.rating < 9) {
+                hotelRatingWord.innerText = `Отличен`;
+            } else if (currentElement.rating >= 9 && currentElement.rating <= 9.3) {
+                hotelRatingWord.innerText = `Превъзходен`;
+            } else if (currentElement.rating >= 9.4 && currentElement.rating <= 9.9) {
+                hotelRatingWord.innerText = `Фантастичен`;
+            }
+
+            hotelRatingWord.setAttribute('class', 'hotelRatingWord');
 
             hotelPictureContainer.append(hotelPicture);
             hotelNameAndDestination.append(hotelName, hotelDestination);

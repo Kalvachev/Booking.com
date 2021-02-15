@@ -25,7 +25,7 @@ const hotels = [
     },
     {
         name: 'Palazzo Parigi Hotel & Grand Spa - LHW',
-        adress: 'Corso Di Porta Nuova 1, Център, 20121 Милано, Италия',
+        address: 'Corso Di Porta Nuova 1, Център, 20121 Милано, Италия',
         rating: 9.2,
         stars: 5,
         facilities: [
@@ -75,7 +75,7 @@ const hotels = [
     },
     {
         name: 'The Corner Duomo Hotel',
-        adress: 'Via Adalberto Catena 2, Център, 20121 Милано, Италия',
+        address: 'Via Adalberto Catena 2, Център, 20121 Милано, Италия',
         rating: 9.2,
         stars: 5,
         facilities: [
