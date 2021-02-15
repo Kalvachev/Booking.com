@@ -57,10 +57,16 @@
     window.addEventListener('DOMContentLoaded', onHashChange);
 
     function printLikedHomes() {
-        let favouriteHotels = hotels.map(el => el.rating > 9);
+        let favouriteHotels = hotels.map(function (el) {
+            if (el.rating > 9) {
+                return el
+            }
+        }).filter(el => el !== undefined);
 
         for (let i = 0; i < 4; i++) {
-            let currentElement = Math.floor(Math.random() * favouriteHotels.length);
+            console.log(favouriteHotels[0])
+            let randomNumber = Math.floor(Math.random() * favouriteHotels.length);
+            let currentElement = favouriteHotels[randomNumber];
 
             let hotelCard = document.createElement('div');
 
@@ -89,7 +95,7 @@
             hotelNameAndDestination.append(hotelName, hotelDestination);
             hotelPriceContainer.append(hotelPrice);
             hotelRatingsContainer.append(hotelRating, hotelRatingWord);
-            
+
             hotelCard.append(hotelPictureContainer, hotelNameAndDestination, hotelPriceContainer, hotelRatingsContainer);
             likedHomesContainer.append(hotelCard);
         }
