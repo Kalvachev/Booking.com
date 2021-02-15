@@ -110,7 +110,7 @@ body {
 .destinationsInBulgariaFreeRooms, .accomodationNumber {
     font-size: 14px;
     color: rgb(156, 156, 156);
-    margin: 5px 0 0 0 ;
+    margin: 5px 0 0 0;
 }
 
 #bigPicturesContainer {
@@ -124,12 +124,14 @@ body {
 
 #likedHomes {
     display: flex;
+    flex-direction: column;
     margin-top: 1em;
 }
 
 #likedHomes h2 {
     font-size: 24px;
     font-weight: bold;
+    margin: 1em 0 1em 0;
 }
 
 #typesOfHomesContainer h2 {
@@ -141,4 +143,81 @@ body {
     width: 207px;
     height: 180px;
     margin: 0.5em 0 0.5em 0;
+}
+
+#likedHomes h2 {
+    justify-content: center;
+}
+
+#likedHomesContainer {
+    display: flex;
+}
+
+.hotelCard {
+    width: 260px;
+    height: 356px;
+    padding-right: 16px;
+}
+
+.hotelPictureContainer img {
+    width: 260px;
+    height: 240px;
+}
+
+.hotelNameAndDestination {
+    justify-content: flex-start;
+}
+
+.hotelNameAndDestination h3 {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #0071c2;
+    margin-top: 0.2em;
+}
+
+.hotelNameAndDestination h3:hover {
+    color: #BC5B01;
+}
+
+.hotelNameAndDestination p {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #6B6B6B;
+}
+
+.hotelPriceContainer p {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    margin-bottom: 0;
+    margin-top: 8px;
+}
+
+.hotelRatingsContainer {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.hotelRating {
+    width: 28px;
+    height: 28px;
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: 500;
+    text-align: center;
+    
+    background: #003580;
+    color: #fff;
+    border-radius: 6px 6px 6px 0;
+}
+
+.hotelRatingWord {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1;
+    color: #003580;
+    margin-left: 7px;
 }
