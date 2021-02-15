@@ -9,10 +9,19 @@ const hotels = [
             'Non-Smoker Rooms', 'Restaurant', 'Coffe Machine', 'Bar'
         ],
         pictures: [
-
+            'https://cf.bstatic.com/images/hotel/max1024x768/119/119790921.jpg',
+            'https://cf.bstatic.com/images/hotel/max1024x768/119/119790756.jpg',
+            'https://cf.bstatic.com/images/hotel/max1024x768/666/66614891.jpg',
+            'https://cf.bstatic.com/images/hotel/max1024x768/666/66613730.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/120/120579092.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/120/120206822.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/119/119788823.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/119/119788828.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/845/84511858.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/666/66613707.jpg'
         ],
         type: 'Hotel',
-        price: 234
+        price: 432
     },
     {
         name: 'Palazzo Parigi Hotel & Grand Spa - LHW',
@@ -24,8 +33,16 @@ const hotels = [
             'Pets Allowed', 'Family Rooms', 'Bar'
         ],
         pictures: [
-
-
+            'https://cf.bstatic.com/images/hotel/max1280x900/623/62317625.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/276/276752704.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/597/59797085.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/763/76388738.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/763/76388683.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/276/276751405.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/112/112682825.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/763/76392613.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/274/274258886.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/597/59794302.jpg'
         ],
         type: 'Hotel',
         price: 312
@@ -40,7 +57,18 @@ const hotels = [
             'Non-Smoker Rooms', 'Restaurant', 'Family Rooms', 'Coffe Machine', 'Bar'
         ],
         pictures: [
-
+            'https://cf.bstatic.com/images/hotel/max1280x900/134/13457149.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/134/13458519.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/831/83191788.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/153/15319783.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/134/13458990.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/831/83191446.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/134/13472270.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/154/15455771.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/153/15319804.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/134/13457192.jpg',
+            'htts://cf.bstatic.com/images/hotel/max1280x900/133/133338409.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/133/133231528.jpg'
         ],
         type: 'Hotel',
         price: 325
@@ -55,23 +83,43 @@ const hotels = [
             'Pets Allowed', 'Family Rooms', 'Bar'
         ],
         pictures: [
-
-
+            'https://cf.bstatic.com/images/hotel/max1280x900/271/271225262.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/271/271225265.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/271/271225267.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/271/271228344.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/271/271226444.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/271/271225260.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/271/271221097.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/271/271226455.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/271/271226465.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/271/271228352.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/271/271225272.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/232/232478340.jpg'
         ],
         type: 'Hotel',
         price: 288
     },
     {
-        name: 'The Square Milano Duomo',
-        address: 'Via Albricci 2-4, Център, 20122 Милано, Италия',
-        rating: 9.1,
+        name: 'Hotel VIU Milan',
+        address: '6 Via Aristotile Fioravanti, Стационе Гарибалди, 20154 Милано, Италия',
+        rating: 9.2,
         stars: 5,
         facilities: [
-            'Parking', 'Free Wi Fi', 'Airport Transfer', 'Pets Allowed', 'Spa Center',
+            'Pool', 'Free Wi Fi', 'Airport Transfer', 'Pets Allowed', 'Spa Center',
             'Non-Smoker Rooms', 'Restaurant', 'Family Rooms', 'Coffe Machine', 'Bar'
         ],
         pictures: [
-
+            'https://cf.bstatic.com/images/hotel/max1024x768/124/124367365.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/102/102998127.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/103/103163816.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/103/103163844.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/103/103162728.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/988/98833241.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/103/103165114.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/139/139529729.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/139/139529750.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/139/139529715.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/103/103015740.jpg'
         ],
         type: 'Hotel',
         price: 298
@@ -86,7 +134,17 @@ const hotels = [
             'Non-Smoker Rooms', 'Restaurant', 'Family Rooms', 'Coffe Machine', 'Bar'
         ],
         pictures: [
-
+            'https://cf.bstatic.com/images/hotel/max1280x900/845/84555172.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/245/245203845.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/245/245204059.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/245/245203963.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/245/245203914.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/245/245203403.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/245/245203303.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/245/245203200.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/845/84522117.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/845/84522060.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/845/84522061.jpg'
         ],
         type: 'Hotel',
         price: 263
@@ -101,7 +159,20 @@ const hotels = [
             'Non-Smoker Rooms', 'Restaurant', 'Family Rooms', 'Coffe Machine', 'Bar'
         ],
         pictures: [
-
+            'https://cf.bstatic.com/images/hotel/max1280x900/269/269101948.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/220/220834447.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/269/269102300.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/220/220833652.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/220/220833656.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/220/220833660.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/220/220833663.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/220/220833667.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/212/212110726.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/212/212102299.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/212/212100839.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/628/62881835.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/644/64444096.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/644/64444089.jpg'
         ],
         type: 'Hotel',
         price: 234
@@ -116,7 +187,19 @@ const hotels = [
             'Non-Smoker Rooms', 'Restaurant', 'Family Rooms', 'Coffe Machine', 'Bar'
         ],
         pictures: [
-
+            'https://cf.bstatic.com/images/hotel/max1280x900/228/228243081.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/252/252396247.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/252/252396248.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/252/252396249.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/252/252396253.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/252/252396254.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/252/252396255.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/252/252396257.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/252/252396258.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/252/252396259.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/252/252396264.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/252/252396273.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/252/252396274.jpg'
         ],
         type: 'Hotel',
         price: 325
@@ -131,13 +214,26 @@ const hotels = [
             'Non-Smoker Rooms', 'Restaurant', 'Fitness Center', 'Bar'
         ],
         pictures: [
-
+            'https://cf.bstatic.com/images/hotel/max1280x900/155/155036284.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/155/155036325.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/154/154282922.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/154/154282950.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/155/155036553.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/154/154282939.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/154/154282756.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/155/155036460.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/155/155036302.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/155/155036268.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/155/155036689.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/154/154282983.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/154/154282810.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/154/154282782.jpg'
         ],
         type: 'Hotel',
         price: 420
     },
     {
-        name: 'Aphrodite ',
+        name: 'Aphrodite',
         address: 'Keramoti, Керамоти, 64200, Гърция',
         rating: 9.1,
         stars: 3,
@@ -146,7 +242,18 @@ const hotels = [
             'Bar'
         ],
         pictures: [
-
+            'https://cf.bstatic.com/images/hotel/max1280x900/284/28412789.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/153/153357911.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/153/153054671.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/153/153357507.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/153/153357509.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/153/153357511.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/153/153356960.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/153/153057093.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/284/28410502.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/153/153054122.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/153/153053263.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/153/153053259.jpg'
         ],
         type: 'Apartments',
         price: 60
@@ -161,7 +268,20 @@ const hotels = [
             'Family Rooms', 'Bar'
         ],
         pictures: [
-
+            'https://cf.bstatic.com/images/hotel/max1280x900/109/109417406.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/257/257973867.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/257/257973920.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/257/257973968.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/257/257973997.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/257/257974049.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/257/257974211.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/257/257974300.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/257/257974484.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/257/257972826.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/257/257972709.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/257/257972594.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/257/257972476.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/257/257972434.jpg'
         ],
         type: 'Apartments',
         price: 56
@@ -176,7 +296,20 @@ const hotels = [
             'Family Rooms', 'Pets Allowed', 'Bar'
         ],
         pictures: [
-
+            'https://cf.bstatic.com/images/hotel/max1280x900/190/190397057.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/189/189566411.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/189/189574403.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/190/190393531.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/189/189574592.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/190/190397113.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/189/189575788.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/189/189575439.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/189/189576069.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/189/189575113.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/189/189574888.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/189/189754905.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/189/189037536.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/189/189037513.jpg'
         ],
         type: 'Villa',
         price: 58
@@ -191,7 +324,19 @@ const hotels = [
             'Family Rooms', 'Pets Allowed', 'Bar'
         ],
         pictures: [
-
+            'https://cf.bstatic.com/images/hotel/max1280x900/716/71688574.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/214/214163107.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/214/214162613.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/206/206870542.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/206/206870313.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/206/206869262.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/206/206869049.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/206/206867193.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/205/205479254.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/205/205479254.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/960/96049783.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/101/101627450.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/716/71688579.jpg'
         ],
         type: 'Apartments',
         price: 88
@@ -206,7 +351,18 @@ const hotels = [
             'Family Rooms', 'Pets Allowed', 'Bar', 'Breakfast'
         ],
         pictures: [
-
+            'https://cf.bstatic.com/images/hotel/max1280x900/497/49769963.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/189/18953010.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/494/49455715.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/494/49458798.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/494/49455452.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/494/49455396.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/189/18953310.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/497/49769961.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/494/49455378.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/494/49455650.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/494/49455725.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/494/49455634.jpg'
         ],
         type: 'Hotel',
         price: 45
@@ -221,7 +377,19 @@ const hotels = [
             'Family Rooms', 'Pets Allowed', 'Bar'
         ],
         pictures: [
-
+            'https://cf.bstatic.com/images/hotel/max1280x900/968/96858563.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/696/69690055.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/968/96858581.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/968/96858592.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/968/96858597.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/968/96858607.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/968/96858621.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/968/96858682.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/968/96858693.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/968/96858706.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/968/96858710.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/968/96858714.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/968/96858719.jpg'
         ],
         type: 'Apartments',
         price: 89
@@ -236,7 +404,18 @@ const hotels = [
             'Family Rooms', 'Pets Allowed', 'Bar'
         ],
         pictures: [
-
+            'https://cf.bstatic.com/images/hotel/max1280x900/460/46077947.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/101/101467453.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/453/45331301.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/453/45331271.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/453/45331290.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/453/45331275.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/462/46291413.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/453/45331272.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/136/136005663.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/136/136005567.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/136/136005733.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/136/136005503.jpg'
         ],
         type: 'Villa',
         price: 83
@@ -250,10 +429,20 @@ const hotels = [
             'Parking', 'Free Wi Fi'
         ],
         pictures: [
-
+            'https://cf.bstatic.com/images/hotel/max1280x900/268/268032508.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/268/268032513.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/268/268032520.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/268/268032527.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/267/267847396.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/267/267847111.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/731/73144864.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/258/258588489.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/256/256482535.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/256/256482516.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/256/256482523.jpg'
         ],
         type: 'Villa',
-        price: 50
+        price: 150
     },
     {
         name: 'Santa Catalina, a Royal Hideaway Hotel 5*GL',
@@ -265,6 +454,17 @@ const hotels = [
             'Free Wi Fi', 'Roomservice', 'Breakfast', 'Bar'
         ],
         pictures: [
+            'https://cf.bstatic.com/images/hotel/max1280x900/226/226834736.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/261/261892734.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/255/255139334.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/264/264624624.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/226/226834752.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/226/226834725.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/261/261858165.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/261/261863405.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/261/261871309.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/261/261872483.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/264/264838188.jpg',
 
         ],
         type: 'Hotel',
