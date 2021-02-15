@@ -80,7 +80,7 @@
             let hotelName = document.createElement('h3');
             hotelName.innerText = currentElement.name;
             let hotelDestination = document.createElement('p');
-            hotelDestination.innerText = currentElement.address.split(', ')[2];
+            hotelDestination.innerText = currentElement.destination;
             hotelNameAndDestination.setAttribute('class', 'hotelNameAndDestination');
 
             let hotelPriceContainer = document.createElement('div');
