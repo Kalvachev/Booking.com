@@ -33,18 +33,21 @@
                 RENT_CAR_PAGE.style.display = 'block';
                 ATTRACTIONS_PAGE.style.display = 'none';
                 TAXI_PAGE.style.display = 'none';
+                allHotelsByDestination.display = 'none';
                 break;
             case 'attractions':
                 HOME_PAGE.style.display = 'none';
                 RENT_CAR_PAGE.style.display = 'none';
                 ATTRACTIONS_PAGE.style.display = 'block';
                 TAXI_PAGE.style.display = 'none';
+                allHotelsByDestination.display = 'none';
                 break;
             case 'taxis':
                 HOME_PAGE.style.display = 'none';
                 RENT_CAR_PAGE.style.display = 'none';
                 ATTRACTIONS_PAGE.style.display = 'none';
                 TAXI_PAGE.style.display = 'block';
+                allHotelsByDestination.display = 'none';
                 break;
             case 'displayHomes':
                 HOME_PAGE.style.display = 'none';
@@ -57,6 +60,7 @@
                 RENT_CAR_PAGE.style.display = 'none';
                 ATTRACTIONS_PAGE.style.display = 'none';
                 TAXI_PAGE.style.display = 'none';
+                allHotelsByDestination.display = 'none';
                 break;
         }
     }
