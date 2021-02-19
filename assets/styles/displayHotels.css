@@ -1,0 +1,53 @@
+#allHotelsByDestination {
+    display: flex;
+}
+
+#hotelsByDestinationContainer {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: flex-end; */
+}
+
+#hotelFiltration {
+    width: 470px;
+    background-color: aquamarine;
+}
+
+.destinationHeadingText {
+    font-size: 23px;
+    margin: 0;
+    font-weight: bold;
+}
+
+.destinationHotelCard {
+    display: flex;
+    flex-direction: row;
+    width: 780px;
+    height: 200px;
+    padding: 16px;
+    border: 1px solid #c6c6c6;
+    border-radius: 3px;
+    margin: 16px 0;
+}
+
+.destinationHotelPictureContainer img {
+    width: 200px;
+    height: 200px;
+}
+
+.destinationRestInformation {
+    display: flex;
+    padding: 0 0 0 16px;
+}
+
+.destinationHotelNameAndDestination h3 {
+    padding: 3px 0;
+    font-size: 20px;
+    word-break: break-word;
+    color: #0071c2;
+    font-weight: bold;
+}
+
+.checked {
+    color: orange;
+}

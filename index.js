@@ -26,41 +26,41 @@
                 RENT_CAR_PAGE.style.display = 'none';
                 ATTRACTIONS_PAGE.style.display = 'none';
                 TAXI_PAGE.style.display = 'none';
-                allHotelsByDestination.display = 'none';
+                allHotelsByDestination.style.display = 'none';
                 break;
             case 'rent':
                 HOME_PAGE.style.display = 'none';
                 RENT_CAR_PAGE.style.display = 'block';
                 ATTRACTIONS_PAGE.style.display = 'none';
                 TAXI_PAGE.style.display = 'none';
-                allHotelsByDestination.display = 'none';
+                allHotelsByDestination.style.display = 'none';
                 break;
             case 'attractions':
                 HOME_PAGE.style.display = 'none';
                 RENT_CAR_PAGE.style.display = 'none';
                 ATTRACTIONS_PAGE.style.display = 'block';
                 TAXI_PAGE.style.display = 'none';
-                allHotelsByDestination.display = 'none';
+                allHotelsByDestination.style.display = 'none';
                 break;
             case 'taxis':
                 HOME_PAGE.style.display = 'none';
                 RENT_CAR_PAGE.style.display = 'none';
                 ATTRACTIONS_PAGE.style.display = 'none';
                 TAXI_PAGE.style.display = 'block';
-                allHotelsByDestination.display = 'none';
+                allHotelsByDestination.style.display = 'none';
                 break;
             case 'displayHomes':
                 HOME_PAGE.style.display = 'none';
                 RENT_CAR_PAGE.style.display = 'none';
                 ATTRACTIONS_PAGE.style.display = 'none';
                 TAXI_PAGE.style.display = 'none';
-                allHotelsByDestination.display = 'block';
+                allHotelsByDestination.style.display = 'block';
             default:
                 HOME_PAGE.style.display = 'block';
                 RENT_CAR_PAGE.style.display = 'none';
                 ATTRACTIONS_PAGE.style.display = 'none';
                 TAXI_PAGE.style.display = 'none';
-                allHotelsByDestination.display = 'none';
+                allHotelsByDestination.style.display = 'none';
                 break;
         }
     }
@@ -134,54 +134,111 @@
     printLikedHomes();
 
     function printHotelsByDestination(searchInput, container) {
+        container.innerHTML = '';
         let filtered = hotels.map(el => {
             if (el.destination.toLowerCase() === searchInput.toLowerCase()) {
                 return el;
             }
         }).filter(el => el !== undefined);
 
+        let heading = document.createElement('h1');
+        heading.innerText = `${searchInput}: намерени са ${filtered.length} места за настаняване.`
+        heading.setAttribute('class', 'destinationHeadingText');
+        container.append(heading);
+
         filtered.forEach(currentElement => {
             let hotelCard = document.createElement('div');
-            hotelCard.setAttribute('class', 'hotelCard');
+            hotelCard.setAttribute('class', 'destinationHotelCard');
 
             let hotelPictureContainer = document.createElement('div');
             let hotelPicture = document.createElement('img');
             hotelPicture.src = currentElement.pictures[0];
             hotelPicture.alt = currentElement.name + "'s picture";
-            hotelPictureContainer.setAttribute('class', 'hotelPictureContainer');
+            hotelPictureContainer.setAttribute('class', 'destinationHotelPictureContainer');
+
+            let restInformation = document.createElement('div');
+            restInformation.setAttribute('class', 'destinationRestInformation');
 
             let hotelNameAndDestination = document.createElement('div');
             let hotelName = document.createElement('h3');
             hotelName.innerText = currentElement.name;
             let hotelDestination = document.createElement('p');
             hotelDestination.innerText = currentElement.destination;
-            hotelNameAndDestination.setAttribute('class', 'hotelNameAndDestination');
+            hotelNameAndDestination.setAttribute('class', 'destinationHotelNameAndDestination');
 
             let hotelPriceContainer = document.createElement('div');
             let hotelPrice = document.createElement('p')
             hotelPrice.innerText = 'BGN ' + currentElement.price;
-            hotelPriceContainer.setAttribute('class', 'hotelPriceContainer');
+            hotelPriceContainer.setAttribute('class', 'destinationHotelPriceContainer');
 
             let hotelRatingsContainer = document.createElement('div');
-            hotelRatingsContainer.setAttribute('class', 'hotelRatingsContainer');
+            hotelRatingsContainer.setAttribute('class', 'destinationHotelRatingsContainer');
             let hotelRating = document.createElement('div');
             hotelRating.innerText = currentElement.rating;
             hotelRating.setAttribute('class', 'hotelRating');
             let hotelRatingWord = document.createElement('div');
 
+            let destinationStars = document.createElement('div');
+
+            if (currentElement.stars === 1) {
+                destinationStars.innerHTML = `
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>    
+                `
+            } else  if (currentElement.stars === 2) {
+                destinationStars.innerHTML = `
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>    
+                `
+            } else  if (currentElement.stars === 3) {
+                destinationStars.innerHTML = `
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>    
+                `
+            } else  if (currentElement.stars === 4) {
+                destinationStars.innerHTML = `
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>    
+                `
+            } else  if (currentElement.stars === 5) {
+                destinationStars.innerHTML = `
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>    
+                `
+            }
+
             hotelPictureContainer.append(hotelPicture);
             hotelNameAndDestination.append(hotelName, hotelDestination);
             hotelPriceContainer.append(hotelPrice);
             hotelRatingsContainer.append(hotelRating, hotelRatingWord);
+            restInformation.append(hotelNameAndDestination, destinationStars, hotelPriceContainer, hotelRatingsContainer);
 
-            hotelCard.append(hotelPictureContainer, hotelNameAndDestination, hotelPriceContainer, hotelRatingsContainer);
+            hotelCard.append(hotelPictureContainer, restInformation);
             container.append(hotelCard);
         })
     }
 
     homepageSearchButton.addEventListener('click', function (ev) {
-        ev.preventDefault();
+        // ev.preventDefault();
+
         HOME_PAGE.style.display = 'none';
+        allHotelsByDestination.style.display = 'block'
+
         printHotelsByDestination(SEARCH_BOX.value, hotelsByDestinationContainer);
     })
 

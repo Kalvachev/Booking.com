@@ -221,3 +221,7 @@ body {
     color: #003580;
     margin-left: 7px;
 }
+
+#allHotelsByDestination {
+    display:none;
+}
