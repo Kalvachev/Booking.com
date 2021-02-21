@@ -12,3 +12,5 @@ const hotelsByDestinationContainer = document.getElementById('hotelsByDestinatio
 const homepageSearchButton = document.getElementById('homepageSearchButton');
 const SEARCH_BOX = document.getElementById('search-box');
 const currentHotelContainer = document.getElementById('currentHotelContainer');
+
+const ERROR_PAGE = document.getElementById('errorPageContainer');
