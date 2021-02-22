@@ -15,9 +15,14 @@ const currentHotelContainer = document.getElementById('currentHotelContainer');
 
 const ERROR_PAGE = document.getElementById('errorPageContainer');
 
-const MODAL_BG = document.querySelector('.modal-bg');
+const MODAL_BG_LOGIN = document.getElementById('modal-bg-login');
+const MODAL_BG_REGISTER = document.getElementById('modal-bg-register');
+const MODAL_BG_REGISTER_HOME = document.getElementById('modal-bg-register-home');
 
 const LOGIN_BTN = document.querySelector('.loginButton');
 const CREATE_PROFILE_BTN = document.querySelector('.createProfileButton');
 const REGISTER_NEW_HOME_BTN = document.querySelector('.registerButton');
-const MODAL_CLOSE = document.querySelector('.modal-close');
+
+const MODAL_CLOSE_LOGIN = document.getElementById('modal-close-login');
+const MODAL_CLOSE_REGISTER = document.getElementById('modal-close-register');
+const MODAL_CLOSE_REGISTER_HOME = document.getElementById('modal-close-register-home');

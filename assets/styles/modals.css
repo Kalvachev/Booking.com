@@ -49,4 +49,32 @@
     cursor: pointer;
 }
 
- 
+#registerModal {    
+    background: white;
+    border: 2px solid #003580;
+    width: 600px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    margin: 100px auto;
+    padding: 30px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#registerHomeModal {
+    background: white;
+    border: 2px solid #003580;
+    width: 600px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    margin: 100px auto;
+    padding: 30px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}

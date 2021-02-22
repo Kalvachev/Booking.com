@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="assets/styles/Carousels/secondCarousel.css">
     <link rel="stylesheet" href="assets/styles/Carousels/thirdCarousel.css">
     <link rel="stylesheet" href="assets/styles/errorPage.css">
-    <link rel="stylesheet" href="assets/styles/registerModal.css">
+    <link rel="stylesheet" href="assets/styles/modals.css">
     <link rel="icon" href="./assets/images/BookingIcon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -377,21 +377,56 @@
             </div>
         </div>
 
-        <div class='modal-bg'>
+        <div class='modal-bg' id='modal-bg-login'>
             <div id='loginModal'>
                 <form action="">
                     <h2>Login</h2>
-                    <input type="text" placeholder="username">
-                    <input type="password" placeholder="password">
+                    <input type="text" placeholder="username" id='usernameInput'>
+                    <input type="password" placeholder="password" id='passwordInput'>
                     <div id='loginButtonsContainer'>
                         <button>Login</button>
-                        <button>Register</button>
+                        <button id='goToRegistrationButton'>Register</button>
                     </div>
-                    <span class='modal-close'>X</span>
+                    <span class='modal-close' id='modal-close-login'>X</span>
                 </form>
             </div>
-
         </div>
+
+        <div class='modal-bg' id='modal-bg-register'>
+            <div id='registerModal'>
+                <form action="">
+                    <h2>Register</h2>
+                    <input type="text" placeholder="username" id='usernameInputReg'>
+                    <input type="password" placeholder="password" id='passwordInputReg'>
+                    <input type="password" placeholder="repeat password" id='repeatPasswordInputReg'>
+                    <input type="email" placeholder='email' id="emailInputReg">
+                    <button id='submitBtnReg'>Submit</button>
+                    <span class='modal-close' id='modal-close-register'>X</span>
+                </form>
+            </div>
+        </div>
+        <!-- <div class='modal-bg' id='modal-bg-register-home'>
+            <div id='registerHomeModal'>
+                <form action="">
+                    <h2>Register new home</h2>
+                    <input type="text" placeholder="Hotel Name" id='registerHotelName'>
+                    <input type="text" placeholder='Hotel address' id='registerHotelAddress'>
+                    <input type="number" placeholder="Stars" id='registerStars'>
+                    <input type="text" placeholder="Facilities" id='registerFacilities'>
+                    <input type='image'>
+                    <input type='image'>
+                    <input type='image'>
+                    <input type='image'>
+                    <input type='image'>
+                    <input type='image'>
+                    <input type="text" placeholder="Type of the object">
+                    <input type="number" placeholder="Price per night">
+                    <input type="text" placeholder="Destination">
+                    <button id='submitBtnReg'>Submit</button>
+                    <span class='modal-close' id='modal-close-register-home'>X</span>
+                </form>
+            </div>
+        </div> -->
 
     </main>
 
