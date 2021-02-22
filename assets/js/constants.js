@@ -14,3 +14,10 @@ const SEARCH_BOX = document.getElementById('search-box');
 const currentHotelContainer = document.getElementById('currentHotelContainer');
 
 const ERROR_PAGE = document.getElementById('errorPageContainer');
+
+const MODAL_BG = document.querySelector('.modal-bg');
+
+const LOGIN_BTN = document.querySelector('.loginButton');
+const CREATE_PROFILE_BTN = document.querySelector('.createProfileButton');
+const REGISTER_NEW_HOME_BTN = document.querySelector('.registerButton');
+const MODAL_CLOSE = document.querySelector('.modal-close');

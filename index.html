@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="assets/styles/Carousels/secondCarousel.css">
     <link rel="stylesheet" href="assets/styles/Carousels/thirdCarousel.css">
     <link rel="stylesheet" href="assets/styles/errorPage.css">
+    <link rel="stylesheet" href="assets/styles/registerModal.css">
     <link rel="icon" href="./assets/images/BookingIcon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -376,6 +377,22 @@
             </div>
         </div>
 
+        <div class='modal-bg'>
+            <div id='loginModal'>
+                <form action="">
+                    <h2>Login</h2>
+                    <input type="text" placeholder="username">
+                    <input type="password" placeholder="password">
+                    <div id='loginButtonsContainer'>
+                        <button>Login</button>
+                        <button>Register</button>
+                    </div>
+                    <span class='modal-close'>X</span>
+                </form>
+            </div>
+
+        </div>
+
     </main>
 
     <footer>
@@ -495,6 +512,7 @@
     <script src="assets/js/Carousels/firstCarousel.js"></script>
     <script src="assets/js/Carousels/secondCarousel.js"></script>
     <script src="assets/js/Carousels/thirdCarousel.js"></script>
+    <script src="assets/js/loginController.js"></script>
     <script src="hotels.js"></script>
     <script src="index.js"></script>
 </body>
