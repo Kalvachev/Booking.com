@@ -162,8 +162,8 @@
             let hotelNameAndDestination = document.createElement('div');
             let hotelName = document.createElement('h3');
             hotelName.innerText = currentElement.name;
-            let hotelDestination = document.createElement('p');
-            hotelDestination.innerText = currentElement.destination;
+            // let hotelDestination = document.createElement('p');
+            // hotelDestination.innerText = currentElement.destination;
             hotelNameAndDestination.setAttribute('class', 'destinationHotelNameAndDestination');
 
             let hotelPriceContainer = document.createElement('div');
@@ -177,6 +177,20 @@
             hotelRating.innerText = currentElement.rating;
             hotelRating.setAttribute('class', 'hotelRating');
             let hotelRatingWord = document.createElement('div');
+
+            if (currentElement.rating >= 7.5 && currentElement.rating < 8.0) {
+                hotelRatingWord.innerText = `Добър`;
+            } if (currentElement.rating >= 8.0 && currentElement.rating <= 8.6) {
+                hotelRatingWord.innerText = `Много добър`;
+            } else if (currentElement.rating >= 8.7 && currentElement.rating < 9) {
+                hotelRatingWord.innerText = `Отличен`;
+            } else if (currentElement.rating >= 9 && currentElement.rating <= 9.3) {
+                hotelRatingWord.innerText = `Превъзходен`;
+            } else if (currentElement.rating >= 9.4 && currentElement.rating <= 9.9) {
+                hotelRatingWord.innerText = `Фантастичен`;
+            }
+
+            hotelRatingWord.setAttribute('class', 'hotelRatingWord');
 
             let destinationStars = document.createElement('div');
 
@@ -223,10 +237,10 @@
             }
 
             hotelPictureContainer.append(hotelPicture);
-            hotelNameAndDestination.append(hotelName, hotelDestination);
-            hotelPriceContainer.append(hotelPrice);
-            hotelRatingsContainer.append(hotelRating, hotelRatingWord);
-            restInformation.append(hotelNameAndDestination, destinationStars, hotelPriceContainer, hotelRatingsContainer);
+            hotelNameAndDestination.append(hotelName, destinationStars);
+            // hotelPriceContainer.append(hotelPrice);
+            hotelRatingsContainer.append(hotelRatingWord, hotelRating);
+            restInformation.append(hotelNameAndDestination, hotelRatingsContainer);
 
             hotelCard.append(hotelPictureContainer, restInformation);
             container.append(hotelCard);
@@ -238,7 +252,8 @@
 
         HOME_PAGE.style.display = 'none';
         allHotelsByDestination.style.display = 'block'
-
+        // ERROR_PAGE.style.display = 'flex';
+        
         printHotelsByDestination(SEARCH_BOX.value, hotelsByDestinationContainer);
     })
 
