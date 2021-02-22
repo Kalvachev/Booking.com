@@ -22,7 +22,14 @@ const MODAL_BG_REGISTER_HOME = document.getElementById('modal-bg-register-home')
 const LOGIN_BTN = document.querySelector('.loginButton');
 const CREATE_PROFILE_BTN = document.querySelector('.createProfileButton');
 const REGISTER_NEW_HOME_BTN = document.querySelector('.registerButton');
+const GO_TO_REGISTER_BTN = document.getElementById('goToRegistrationButton');
+const SUBMIT_BTN_REG = document.getElementById('submitBtnReg');
 
 const MODAL_CLOSE_LOGIN = document.getElementById('modal-close-login');
 const MODAL_CLOSE_REGISTER = document.getElementById('modal-close-register');
 const MODAL_CLOSE_REGISTER_HOME = document.getElementById('modal-close-register-home');
+
+USERNAME_INPUT_REG = document.getElementById('usernameInputReg');
+PASSWORD_INPUT_REG = document.getElementById('passwordInputReg');
+REPEAT_PASSWORD_INPUT = document.getElementById('repeatPasswordInputReg');
+EMAIL_INPUT_REG = document.getElementById('emailInputReg');
