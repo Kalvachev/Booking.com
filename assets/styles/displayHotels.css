@@ -1,16 +1,21 @@
-#allHotelsByDestination {
+#allHotelsByDestinationContainer {
     display: flex;
-}
-
-#hotelsByDestinationContainer {
-    display: flex;
-    flex-direction: column;
-    /* justify-content: flex-end; */
+    justify-content: center;
+    margin-top: 25px;
 }
 
 #hotelFiltration {
-    width: 470px;
-    background-color: aquamarine;
+    width: 270px;
+    height: 500px;
+    /* background-color: aquamarine; */
+    margin-right: 20px;
+}
+
+#hotelsByDestinationContainer {
+    width: 815px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: flex-end; */
 }
 
 .destinationHeadingText {
@@ -46,8 +51,85 @@
     word-break: break-word;
     color: #0071c2;
     font-weight: bold;
+    padding-right: 5px;
+}
+
+.destinationHotelNameAndDestination {
+    display: flex;
+    flex-wrap: wrap;
+    width: 380px;
+    height: 60px;
+    align-items: center;
+}
+
+.destinationHotelRatingsContainer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding-top: 15px;
+}
+
+.destinationHotelRatingsContainer .hotelRatingWord {
+    font-size: 16px;
+    padding-right: 7px;
 }
 
 .checked {
     color: orange;
+}
+
+#hotelFiltrationContainer {
+    background: #fff;
+    border-radius: 3px;
+    border: 1px solid #bdbdbd;
+    margin: 0 0 10px;
+    padding: 5px;
+}
+
+#filterByContainer {
+    position: static;
+    padding: 8px;
+    border-bottom: 1px solid #bdbdbd;
+}
+
+#filterBy {
+    position: static;
+    color: #000;
+    background: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+}
+
+.filterParts {
+    padding: 0 8px 8px;
+    margin-bottom: 8px;
+    border-bottom: 1px solid #bdbdbd;
+}
+
+.filterHeaders {
+    margin: 0;
+    padding: 4px 0;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 700;
+}
+
+#hotelFiltrationContainer label {
+    font-size: 13px;
+    line-height: 1.6em;
+}
+
+#hotelFiltrationContainer input {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.checkboxLabelContainer {
+    display: flex;
+    align-items: center;
+    padding: 5px 2px 5px 5px;
 }

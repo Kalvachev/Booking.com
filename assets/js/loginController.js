@@ -21,10 +21,10 @@ REGISTER_NEW_HOME_BTN.addEventListener('click', function () {
     MODAL_BG_REGISTER_HOME.classList.add('bg-active');
 })
 
-MODAL_CLOSE_REGISTER_HOME.addEventListener('click', function () {
-    MODAL_BG_REGISTER_HOME.classList.remove('bg-active');
-})
+// MODAL_CLOSE_REGISTER_HOME.addEventListener('click', function () {
+//     MODAL_BG_REGISTER_HOME.classList.remove('bg-active');
+// })
 
-GO_TO_REGISTER_BTN.addEventListener('click', function () {
-    MODAL_BG_REGISTER.classList.add('bg-active');
-})
+// GO_TO_REGISTER_BTN.addEventListener('click', function () {
+//     MODAL_BG_REGISTER.classList.add('bg-active');
+// })
