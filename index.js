@@ -202,7 +202,7 @@
                 <span class="fa fa-star"></span>
                 <span class="fa fa-star"></span>    
                 `
-            } else  if (currentElement.stars === 2) {
+            } else if (currentElement.stars === 2) {
                 destinationStars.innerHTML = `
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
@@ -210,7 +210,7 @@
                 <span class="fa fa-star"></span>
                 <span class="fa fa-star"></span>    
                 `
-            } else  if (currentElement.stars === 3) {
+            } else if (currentElement.stars === 3) {
                 destinationStars.innerHTML = `
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
@@ -218,7 +218,7 @@
                 <span class="fa fa-star"></span>
                 <span class="fa fa-star"></span>    
                 `
-            } else  if (currentElement.stars === 4) {
+            } else if (currentElement.stars === 4) {
                 destinationStars.innerHTML = `
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
@@ -226,7 +226,7 @@
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>    
                 `
-            } else  if (currentElement.stars === 5) {
+            } else if (currentElement.stars === 5) {
                 destinationStars.innerHTML = `
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
@@ -251,10 +251,18 @@
         // ev.preventDefault();
 
         HOME_PAGE.style.display = 'none';
-        allHotelsByDestination.style.display = 'block'
         // ERROR_PAGE.style.display = 'flex';
-        
-        printHotelsByDestination(SEARCH_BOX.value, hotelsByDestinationContainer);
+
+        if (SEARCH_BOX.value !== 'Милано' && SEARCH_BOX.value !== 'Керамоти'
+            && SEARCH_BOX.value !== 'Лас Палмас де Гран Канария' && SEARCH_BOX.value !== 'Рио де Жанейро'
+            && SEARCH_BOX.value !== 'Пукет' && SEARCH_BOX.value !== 'Виена'
+            && SEARCH_BOX.value !== 'Лондон' && SEARCH_BOX.value !== 'Париж'
+            && SEARCH_BOX.value !== 'Созопол' && SEARCH_BOX.value !== 'Атина') {
+            ERROR_PAGE.style.display = 'flex';
+        } else {
+            allHotelsByDestination.style.display = 'block'
+            printHotelsByDestination(SEARCH_BOX.value, hotelsByDestinationContainer);
+        }
     })
 
 })();
