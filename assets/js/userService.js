@@ -18,7 +18,14 @@ const userService = (function () {
             this.users = testUsers;
         }
         register(username, password, email) {
-            this.users.push(new User(username, password, email));
+
+            const isUserRegistered = this.users.some(user => user.email === email || user.username === username)
+
+            if (!isUserRegistered) {
+                this.users.push(new User(username, password, email));
+            } else {
+                alert('User is already registered!')
+            }
         }
 
         login(username, password) {
