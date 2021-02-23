@@ -8,19 +8,17 @@ const userService = (function () {
         }
     }
 
+    const testUsers = [
+        new User('goshko', 'goshotarikat', 'goshko@abv.bg'),
+        new User('pencho', 'pencho123', 'pencho@gmail.com')
+    ];
+
     class UserService {
         constructor() {
-            if (getItem('allUsers')) {
-                this.allUsers = getItem('allUsers');
-            } else {
-                this.allUsers = [];
-                setItem('allUsers', this.allUsers);
-            }
+            this.users = testUsers;
         }
-        addUser(username, password, email) {
-            this.allUsers = getItem('allUsers');
-            this.allUsers.push(new User(username, password, email));
-            setItem('allUsers', this.allUsers);
+        register(username, password, email) {
+            this.users.push(new User(username, password, email));
         }
 
         login(username, password) {
@@ -30,10 +28,11 @@ const userService = (function () {
             return isUserLoggedIn;
         }
 
-        removeUser(username) {
-            this.allUsers = getItem('allUsers');
-            this.allUsers = this.allUsers.filter(user => user.username === username);
-            setItem('allUsers', this.allUsers);
+        validate(username, password) {
+            if (username.trim().length > 3 && password.trim().length > 3) {
+                return true;
+            }
+            return false;
         }
     }
 
