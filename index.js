@@ -251,7 +251,6 @@
         // ev.preventDefault();
 
         HOME_PAGE.style.display = 'none';
-        // ERROR_PAGE.style.display = 'flex';
 
         if (SEARCH_BOX.value !== 'Милано' && SEARCH_BOX.value !== 'Керамоти'
             && SEARCH_BOX.value !== 'Лас Палмас де Гран Канария' && SEARCH_BOX.value !== 'Рио де Жанейро'
@@ -259,10 +258,18 @@
             && SEARCH_BOX.value !== 'Лондон' && SEARCH_BOX.value !== 'Париж'
             && SEARCH_BOX.value !== 'Созопол' && SEARCH_BOX.value !== 'Атина') {
             ERROR_PAGE.style.display = 'flex';
+
+            setTimeout(function () {
+                HOME_PAGE.style.display = 'block';
+                ERROR_PAGE.style.display = 'none';
+                // window.location.href = "https://www.example.com";
+            }, 5000);
         } else {
             allHotelsByDestination.style.display = 'block'
             printHotelsByDestination(SEARCH_BOX.value, hotelsByDestinationContainer);
         }
+
+
     })
 
 })();
