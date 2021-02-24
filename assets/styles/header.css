@@ -124,7 +124,7 @@ a {
 
 } */
 
-.createProfileButton, .loginButton {
+.createProfileButton, .loginButton, .profileButton {
     font-size: 14px;
     border: 1px solid #0071c2;
     background: #fff;
@@ -134,11 +134,15 @@ a {
     margin-right: 10px;
 }
 
+.profileButton{
+    display: none;
+}
+
 .registerButton:hover {
     background: #104a9b;
 }
 
-.createProfileButton:hover, .loginButton:hover {
+.createProfileButton:hover, .loginButton:hover, .profileButton:hover {
     background: #d5e6ff;
 }
 

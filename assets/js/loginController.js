@@ -52,9 +52,12 @@ LOGIN_BTN_MODAL.addEventListener('click', function (ev) {
 
     if (userService.login(username, password)) {
         MODAL_BG_LOGIN.classList.remove('bg-active');
-        alert('Congratulations you logged in!');
 
         USERNAME_INPUT = '';
         PASSWORD_INPUT = '';
+
+        LOGIN_BTN.style.display = 'none';
+        CREATE_PROFILE_BTN.style.display = 'none';
+        PROFILE_BUTTON.style.display = 'block';
     }
 })
