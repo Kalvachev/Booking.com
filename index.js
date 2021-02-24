@@ -248,7 +248,10 @@
     }
 
     homepageSearchButton.addEventListener('click', function (ev) {
-        // ev.preventDefault();
+        ev.preventDefault();
+
+        let sliced = String(window.location).split('#');
+        window.location = sliced[0] + '#displayHomes';
 
         HOME_PAGE.style.display = 'none';
 
@@ -262,14 +265,12 @@
             setTimeout(function () {
                 HOME_PAGE.style.display = 'block';
                 ERROR_PAGE.style.display = 'none';
-                // window.location.href = "https://www.example.com";
-            }, 5000);
+                window.location = sliced[0] + '#home';
+            }, 3000);
         } else {
             allHotelsByDestination.style.display = 'block'
             printHotelsByDestination(SEARCH_BOX.value, hotelsByDestinationContainer);
         }
-
-
     })
 
 })();
