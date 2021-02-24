@@ -77,7 +77,19 @@
 
                 <form action="#displayHomes">
                     <div id='searchInput'>
-                        <input type="text" name="" id="search-box" placeholder='Накъде отивате?'>
+                        <input type="text" name="" id="search-box" placeholder='Накъде отивате?' list="destinаtions">
+                        <datalist id="destinаtions">
+                            <option>Милано</option>
+                            <option>Керамоти</option>
+                            <option>Лас Палмас де Гран Канария</option>
+                            <option>Рио де Жанейро</option>
+                            <option>Пукет</option>
+                            <option>Виена</option>
+                            <option>Лондон</option>
+                            <option>Париж</option>
+                            <option>Созопол</option>
+                            <option>Атина</option>
+                        </datalist>
                         <!-- <input type="date" name="" id="arrive-date">
                         <input type="date" name="" id="leave-date"> -->
                         <button id="homepageSearchButton">Търсене</button>
@@ -434,6 +446,58 @@
                             <div class="checkboxLabelContainer">
                                 <input type="checkbox" id="fiveStarsFilter" name="fiveStarsFilter">
                                 <label for="fiveStarsFilter">5 звезди</label>
+                            </div>
+                        </div>
+
+                        <div class="filterParts" id="entertainmentFilter">
+                            <div>
+                                <h2 class="filterHeaders" id="entertainmentHeader">Развлечения</h2>
+                            </div>
+
+                            <div class="checkboxLabelContainer">
+                                <input type="checkbox" id="poolFilter" name="poolFilter">
+                                <label for="poolFilter">Плувен басейн</label>
+                            </div>
+
+                            <div class="checkboxLabelContainer">
+                                <input type="checkbox" id="spaFilter" name="spaFilter">
+                                <label for="spaFilter">Спа център</label>
+                            </div>
+
+                            <div class="checkboxLabelContainer">
+                                <input type="checkbox" id="fitnessFilter" name="fitnessFilter">
+                                <label for="fitnessFilter">Фитнес център</label>
+                            </div>
+                        </div>
+
+                        <div class="filterParts" id="ratingsFilter">
+                            <div>
+                                <h2 class="filterHeaders" id="ratingsHeader">Оценка от отзиви</h2>
+                            </div>
+
+                            <div class="checkboxLabelContainer">
+                                <input type="checkbox" id="fantasticFilter" name="fantasticFilter">
+                                <label for="fantasticFilter">Фантастичен 9.4+</label>
+                            </div>
+
+                            <div class="checkboxLabelContainer">
+                                <input type="checkbox" id="superbFilter" name="superbFilter">
+                                <label for="superbFilter">Превъзходен 9+</label>
+                            </div>
+
+                            <div class="checkboxLabelContainer">
+                                <input type="checkbox" id="excellentFilter" name="excellentFilter">
+                                <label for="excellentFilter">Отличен 8.7+</label>
+                            </div>
+
+                            <div class="checkboxLabelContainer">
+                                <input type="checkbox" id="veryGoodFilter" name="veryGoodFilter">
+                                <label for="veryGoodFilter">Много добър 8+</label>
+                            </div>
+
+                            <div class="checkboxLabelContainer">
+                                <input type="checkbox" id="goodFilter" name="goodFilter">
+                                <label for="goodFilter">Добър 7.5+</label>
                             </div>
                         </div>
                     </div>

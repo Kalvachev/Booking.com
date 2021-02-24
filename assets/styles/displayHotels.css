@@ -133,3 +133,14 @@
     align-items: center;
     padding: 5px 2px 5px 5px;
 }
+
+#popularFiltersHeader {
+    padding: 8px 0 4px 0;
+}
+
+#ratingsFilter {
+    padding: 0 8px 8px;
+    margin-bottom: 8px;
+    border-bottom: none;
+
+}
