@@ -22,7 +22,16 @@ const hotels = [
         ],
         type: 'Hotel',
         price: 432,
-        destination: 'Милано'
+        destination: 'Милано',
+        desciption: `The Square Milano Duomo се помещава в историческа сграда, на 5 минути пеша от Миланската катедрала, операта Ла Скала и търговската зона Vittorio Emanuele. Предлага ресторант, бар и безплатен Wi-Fi в цялата сграда.
+
+        Всяка стая е в модерен стил и е оборудвана с климатик и минибар. Самостоятелната баня е със сешоар и безплатни тоалетни принадлежности.
+        
+        The Square Milano се намира на 15 минути пеша от парка Семпионе. Метростанция Missori е на 100 метра.
+        
+        За нашите гости това е любимата част на Милано, според независими отзиви.
+        
+        Самостоятелно пътуващите харесват местоположението - те му дават оценка от 9.5 за самостоятелен престой.`
     },
     {
         name: 'Palazzo Parigi Hotel & Grand Spa - LHW',
@@ -47,7 +56,18 @@ const hotels = [
         ],
         type: 'Hotel',
         price: 312,
-        destination: 'Милано'
+        destination: 'Милано',
+        description: `Palazzo Parigi Hotel & Grand Spa - LHW се намира в сърцето на Модния квартал в Милано. Този луксозен хотел предлага ресторант и климатизирани стаи с балкон или тераса.
+
+        Елегантните стаи в Palazzo Parigi разполагат с безплатен WiFi, модерни технологии, телевизор с плосък екран, минибар и под с паркет или мрамор. Суитите са обзаведени с кът за сядане.
+        
+        В ресторанта се приготвят местни специалитети. Гостите могат да опитат традиционни италиански сладкиши в сладкарница Caffè Parigi. При заявка се сервира закуска на шведска маса.
+        
+        Миланската катедрала е на 1,5 км, а метростанция Turati е на 500 м. Летище „Малпенса“ е на 40 минути път с кола.
+        
+        За нашите гости това е любимата част на Милано, според независими отзиви.
+        
+        Двойките харесват местоположението - те му дават оценка от 9.2 за пътуване за двама.`
     },
     {
         name: 'Armani Hotel Milano',
@@ -74,7 +94,20 @@ const hotels = [
         ],
         type: 'Hotel',
         price: 325,
-        destination: 'Милано'
+        destination: 'Милано',
+        description: `Armani Hotel Milano се намира в шикозния квартал Quadrilatero della Moda, само на 50 метра от метростанция Montenapoleone. Личен лайфстайл мениджър отвежда гостите до елегантните и модерни стаи.
+
+        Сградата на хотела датира от 1930 г. и е проектирана от Енрико Грифини. Стаите включват обзавеждане от Armani Casa и кафемашина Nespresso. Каменните или мраморни бани разполагат с душ и вана. Всички стаи са оборудвани с LCD телевизор със сателитни канали и iPad.
+        
+        Armani Milano предлага ежедневна закуска на шведска маса. Ресторантът сервира интернационална кухня и ястия от региона Ломбардия.
+        
+        След ден, прекаран в срещи, пазаруване или разглеждане на историческия център на Милано, гостите могат да релаксират в сауната или в турската баня. Любителите на спорта могат да посетят фитнес центъра.
+        
+        Оперният театър Ла Скала и катедралата на Милано са на 10 минути пеша от хотела. Паркът Sempione е на 1 километър.
+        
+        За нашите гости това е любимата част на Милано, според независими отзиви.
+        
+        Двойките харесват местоположението - те му дават оценка от 9.6 за пътуване за двама.`
     },
     {
         name: 'The Corner Duomo Hotel',
@@ -101,7 +134,18 @@ const hotels = [
         ],
         type: 'Hotel',
         price: 288,
-        destination: 'Милано'
+        destination: 'Милано',
+        description: `The Corner Duomo Hotel се намира в Милано, на 300 м от търговската галерия „Виктор Емануел“ и на 500 м от площад „Пиаца дел Дуомо“. Предлага бар, в който гостите заплащат за консумацията си по собствена преценка. Този 4-звезден хотел разполага със система за автоматизация на съоръженията и консиерж услуги. Удобствата се допълват от денонощна рецепция, рум-сървиз и помещение за съхранение на багаж.
+
+        Всички стаи за гости са оборудвани с климатик, 55-инчов смарт телевизор с плосък екран и сателитни канали, електрическа кана, биде, сешоар и бюро. Всички включват гардероб и собствена баня.
+        
+        Всяка сутрин в The Corner Duomo Hotel се сервира континентална закуска.
+        
+        Оперният театър „Ла Скала“ и шикозната улица „Монте Наполеоне“ са на 350 м.
+        
+        За нашите гости това е любимата част на Милано, според независими отзиви.
+        
+        Двойките харесват местоположението - те му дават оценка от 9.7 за пътуване за двама.`
     },
     {
         name: 'Hotel VIU Milan',
@@ -127,7 +171,14 @@ const hotels = [
         ],
         type: 'Hotel',
         price: 298,
-        destination: 'Милано'
+        destination: 'Милано',
+        destination: `Hotel VIU Milan се намира в центъра на град Милано, на 10 минути пеша от площад Gae Aulenti и модния квартал Corso Como. Предлага басейн на покрива с панорамен 360-градусов изглед. Хотелът разполага със СПА център, сауна и фитнес зала. Гостите могат да се насладят на питие в бар Mixology.
+
+        Създадени от прочутия дизайнер Никола Галиция, стаите са обзаведени в модерен, елегантен стил с дизайнерски мебели и мраморни бани с пъровокласни тоалетни принадлежности. Всяка стая разполага с безплатен WiFi и смарт телевизор, както и с халати за баня и чехли.
+        
+        Този 5-звезден хотел е построен с екологични материали. Гостите могат да се наслаждават ма местни специалитети и интернационални ястия в ресторанта с главен готвач, удостоен с 1 звезда Michelin.
+        
+        Хотел VIU Milan се намира в един от най-популярните квартали на Милано, близо до метростанция Isola и железопътна гара Porta Garibaldi. Разположен е на 10 минути пеша от известния парк Семпионе в Милано. От хотела има удобни връзки с метро за целия град, а най-близката метростанция Monumentale е само на 200 метра. Има удобни връзки и до катедралата Дуомо.`
     },
     {
         name: 'Hotel Dei Cavalieri Milano Duomo',
@@ -153,7 +204,20 @@ const hotels = [
         ],
         type: 'Hotel',
         price: 263,
-        destination: 'Милано'
+        destination: 'Милано',
+        description: `Хотел Dei Cavalieri се помещава в историческа сграда срещу метростанция Missori, само на 250 метра от Миланската катедрала. Предлага безплатен Wi-Fi и ресторант, сервиращ типична италианска кухня.
+
+        Стаите са с декор в класически стил, с дървени мебели, пастелни цветове и мокет или паркет. Всяка разполага с LCD телевизор със сателитни канали и собствена баня с вана или душ.
+        
+        Закуската в Dei Cavalieri Hotel е на разнообразна шведска маса с избор от колбаси, сирена и пресни сладкиши. В бара се сервират топли леки закуски, а за вечеря се предлагат а ла карт ястия. През лятото е отворен и ресторантът с тераса на последния етаж.
+        
+        Хотелът се намира близо до фондовата борса на Милано и оперния театър Ла Скала. Метростанция Duomo е отдалечена на 300 метра.
+        
+        За нашите гости това е любимата част на Милано, според независими отзиви.
+        
+        Самостоятелно пътуващите харесват местоположението - те му дават оценка от 9.3 за самостоятелен престой.
+        
+        Ние говорим на вашия език!`
     },
     {
         name: 'Mandarin Oriental, Milan',
@@ -182,7 +246,24 @@ const hotels = [
         ],
         type: 'Hotel',
         price: 234,
-        destination: 'Милано'
+        destination: 'Милано',
+        description: `Mandarin Oriental, Milan е само на кратка разходка от бутиците в Модния квартал на Милано. Предлага безплатен уелнес център със закрит басейн и фитнес център, луксозни помещения за настаняване, заседателни зали и ресторант Seta, отличен с 2 звезди Michelin.
+
+        Всички климатизирани стаи и суити се помещават в комплекс от 5 свързани сгради от 18-и век. Всички имат модерен интериор с дизайнерски мебели от Антонио Ситерио и под с паркет. От стаите се открива гледка към вътрешния двор или улицата, а някои са с изглед към Миланската катедрала.
+        
+        Помещенията за настаняване включват мраморна баня с меки халати и чехли. Всички са оборудвани с кафемашина Nespresso и телевизор с плосък екран с HDMI порт за връзка с лаптоп.
+        
+        В изискания хотелски ресторант Seta, отличен със звезди Michelin, се сервират италиански ястия. При хубаво време гостите могат да се хранят във вътрешния двор, а при заявка се предоставя самостоятелна стая за хранене. В бар Mandarin се предлагат коктейли. Осигурен е и денонощен рум-сървиз.
+        
+        Уелнес центърът с площ над 900 кв.м включва закрит басейн, сауна и фитнес център. Могат да се резервират масажи, козметични процедури и фризьорски услуги.
+        
+        Сред останалите удобства в хотела са обслужване от консиерж, велосипеди и автомобили под наем, както и бизнес център със заседателни зали с естествена дневна светлина.
+        
+        Оперният театър „Ла Скала“ се намира на 300 м, а летище Linate е най-близкото летище, на 7 км. Хотелът е на 25 минути с кола от изложбения център Area Expo Milan.
+        
+        За нашите гости това е любимата част на Милано, според независими отзиви.
+        
+        Самостоятелно пътуващите харесват местоположението - те му дават оценка от 9.6 за самостоятелен престой.`
     },
     {
         name: 'NH Milano Touring',
@@ -210,7 +291,18 @@ const hotels = [
         ],
         type: 'Hotel',
         price: 325,
-        destination: 'Милано'
+        destination: 'Милано',
+        description: `NH Milano Touring се намира на 3 минути пеша от метростанциите Turati и Repubblica. На 1 километър е централната жп гара на Милано, а за 15 минути се стига пеша до центъра на града и търговската улица Via della Spiga.
+
+        Стаите в този дизайнерски хотел са оформени в класически или в модерен стил. Те са с мокет или паркет, безплатен Wi-Fi и климатик. В някои от стаите има LCD телевизор.
+        
+        Ресторант Pianoterra на Milano Touring сервира богата закуска всяка сутрин. За обяд и вечеря се предлагат класически италиански ястия и международна кухня. Преди вечеря се поднася традиционен милански аперитив.
+        
+        Международно летище Линате в Милано е разположено на 7,5 километра.
+        
+        За нашите гости това е любимата част на Милано, според независими отзиви.
+        
+        Самостоятелно пътуващите харесват местоположението - те му дават оценка от 8.8 за самостоятелен престой.`
     },
     {
         name: 'Park Hyatt Milano',
@@ -239,7 +331,16 @@ const hotels = [
         ],
         type: 'Hotel',
         price: 420,
-        destination: 'Милано'
+        destination: 'Милано',
+        destination: `Хотел Park Hyatt Milano се намира в центъра на Модния квартал, с лице към входа на търговската галерия „Виктор Емануил“ и на 200 метра от катедралата и оперния театър ,Ла Скала“. Хотелът предлага безплатен WiFi, СПА център и фитнес зала.
+
+        Просторните луксозни стаи в хотел Park Hyatt разполагат с големи мраморни бани. Някои стаи се отварят към собствена тераса с изглед към силуета на града.
+        
+        Гостите могат да опитат изискани специалитети в ресторант VUN Andrea Aprea, удостоен с 2 звезди от пътеводителя „Мишлен“, да се отпуснат с напитка в Mio Lab или да си поръчат международни ястия в целодневния ресторант La Cupola.
+        
+        Метростанция „Дуомо“ е на 2 минути пеша от хотел Park Hyatt Milano.
+        
+        За нашите гости това е любимата част на Милано, според независими отзиви.`
     },
     {
         name: 'Aphrodite',
@@ -266,10 +367,19 @@ const hotels = [
         ],
         type: 'Apartments',
         price: 60,
-        destination: 'Керамоти'
+        destination: 'Керамоти',
+        description: `Хотел Aphrodite предлага помещения за настаняване с възможност за самостоятелно готвене и пране и безплатен Wi-Fi. Намира се на крайбрежието на курорта Керамоти в Кавала. На 100 метра от хотела има 5-километров бял пясъчен плаж. Близката борова гора предлага възможности за разходки и спорт.
+
+        Климатизираните студиа и апартаменти в хотел Aphrodite разполагат с телевизор с плосък екран, сешоар и кухненски бокс с хладилник, електрическа кана и котлони. От балконите се открива изглед към градината на хотела.
+        
+        Хотел Aphrodite сервира ежедневна закуска в градината. На разположение на гостите има кафе-бар, който предлага рум-сървиз.
+        
+        Кавала е на 40 км. Гостите могат да ползват безплатно двора и паркинга на хотела.
+        
+        Двойките харесват местоположението - те му дават оценка от 9.6 за пътуване за двама.`
     },
     {
-        name: 'Daniela sunshine pool apartments ',
+        name: 'Daniela sunshine pool apartments',
         address: 'Keramoti, Керамоти, 64200, Гърция',
         rating: 8.9,
         stars: 3,
@@ -295,7 +405,14 @@ const hotels = [
         ],
         type: 'Apartments',
         price: 56,
-        destination: 'Керамоти'
+        destination: 'Керамоти',
+        description: `Dany House се намира на 300 метра от плажа на Керамоти. Предлага помещения за настаняване с балкон, градина и тераса.
+
+        Апартаментите са климатизирани и са с теракотен под. Разполагат със собствена баня, телевизор с плосък екран, безплатен WiFi, гардероб, всекидневна, оборудвана кухня, веранда и изглед към градината. Всички помещения включват кът за сядане и трапезария.
+        
+        Плажът Амоглоса е на 1,5 км от апартамента. Най-близкото летище е международно летище Кавала „Александър Велики“, разположено на 13 км от Dany House.
+        
+        Ние говорим на вашия език!`
     },
     {
         name: 'Villa Christie',
@@ -324,7 +441,12 @@ const hotels = [
         ],
         type: 'Villa',
         price: 58,
-        destination: 'Керамоти'
+        destination: 'Керамоти',
+        description: `Villa Christie се намира в Керамоти и предлага климатизирано помещение за настаняване с веранда. Тази вила предлага градина, барбекю, безплатен WiFi и безплатен собствен паркинг.
+
+        Вилата разполага с DVD плейър, кухня с хладилник, фурна и тостер, всекидневна с кът за сядане и трапезария, 4 спални и 2 бани с биде и душ. Осигурен е телевизор с плосък екран.
+        
+        Плажът на Керамоти е на 400 метра от вилата. Най-близкото летище е международно летище Кавала „Александър Велики“, на 12 км.`
     },
     {
         name: 'Kassiani Studios',
@@ -352,7 +474,16 @@ const hotels = [
         ],
         type: 'Apartments',
         price: 88,
-        destination: 'Керамоти'
+        destination: 'Керамоти',
+        description: `Kassiani Studios се намира в Керамоти. Предлага помещения за настаняване с веранда или балкон, безплатен WiFi и телевизор с плосък екран, както и общ салон и бар.
+
+        Всички помещения за настаняване включват собствена баня с душ, сешоар и безплатни тоалетни принадлежности.
+        
+        На разположение на гостите има тераса и градина.
+        
+        Плажът в Керамоти е на 200 м от Kassiani Studios. Международното летище Кавала „Александър Велики“ е най-близкото летище, на 10 км.
+        
+        Двойките харесват местоположението - те му дават оценка от 9.8 за пътуване за двама.`
     },
     {
         name: 'Filippion Hotel',
@@ -379,7 +510,18 @@ const hotels = [
         ],
         type: 'Hotel',
         price: 45,
-        destination: 'Керамоти'
+        destination: 'Керамоти',
+        description: `Filippion е сгушен сред добре поддържана градина в град Керамоти, Кавала, само на 150 метра от плажа. Този семеен хотел предлага снек-бар, детска площадка и стаи за гости с безплатен Wi-Fi интернет и самостоятелен балкон.
+
+        В климатизираните стаи Ви очакват изглед към Тракийско море или градината, теракот и мебели от тъмно дърво. Оборудването им включва телевизор, сейф и хладилник. В самостоятелните бани са осигурени сешоар и безплатни тоалетни принадлежности.
+        
+        Гостите могат да се насладят на сутрешно кафе, питие или леки ястия сред отпускащата обстановка на снек-бара. В радиус от 50 метра ще откриете разнообразие от таверни, барове и магазини.
+        
+        Река Нестос е на 5 километра, а град Кавала - на 30 километра. Международното летище Кавала е на 6 километра. От пристанище Керамоти пътуват редовни фериботи до остров Тасос. За гостите е осигурен безплатен частен паркинг.
+        
+        Двойките харесват местоположението - те му дават оценка от 8.7 за пътуване за двама.
+        
+        Ние говорим на вашия език!`
     },
     {
         name: 'Irini Apartments',
@@ -407,7 +549,16 @@ const hotels = [
         ],
         type: 'Apartments',
         price: 89,
-        destination: 'Керамоти'
+        destination: 'Керамоти',
+        destination: `Irini Apartments се намира на около 200 м от плажа в Керамоти, регион Македония. Предлага помещения за настаняване с безплатен WiFi, барбекю, градина и безплатен частен паркинг.
+
+        Апартаментите разполагат с кухня с микровълнова фурна и хладилник, телевизор с плосък екран със сателитни канали, уреди за гладене, гардероб и кът за сядане с диван. Всички включват самостоятелна баня с душ, сешоар и безплатни тоалетни принадлежности.
+        
+        В апартхотела има слънчева тераса.
+        
+        Плажът Амоглоса е на 1,5 км от Irini Apartments. Най-близкото летище е международното летище Кавала „Александър Велики“, на 13 км.
+        
+        Двойките харесват местоположението - те му дават оценка от 8.9 за пътуване за двама.`
     },
     {
         name: 'Villa Anna',
@@ -434,7 +585,16 @@ const hotels = [
         ],
         type: 'Villa',
         price: 83,
-        destination: 'Керамоти'
+        destination: 'Керамоти',
+        description: `Семейна вила Villa Anna се намира в Лименас, само на 200 метра от главното пристанище и на 300 метра от плажа Agios Vassilikos, и предлага помещения с условия за самостоятелно готвене с безплатен WiFi и балкон или вътрешен двор.
+
+        Климатизираните апартаменти предлагат изглед към градината, планината или околностите и разполагат с отделна спалня, кухня с отворен план, трапезария и кът за сядане, както и със собствена баня със сешоар и безплатни тоалетни принадлежности. Включват и телевизор с плосък екран със сателитни програми, CD/DVD плейър, фурна и пералня.
+        
+        Villa Anna предлага градина, съоръжения за барбекю и тераса. Осигурен е безплатен паркинг на място.
+        
+        До вилата има супермаркет, а в непосредствена близост има ресторанти. Археологическият музей на Тасос се намира на 500 метра, а Античният театър на Тасос е на 700 метра. Плажът Chryssi Ammoudia е на 12 километра.
+        
+        Двойките харесват местоположението - те му дават оценка от 9.3 за пътуване за двама.`
     },
     {
         name: 'Villa Aggeliki',
@@ -459,7 +619,12 @@ const hotels = [
         ],
         type: 'Villa',
         price: 150,
-        destination: 'Керамоти'
+        destination: 'Керамоти',
+        description: `Ваканционен дом Aggeliki се намира в село Прѝнос, на по-малко от 1 км от плажа Ска̀ла Прѝну. Разполага с градина с цитрусови дървета, просторна тераса с кът за барбекю и детска площадка. Предлага настаняване с възможност за самостоятелно готвене и пране и безплатна Wi-Fi връзка.
+
+        Вилата е на един етаж и представлява построен от камък апартамент с дървени подове и легла от ковано желязо. Включва кът за сядане, напълно оборудвана кухня с кът за хранене и баня с душ. Оборудвана е също с фурна и плоскоекранен телевизор.
+        
+        В центъра на Прѝнос, на 300 м от Aggeliki, има супермаркети и таверни. Град Лимѐнас и пристанището му са на 18 км, а пристанище О̀рмос Прѝну е на 2 км. Осигурен е безплатен паркинг на място.`
     },
     {
         name: 'Santa Catalina, a Royal Hideaway Hotel 5*GL',
@@ -486,7 +651,16 @@ const hotels = [
         ],
         type: 'Hotel',
         price: 312,
-        destination: 'Лас Палмас де Гран Канария'
+        destination: 'Лас Палмас де Гран Канария',
+        description: `Santa Catalina, a Royal Hideaway Hotel 5*GL is situated in Las Palmas de Gran Canaria, a 5-minute walk from Las Palmas Marina and surrounded by extensive gardens. This hotel features an outdoor pool, 3 restaurants, a rooftop bar, a wellness centre and free WiFi.
+
+        The spacious, air-conditioned rooms have flat screen TV and a bathroom with a rain-effect shower. Most have balcony or terrace with garden views.
+        
+        The Santa Catalina’s wellness centre offers hot tubs, Turkish baths and beauty treatments. A fitness centre is available for free. Guests can access the spa for an extra cost.
+        
+        Santa Catalina, a Royal Hideaway Hotel 5*GL features 3 restaurants: Poemas, offering gourmet cuisine, 1890 La Bodeguita, specialised in tapas, and Camarote, featuring a cuisine based in local products. Guest can also enjoy a cocktail in the piano bar Carabela and in the Alis Roof Top Bar.
+        
+        Santa Catalina, a Royal Hideaway Hotel 5*GL is a 10-minute drive from Puerto de la Luz and Las Canteras Beach. Vegueta historic district is also a 10-minute drive away. Gran Canaria Airport is a 20-minute drive from the hotel.`
     },
     {
         name: 'Ático LUXURY vista mar en Las Palmas',
@@ -512,7 +686,14 @@ const hotels = [
         ],
         type: 'Hotel',
         price: 135,
-        destination: 'Лас Палмас де Гран Канария'
+        destination: 'Лас Палмас де Гран Канария',
+        description: `Boasting sea views, Ático LUXURY vista mar en Las Palmas offers accommodation with a balcony and a kettle, 200 metres from Playa de Las Canteras. Free WiFi is available in this apartment, set 400 metres from Parque de Santa Catalina and less than 1 km from Poema Del Mar Aquarium.
+
+        This apartment includes 1 bedroom, a living room and a flat-screen TV, an equipped kitchen with a dining area, and 1 bathroom with a shower and a washing machine.
+        
+        A terrace is available on site and cycling can be enjoyed within close proximity of the apartment.
+        
+        Centro Comercial El Muelle is 1.9 km from Ático LUXURY vista mar en Las, while Alfredo Kraus Auditorium is 2.5 km from the property. The nearest airport is Gran Canaria Airport, 27 km from the accommodation.`
     },
     {
         name: 'BULL Reina Isabel & SPA',
@@ -541,7 +722,16 @@ const hotels = [
         ],
         type: 'Hotel',
         price: 257,
-        destination: 'Лас Палмас де Гран Канария'
+        destination: 'Лас Палмас де Гран Канария',
+        description: `Reina Isabel се намира на плажа Лас Кантерас в Лас Палмас. Предлага басейн на покрива си, безплатен спа център с фитнес зала и слънчева тераса с изглед към Атлантическия океан. Осигурени са безплатен паркинг и WiFi.
+
+        Всички стаи в хотел Reina Isabel разполагат с климатик, под с паркет и балкон. Във всяка има телевизор с плосък екран със сателитни канали и самостоятелна баня със сешоар.
+        
+        Хотелът сервира закуска на шведска маса, която включва пенливо вино кава, водка и пресен портокалов сок. Вечерята е на шведска маса, има и а ла карт ресторант. Удобствата в хотела се допълват от бар край басейна и плажен бар с тераса.
+        
+        На плажа могат да се предоставят чадъри, хавлии и шезлонги за безплатно ползване.
+        
+        Киносалон El Muelle е на 5 минути пеша от BULL Reina Isabel & SPA, а до голф игрището Las Palmas може да се стигне за 8 минути с кола. Летище Gran Canaria е на около 25 минути с кола.`
     },
     {
         name: 'AC Hotel Iberia Las Palmas',
@@ -568,7 +758,14 @@ const hotels = [
         ],
         type: 'Hotel',
         price: 280,
-        destination: 'Лас Палмас де Гран Канария'
+        destination: 'Лас Палмас де Гран Канария',
+        description: `Set in the Vegueta district of Las Palmas, the oceanfront AC Hotel Iberia Las Palmas features a gym and rooftop pool.
+
+        Modern air-conditioned rooms have a private bathroom with free toiletries. Rooms feature a king-size or double bed with 4 pillows. All have a desk, flat-screen TV and mini bar. Junior suites also have a sofa bed and free WiFi.
+        
+        The hotel has a free WiFi zone and WiFi is available in rooms for an extra charge. There is 24-hour reception and the hotel is a 5-minute drive from Las Canteras Beach and the Port.
+        
+        За нашите гости това е любимата част на Лас Палмас де Гран Канария, според независими отзиви.`
     },
     {
         name: 'Apartamentos Colón Playa',
@@ -594,7 +791,14 @@ const hotels = [
         ],
         type: 'Apartments',
         price: 97,
-        destination: 'Лас Палмас де Гран Канария'
+        destination: 'Лас Палмас де Гран Канария',
+        description: `Разположен на алеята Лас Кантерас в Лас Палмас де Гран Канария, Apartamentos Colón Playa се намира на 300 метра от Пуерто де ла Лус и парка Санта Каталина. Разполага с обща слънчева тераса на покрива и добре оборудвани апартаменти.
+
+        Всеки апартамент в Colón Playa има кухненски бокс, самостоятелна баня и дневна с кът за спане. Осигурени са сателитна телевизия, безплатен Wi-Fi интернет достъп и сейф. Повечето апартаменти са със самостоятелна тераса.
+        
+        Разположен в търговска и централна част, този комплекс е на съвсем кратко пътуване с обществен транспорт от центъра на Лас Палмас де Гран Канария, където можете да опитате великолепна кухня в ресторантите и модерните барове на града.
+        
+        Colón Playa разполага и с 24-часова рецепция.`
     },
     {
         name: 'Exe Las Palmas',
@@ -621,7 +825,14 @@ const hotels = [
         ],
         type: 'Hotel',
         price: 336,
-        destination: 'Лас Палмас де Гран Канария'
+        destination: 'Лас Палмас де Гран Канария',
+        description: `Този модерен хотел се намира на 20 метра от плажа Las Canteras. Предлага открит басейн, фитнес център, тераса за слънчеви бани, сауна и хидромасажна вана. На разположение на гостите са зона с безплатен WiFi и безплатни вода и кафе в стаите.
+
+        Климатизираните стаи в Exe Las Palmas са с паркет и разполагат с плоскоекранен телевизор със сателитни програми и сейф за лаптоп. Мраморната баня е снабдена с тоалетни принадлежности и сешоар.
+        
+        Хотелът разполага също с напълно оборудвана фитнес зала и модерен бизнес център за срещи. Рецепцията работи денонощно, а в туристическото бюро могат да се наемат велосипеди.
+        
+        Популярните забележителности в близост до хотела включват Las Alcaravaneras, Playa del Confital и Parque de Santa Catalina. Най-близкото летище е Гран Канария, на 23 км от Exe Las Palmas.`
     },
     {
         name: 'Hotel Aloe Canteras',
@@ -647,7 +858,14 @@ const hotels = [
         ],
         type: 'Hotel',
         price: 420,
-        destination: 'Лас Палмас де Гран Канария'
+        destination: 'Лас Палмас де Гран Канария',
+        description: `Hotel Aloe Canteras се намира в столицата на Гран Канария, Лас Палмас и разполага с тераса за слънчеви бани с изглед към плажа Кантерас, отдалечен само на 30 метра. Повечето от светлите и модерни стаи предлагат панорамен или страничен изглед към Атлантическия океан.
+
+        Стаите в Hotel Aloe Canteras са оборудвани с телевизор и работно бюро. Имат също сейф и малък хладилник, а собствените бани са със сешоар и тоалетни принадлежности.
+        
+        Хотелът разполага със салон с телевизор и интернет кът с безплатен WiFi. На място има вендинг автомати за напитки и леки закуски. В околността на този централно разположен хотел ще откриете много барове и ресторанти.
+        
+        Hotel Aloe Canteras предлага денонощна рецепция и коли под наем. Наблизо има платен паркинг.`
     },
     {
         name: 'Bex Holiday Homes',
@@ -674,7 +892,16 @@ const hotels = [
         ],
         type: 'Apartments',
         price: 140,
-        destination: 'Лас Палмас де Гран Канария'
+        destination: 'Лас Палмас де Гран Канария',
+        description: `Located in Las Palmas de Gran Canaria, near Parque de Santa Catalina, Centro Comercial El Muelle and Poema Del Mar Aquarium, Bex Deluxe Suites features free WiFi.
+
+        All units here are air-conditioned and feature a flat-screen TV, a living room, a well-equipped kitchen with a dining area, and a private bathroom with shower and free toiletries. A dishwasher, a microwave and fridge are also provided, as well as a kettle and a coffee machine.
+        
+        Guests at the apartment can enjoy a continental breakfast.
+        
+        Bex Deluxe Suites offers a sun terrace.
+        
+        Playa del Confital is 2.4 km from the accommodation, while Parque Romano is 1.7 km away.`
     },
     {
         name: 'Hotel Acuario Boutique',
@@ -700,7 +927,12 @@ const hotels = [
         ],
         type: 'Hotel',
         price: 123,
-        destination: 'Лас Палмас де Гран Канария'
+        destination: 'Лас Палмас де Гран Канария',
+        description: `Hotel Acuario Boutique in Las Palmas de Gran Canaria allow children of all ages. Has a terrace and a bar. The property is located 800 metres from Las Canteras Beach, and 1.9 km from Centro Comercial El Muelle. The hotel has views to Parque Santa Catalina.
+
+        At the hotel, every room has a wardrobe, a flat-screen TV and a private bathroom. Free WiFi is accessible to all guests, while selected rooms are equipped with a balcony. Guest rooms will provide guests with a fridge.
+        
+        Poema Del Mar Aquarium is 500 metres from Hotel Acuario Boutique, while Parque Romano is 2.3 km away. The nearest airport is Gran Canaria Airport, 27 km from the accommodation.`
     },
     {
         name: 'Design Plus Bex Hotel',
@@ -727,7 +959,14 @@ const hotels = [
         ],
         type: 'Hotel',
         price: 98,
-        destination: 'Лас Палмас де Гран Канария'
+        destination: 'Лас Палмас де Гран Канария',
+        description: `Located in Las Palmas de Gran Canaria, Design Plus Bex Hotel features a restaurant and a rooftop bar. The property is situated a short distance from Parque de Santa Catalina and Centro Comercial El Muelle. Playa de Las canteras is 700 metres from the property.
+
+        All rooms in the hotel are fitted with a flat-screen TV and a shower. Guest rooms at Design Plus Bex Hotel include air conditioning and a wardrobe. Free WiFi is available throughout the property.
+        
+        Design Plus Bex Hote also offers a gym and 24-hour reception. An international buffet breakfast is served daily at the property.
+        
+        Aquarium "Poema del Mar" is 900 metres from the accommodation, while Gran Casino Las Palmas is just 200 metres away. The nearest airport is Gran Canaria Airport, 25 km from Design Plus Bex Hotel.`
     },
     {
         name: 'Occidental Las Palmas',
@@ -753,7 +992,16 @@ const hotels = [
         ],
         type: 'Hotel',
         price: 260,
-        destination: 'Лас Палмас де Гран Канария'
+        destination: 'Лас Палмас де Гран Канария',
+        description: `Featuring a restaurant, fitness centre, bar and free WiFi, Occidental Las Palmas is set in Las Palmas de Gran Canaria, less than 1 km from Las Alcaravaneras and 2.3 km from Parque de Santa Catalina. Boasting family rooms, this property also provides guests with a terrace. The accommodation offers a 24-hour front desk, a concierge service and currency exchange for guests.
+
+        At the hotel, all rooms come with a desk, a flat-screen TV and a private bathroom. The units at Occidental Las Palmas feature air conditioning and a wardrobe.
+        
+        The accommodation offers a buffet or vegetarian breakfast.
+        
+        Occidental Las Palmas offers 4-star accommodation with a hot tub.
+        
+        Parque Romano is 600 metres from the hotel, while Perez Galdos House Museum is 2.2 km away.`
     },
     {
         name: 'Hotel Atlântico Rio',
@@ -780,7 +1028,16 @@ const hotels = [
         ],
         type: 'Hotel',
         price: 170,
-        destination: 'Рио де Жанейро'
+        destination: 'Рио де Жанейро',
+        description: `Atlântico Rio е 4-звезден хотел, разположен на 500 метра от прочутия плаж Копакабана в Рио де Жанейро. Удобствата включват открит басейн, безплатна ежедневна закуска, собствен ресторант и отлично местоположение, а на кратко разстояние пеша ще откриете различни заведения за обяд и вечеря.
+
+        Всички стаи предлагат съвременен интериор и са оборудвани с климатик, минибар, 32-инчов телевизор с плосък екран и кабелни канали. На разположение на гостите има рум-сървиз.
+        
+        В бара на хотела можете да поръчате екзотични коктейли и различни напитки. Наблизо има пункт за велосипеди под наем.
+        
+        Atlantico Rio е на 80 метра от метростанция Cantagalo и на 3.6 километра от стадион Lagoa. Летище Santos Dumont е на 11,5 километра, а международното летище Galeão - на 26 километра.
+        
+        За нашите гости това е любимата част на Рио де Жанейро, според независими отзиви.`
     },
     {
         name: 'Argentina Hotel',
@@ -807,7 +1064,14 @@ const hotels = [
         ],
         type: 'Hotel',
         price: 120,
-        destination: 'Рио де Жанейро'
+        destination: 'Рио де Жанейро',
+        description: `Argentina Hotel is a traditional hotel set in the 1930s, in Rio´s Flamengo area, a 20-minute drive from the Sugar Loaf. It features modern accommodation with and free WiFi and free parking.
+
+        Rooms at Argentina Hotel feature air conditioning, a TV with cable channels, a minibar, a telephone a desk and a safe. All of them are set with a private bathroom.
+        
+        Guests enjoy Brazilian and international cuisine at Azafrán restaurant, which also offers popular tropical cocktails. A substantial buffet breakfast is served here as well.
+        
+        Argentina Hotel is located a 10-minute walk from Flamengo Subway and a 15-minute drive from Christ the Redeemer. The nearest airport is Santos Dumont Airport, 5 km away, while Tom Jobim /Rio-Galeão International Airport is within a distance of 24 km from Argentina Hotel.`
     },
     {
         name: 'Hotel Atlantico Tower',
@@ -836,7 +1100,14 @@ const hotels = [
         ],
         type: 'Hotel',
         price: 109,
-        destination: 'Рио де Жанейро'
+        destination: 'Рио де Жанейро',
+        description: `Хотел Atlantico Tower предлага модерни помещения за настаняване в центъра на Рио де Жанейро, на 600 метра от Музея на утрешния ден и на 1,5 километра от летище „Сантос Дюмон“. Предлага безплатен Wi-Fi и басейн на покрива с панорамен изглед към града.
+
+        Стаите в хотел Atlantico Tower предлагат непретенциозен интериор с дървени мебели и подова настилка в светли цветове. Всички са оборудвани с климатик, минибар и работно бюро за лаптоп.Всеки ден се сервира закуска на шведска маса.
+        
+        Хотелът е на 5 километра от автогарата Ново Рио и на 12 километра от Международно летище „Галеао Стадионът Maracanã е на 3 километра, а Marquês de Sapucaí Sambadrome е на 20 минути пеша.
+        
+        Двойките харесват местоположението - те му дават оценка от 8.2 за пътуване за двама.`
     },
     {
         name: 'Ibis Budget RJ Copacabana',
@@ -863,7 +1134,16 @@ const hotels = [
         ],
         type: 'Hotel',
         price: 80,
-        destination: 'Рио де Жанейро'
+        destination: 'Рио де Жанейро',
+        description: `Ibis Budget RJ Copacabana is situated in Rio de Janeiro, 350 metres from Copacabana beach. Free WiFi is available throughout the property.
+
+        Every room at this hotel is air conditioned and is fitted with a flat-screen TV. The rooms include a private bathroom equipped with a shower.
+        
+        There is a 24-hour front desk at the property.
+        
+        Post 7 - Arpoador is 1.8 km from the hotel, while Rodrigo de Freitas Lake is 1.9 km from the property. The nearest airport is Santos Dumont Airport, 7 km from Ibis Budget RJ Copacabana.
+        
+        За нашите гости това е любимата част на Рио де Жанейро, според независими отзиви.`
     },
     {
         name: 'Hotel Atlantico Prime',
@@ -889,7 +1169,18 @@ const hotels = [
         ],
         type: 'Hotel',
         price: 129,
-        destination: 'Рио де Жанейро'
+        destination: 'Рио де Жанейро',
+        description: `Хотел Atlantico Prime се намира в центъра на Рио де Жанейро и предлага настаняване с ресторант, собствен паркинг, фитнес център и бар. Този 4-звезден хотел предлага безплатен WiFi и обслужване от консиерж. Хотелът предлага също денонощна рецепция, румсървиз и обмяна на валута.
+
+        Стаите са със съвременен интериор, климатик, кабелна телевизия, минибар, сейф, сешоар и козметично огледало.
+        
+        Всяка сутрин се сервира континентална закуска или закуска на шведска маса. Гостите могат да се насладят на разнообразно меню в ресторанта и освежаващи напитки в бара.
+        
+        Хотел Atlantico Prime разполага с конгресен център за до 150 души, с 6 различни зали, които позволяват конфигурация в различни формати.
+        
+        Стълбите „Ескадария Селарон“ са на 800 метра от хотел Atlantico Prime, а акведуктът Аркос де Лапа е на 600 метра. Аквапаркът AquaRio и заливът Гуанабара са на 3 км, а стадион „Маракана“ е на 6,5 км. Най-близкото летище е „Сантос Дюмон“, на 2 км.
+        
+        `
     },
     {
         name: 'Hotel Astoria Palace',
@@ -917,7 +1208,16 @@ const hotels = [
         ],
         type: 'Hotel',
         price: 118,
-        destination: 'Рио де Жанейро'
+        destination: 'Рио де Жанейро',
+        description: `Hotel Astoria Palace се намира на плажа Копакабана и предлага басейн на покрива с панорамен изглед към океана. Гостите могат да се насладят на разнообразна закуска на шведска маса. За обяд и вечеря се сервират бразилски ястия по а-ла-карт меню. В бара можете да поръчате екзотични напитки. Осигурен е безплатен Wi-Fi.
+
+        Този 4-звезден хотел предлага светли и просторни помещения за настаняване със съвременен интериор и модерни бани.Климатизираните стаи са оборудвани с LCD телевизор със сателитни канали и минибар. Някои от тях разполагат с DVD плеър, хидромасажна вана и изглед към плажа.
+        
+        Другите удобства в хотела включват ресторант, фитнес зала и сауна. Туристическото бюро организира екскурзии до забележителности като планината Захарната буца, на 4 км.
+        
+        Hotel Astoria Palace е удобно разположен само на 300 метра от метростанция Cardeal Arcoverde, на 8 км от летище Santos Dumont и на 25 км от международното летище Galeão. Форт Копакабана е само на 2,6 км.
+        
+        За нашите гости това е любимата част на Рио де Жанейро, според независими отзиви.`
     },
     {
         name: 'Hotel Nacional Rio de Janeiro',
@@ -946,7 +1246,14 @@ const hotels = [
         ],
         type: 'Hotel',
         price: 197,
-        destination: 'Рио де Жанейро'
+        destination: 'Рио де Жанейро',
+        description: `Хотел Nacional Rio de Janeiro е идеално разположен точно до плажа Сао Конрадо и предлага уникален избор за тези, които търсят лукса на градски курорт. Хотелът се намира в историческа сграда, проектирана от Оскар Нимайер и заобиколена от градините „Бурле Маркс“.
+
+        Хотелът разполага с открит басейн, СПА център и фитнес център. Предлагат се плажни услуги, включително шезлонги и плажни чадъри. Гостите могат да се насладят на ексклузивни напитки и изискани тапас в бар Bardot край басейна, както и на един от двата съвременни ресторанта - Sereia и Amaro. Осигурен е WiFi навсякъде.
+        
+        Всички климатизирани стаи в хотел Nacional Rio de Janeiro са декорирани в топли цветове и предлагат спално бельо Trussardi, LED телевизор, минибар, електронен сейф и докинг станция. Самостоятелната баня разполага с безплатни тоалетни принадлежности, халати и сешоар.
+        
+        Метростанция „Сао Конрадо“ е само на 750 метра от хотела. Планината Pedra da Gávea и Ботаническата градина са на 6,5 км. Плажът Копакабана е на 11 км от хотел Nacional Rio de Janeiro. Най-близкото летище е „Сантос Дюмон“, на 13 км от хотела, а международно летище „Том Жобим“ е на 25 км.`
     },
     {
         name: 'Hilton Copacabana Rio de Janeiro',
@@ -974,7 +1281,14 @@ const hotels = [
         ],
         type: 'Hotel',
         price: 260,
-        destination: 'Рио де Жанейро'
+        destination: 'Рио де Жанейро',
+        description: `The 5-star Hilton Rio de Janeiro Copacabana is ideally located across from the blue waters of Copacabana Beach. It features an elegant spa and a rooftop pool, both with splendid sea views.
+
+        Hilton Rio de Janeiro Copacabana offers bright, sophisticated rooms with air conditioning, a TV and a minibar. They are elegantly styled with wooden furniture, contemporary decor and warm, natural tones. Most rooms feature amazing ocean views.
+        
+        A popular buffet breakfast is served every morning with fresh fruits and pastries. The spa at the hotel has a variety of treatments, and there is a second swimming pool on the 4th floor, where guests can find he restaurant The View. They are also welcome to exercise or have a sauna session in the fitness centre.
+        
+        Charming shops, restaurants and lively bars are found just 2 blocks away from this hotel. Copacabana Fort is 3.2 km away. Santos Dumont Airport is 9.6 km away, while GaleÃ£o International Airport is at a distance of 27.6 km.`
     },
     {
         name: 'Grand Hyatt Rio de Janeiro',
@@ -1003,7 +1317,16 @@ const hotels = [
         ],
         type: 'Hotel',
         price: 420,
-        destination: 'Рио де Жанейро'
+        destination: 'Рио де Жанейро',
+        description: `Boasting an outdoor pool and spa, Grand Hyatt Rio de Janeiro is strategically located in the heart of Barra da Tijuca, nested between the ocean, the lake and the mountains, just across the street from Reserva Beach. The hotel has a sauna and fitness centre with a Yoga Studio. Guests can enjoy a meal at one of the three restaurants. Free WiFi is available throughout the property and private parking is available on site.
+
+        Each room at this hotel is air conditioned and offers a furnished balcony. Rooms also offers a bathtub, so guests can relax after a busy day. For your comfort, you will also find bathroom amenities from Granado and a hairdryer.
+        
+        There is a 24-hour front desk, a cash machine and shops at the property. Beach service is available and offers chairs, parasols and towels.
+        
+        Guests can also enjoy several resort activities such as daily physical activities, caipirinha tasting, bike experience and welcome drinks at Cantô Restaurant, at a surcharge.
+        
+        Jeunesse Arena is located nearby, whilst Cidade das Artes is 3.2 km. The nearest airport is Santos Dumont Airport, 26 km from Grand Hyatt Rio de Janeiro.`
     },
     {
         name: 'Mirador Rio Copacabana Hotel',
@@ -1030,7 +1353,18 @@ const hotels = [
         ],
         type: 'Hotel',
         price: 326,
-        destination: 'Рио де Жанейро'
+        destination: 'Рио де Жанейро',
+        description: `Located 650 metres from Copacabana Beach, this hotel's swimming pool boasts panoramic views of Rio de Janeiro. The buffet breakfast is served daily in a luxurious dining area. Guests can enjoy local and international cuisine in Restaurant Vila Real. WiFi is available.
+
+        All rooms at Mirador Rio Copacabana Hotel features a minibar, cable TV and a private bathroom with a shower. Some offer a dry sauna and additional space. Non-smoking rooms are available.
+        
+        As well as an outdoor pool, Mirador Rio offers a fitness centre and sauna. The lounge bar serves a wide variety of drinks, including tropical cocktails.
+        
+        The 24-hour front desk can arrange room service, car and bicycle rental and dry cleaning services. Private parking is available.
+        
+        This 4-star hotel is just 250 metres from Siqueira Campos Subway. Santos Dumont Airport is at a distance of 9 km and Galeão International Airport is 22.5 km from the property.
+        
+        За нашите гости това е любимата част на Рио де Жанейро, според независими отзиви.`
     },
     {
         name: 'Sheraton Grand Rio Hotel & Resort',
@@ -1059,7 +1393,18 @@ const hotels = [
         ],
         type: 'Hotel',
         price: 280,
-        destination: 'Рио де Жанейро'
+        destination: 'Рио де Жанейро',
+        description: `Този луксозен и неотдавна обновен 5-звезден крайбрежен хотелски комплекс се намира на модерния плаж Leblon, в Южната зона на Рио. Гостите на Sheraton Grand Rio може да се насладят на басейн с наскоро обновен дизайн, около който има тучна тропическа пейзажно оформена зеленина с голяма тераса и хидромасажна вана JacuzziⓇ с изглед към океана. Навсякъде в хотела е осигурен безплатен WiFi.
+
+        За отдих се възползвайте от добре оборудваната фитнес зала или релаксирайте в новооткрития СПА център Shine Spa. Ако искате да разгледате някои от забележителностите, може да посетите емблематичната статуя на Христос Спасителя, разположена на 10 километра.
+        
+        В зоната на басейна на Sheraton Grand Rio ви очаква ресторант Casarão, който сервира изискани месни ястия за вечеря и шведска маса за обяд в непринудена и елегантна обстановка. Гостите може също да посетят ресторант Bene за италиански ястия и бар Dry Martini - най-новия, модерен и иновативен бар.
+        
+        Casa da Cachaça ви очаква в зоната на басейна и предлага изискани напитки, типичните бразилски коктейли кайпириня и класически коктейли. На 26-ия етаж ще намерите ресторант L'Etoile, където може да опитате френска кухня, докато се любувате на панорамна гледка към океана.
+        
+        Луксозните ремонтирани стаи в Sheraton Grand Rio са просторни, с модерен интериор и съвременни мебели. Всички стаи имат климатик и самостоятелен балкон с прекрасен изглед към плажа.
+        
+        Плажът Leblon е на 1 километър, а националният парк Tijuca Forest - на 3,4 километра. Sheraton Grand Rio се намира на 16 километра от летище Santos Dumont. Може да се организира летищен трансфер.`
     },
     {
         name: 'The Westin Siray Bay Resort & Spa, Phuket',
