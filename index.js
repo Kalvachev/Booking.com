@@ -238,7 +238,7 @@
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>    
+                <span class="fa fa-star"></span>    
                 `
             } else if (currentElement.stars === 5) {
                 destinationStars.innerHTML = `
@@ -291,6 +291,6 @@
             printHotelsByDestination(SEARCH_BOX.value, hotelsByDestinationContainer);
         }
     })
-
+    
 })();
 
