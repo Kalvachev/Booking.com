@@ -159,16 +159,25 @@
             let restInformation = document.createElement('div');
             restInformation.setAttribute('class', 'destinationRestInformation');
 
+            let firstRowInformation = document.createElement('div');
+            firstRowInformation.setAttribute('class', 'firstRowInformation');
+
+            let secondRowInformation = document.createElement('div');
+            secondRowInformation.setAttribute('class', 'secondRowInformation');
+
             let hotelNameAndDestination = document.createElement('div');
             let hotelName = document.createElement('h3');
             hotelName.innerText = currentElement.name;
-            // let hotelDestination = document.createElement('p');
-            // hotelDestination.innerText = currentElement.destination;
             hotelNameAndDestination.setAttribute('class', 'destinationHotelNameAndDestination');
+
+            let hotelDestinationContainer = document.createElement('div');
+            hotelDestinationContainer.setAttribute('class', 'hotelDestinationContainer');
+            let hotelDestination = document.createElement('p');
+            hotelDestination.innerText = currentElement.destination;
 
             let hotelPriceContainer = document.createElement('div');
             let hotelPrice = document.createElement('p')
-            hotelPrice.innerText = 'BGN ' + currentElement.price;
+            hotelPrice.innerText = 'Цени от: BGN ' + currentElement.price;
             hotelPriceContainer.setAttribute('class', 'destinationHotelPriceContainer');
 
             let hotelRatingsContainer = document.createElement('div');
@@ -177,6 +186,11 @@
             hotelRating.innerText = currentElement.rating;
             hotelRating.setAttribute('class', 'hotelRating');
             let hotelRatingWord = document.createElement('div');
+
+            let hotelDescriptionContainer = document.createElement('div');
+            let hotelDescription = currentElement.description;
+            hotelDescriptionContainer.setAttribute('class', 'hotelDescriptionContainer');
+
 
             if (currentElement.rating >= 7.5 && currentElement.rating < 8.0) {
                 hotelRatingWord.innerText = `Добър`;
@@ -238,9 +252,14 @@
 
             hotelPictureContainer.append(hotelPicture);
             hotelNameAndDestination.append(hotelName, destinationStars);
-            // hotelPriceContainer.append(hotelPrice);
+            hotelDestinationContainer.append(hotelDestination);
+            hotelPriceContainer.append(hotelPrice);
             hotelRatingsContainer.append(hotelRatingWord, hotelRating);
-            restInformation.append(hotelNameAndDestination, hotelRatingsContainer);
+            hotelDescriptionContainer.append(hotelDescription);
+            firstRowInformation.append(hotelNameAndDestination, hotelRatingsContainer);
+            secondRowInformation.append(hotelDestinationContainer, hotelPriceContainer)
+
+            restInformation.append(firstRowInformation, secondRowInformation, hotelDescriptionContainer)
 
             hotelCard.append(hotelPictureContainer, restInformation);
             container.append(hotelCard);
