@@ -192,3 +192,118 @@
     margin-bottom: 8px;
     border-bottom: none;
 }
+
+#hotelPageContainer {
+    display: none;
+}
+
+.singleCardContainer {
+    display: flex;
+    flex-direction: column;
+    width: 815px;
+    margin: 0 auto;
+    /* background-color: burlywood; */
+}
+
+.singleCardNavigationContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.singleCardNavigationList {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.singleCardNavigationList li {
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    position: relative;
+    color: #0071c2;
+    font-size: 14px;
+    background-color: #dfecff;
+}
+
+/* ----------------------- */
+
+.singleCardContainer img {
+    width: 200px;
+    height: 200px;
+}
+
+/* ----------------------- */
+
+.singleCardHeadingContainer {
+    display: flex;
+    flex-direction: row;
+    margin: 15px 0 0 0;
+}
+
+.singleCardHeadingContainer span {
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 18px;
+    vertical-align: middle;
+    padding: 0 4px;
+    border-radius: 3px;
+    background: #aeaeae;
+    color: #fff;
+    align-self: center;
+}
+
+.singleCardHeadingContainer h1 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-left: 10px;
+    align-self: center;
+}
+
+.singleCardReserveButton {
+    max-width: 276px;
+    border: 1px solid #0071c2;
+    border-radius: 2px;
+    box-sizing: border-box;
+    vertical-align: middle;
+    position: relative;
+    color: #fff;
+    background-color: #0071c2;
+    min-height: 36px;
+    min-width: 36px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    justify-content: center;
+    text-align: left;
+    padding: 7px 15px;
+    cursor: pointer;
+    margin: 0 0 0 365px;
+}
+
+.singleCardAddressContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+.singleCardAddress {
+    color: #333;
+    font-size: small;
+    line-height: 1.2;
+}
+/* 
+.singleCardAddressIcon {
+    display: inline-block;
+    width: 15px;
+    height: 23px;
+    margin-right: 0;
+    background: url(//t-cf.bstatic.com/static/img/map/cta_material/map_cta_pin_small_sprite/282fe35….png) no-repeat;
+    margin-top: -2px;
+    background-size: 15px 46px;
+    background-position: 0 0;
+    vertical-align: middle;
+} */

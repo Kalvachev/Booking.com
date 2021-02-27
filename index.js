@@ -27,6 +27,7 @@
                 ATTRACTIONS_PAGE.style.display = 'none';
                 TAXI_PAGE.style.display = 'none';
                 allHotelsByDestination.style.display = 'none';
+                HOTEL_PAGE_CONTAINER.style.display = 'none';
                 break;
             case 'rent':
                 HOME_PAGE.style.display = 'none';
@@ -34,6 +35,7 @@
                 ATTRACTIONS_PAGE.style.display = 'none';
                 TAXI_PAGE.style.display = 'none';
                 allHotelsByDestination.style.display = 'none';
+                HOTEL_PAGE_CONTAINER.style.display = 'none';
                 break;
             case 'attractions':
                 HOME_PAGE.style.display = 'none';
@@ -41,6 +43,7 @@
                 ATTRACTIONS_PAGE.style.display = 'block';
                 TAXI_PAGE.style.display = 'none';
                 allHotelsByDestination.style.display = 'none';
+                HOTEL_PAGE_CONTAINER.style.display = 'none';
                 break;
             case 'taxis':
                 HOME_PAGE.style.display = 'none';
@@ -48,6 +51,7 @@
                 ATTRACTIONS_PAGE.style.display = 'none';
                 TAXI_PAGE.style.display = 'block';
                 allHotelsByDestination.style.display = 'none';
+                HOTEL_PAGE_CONTAINER.style.display = 'none';
                 break;
             case 'displayHomes':
                 HOME_PAGE.style.display = 'none';
@@ -55,12 +59,14 @@
                 ATTRACTIONS_PAGE.style.display = 'none';
                 TAXI_PAGE.style.display = 'none';
                 allHotelsByDestination.style.display = 'block';
+                HOTEL_PAGE_CONTAINER.style.display = 'none';
             default:
                 HOME_PAGE.style.display = 'block';
                 RENT_CAR_PAGE.style.display = 'none';
                 ATTRACTIONS_PAGE.style.display = 'none';
                 TAXI_PAGE.style.display = 'none';
                 allHotelsByDestination.style.display = 'none';
+                HOTEL_PAGE_CONTAINER.style.display = 'none';
                 break;
         }
     }
@@ -264,12 +270,23 @@
             hotelCard.append(hotelPictureContainer, restInformation);
             container.append(hotelCard);
 
+            // Single Page Show
+            //----------------------------------------------------------
+            
             hotelCard.addEventListener('click', function printHotelPage() {
+                HOTEL_PAGE_CONTAINER.innerText = '';
                 ALL_HOTELS_BY_DESTINATION.style.display = 'none';
+                HOTEL_PAGE_CONTAINER.style.display = 'flex';
 
                 const hotelCardContainer = document.createElement('div');
+                hotelCardContainer.setAttribute('class', 'singleCardContainer');
+
                 const hotelCardNavigation = document.createElement('div');
+                hotelCardNavigation.setAttribute('class', 'singleCardNavigationContainer');
+
                 const cardNav = document.createElement('ul');
+                cardNav.setAttribute('class', 'singleCardNavigationList');
+
                 let navBarItem1 = document.createElement('li');
                 navBarItem1.innerText = 'Информация и цени';
                 let navBarItem2 = document.createElement('li');
@@ -282,19 +299,35 @@
                 navBarItem5.innerText = 'Отзиви от гости';
 
                 let hotelHeadingContainer = document.createElement('div');
+                hotelHeadingContainer.setAttribute('class', 'singleCardHeadingContainer');
+
                 let hotelType = document.createElement('span');
                 hotelType.innerText = currentElement.type;
+                hotelType.setAttribute('class', 'singleCardHotelType');
+                
                 let hotelName = document.createElement('h1');
-                hotelName = currentElement.name;
-                //zvezdite
+                hotelName.innerText = currentElement.name;
+                hotelName.setAttribute('class', 'singleCardHotelName');
+
+
+                // Stars
                 let reserveBtn = document.createElement('button');
                 reserveBtn.innerText = 'Резервирайте';
+                reserveBtn.setAttribute('class', 'singleCardReserveButton');
 
                 let addressContainer = document.createElement('div');
+                addressContainer.setAttribute('class', 'singleCardAddressContainer');
+
+                // let hotelAddressIcon = document.createElement('span');
+                // hotelAddressIcon.setAttribute('class', 'singleCardAddressIcon')
+
                 let hotelAddress = document.createElement('p');
                 hotelAddress.innerText = currentElement.address;
+                hotelAddress.setAttribute('class', 'singleCardAddress');
+
                 let returnMoney = document.createElement('div');
                 returnMoney.innerText = 'Ние връщаме разликата в цената.';
+                returnMoney.setAttribute('class', 'singleCardreturnMoney');
 
                 let hotelPicturesContainer = document.createElement('div')
                 let firstRowContainer = document.createElement('div');
