@@ -35,6 +35,12 @@
     margin: 16px 0;
 }
 
+.destinationHotelCard:hover {
+    background: rgb(91, 186, 255);
+    cursor: pointer;
+    transition: 0.4ms;
+}
+
 .destinationHotelPictureContainer img {
     width: 200px;
     height: 200px;

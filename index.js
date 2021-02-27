@@ -263,6 +263,113 @@
 
             hotelCard.append(hotelPictureContainer, restInformation);
             container.append(hotelCard);
+
+            hotelCard.addEventListener('click', function printHotelPage() {
+                const hotelCardContainer = document.createElement('div');
+                const hotelCardNavigation = document.createElement('div');
+                const cardNav = document.createElement('ul');
+                let navBarItem1 = document.createElement('li');
+                navBarItem1.innerText = 'Информация и цени';
+                let navBarItem2 = document.createElement('li');
+                navBarItem2.innerText = 'Удобства';
+                let navBarItem3 = document.createElement('li');
+                navBarItem3.innerText = 'Важна информация';
+                let navBarItem4 = document.createElement('li');
+                navBarItem4.innerText = 'С дребния шрифт';
+                let navBarItem5 = document.createElement('li');
+                navBarItem5.innerText = 'Отзиви от гости';
+
+                let hotelHeadingContainer = document.createElement('div');
+                let hotelType = document.createElement('span');
+                hotelType.innerText = currentElement.type;
+                let hotelName = document.createElement('h1');
+                hotelName = currentElement.name;
+                //zvezdite
+                let reserveBtn = document.createElement('button');
+                reserveBtn.innerText = 'Резервирайте';
+
+                let addressContainer = document.createElement('div');
+                let hotelAddress = document.createElement('p');
+                hotelAddress.innerText = currentElement.address;
+                let returnMoney = document.createElement('div');
+                returnMoney.innerText = 'Ние връщаме разликата в цената.';
+
+                let hotelPicturesContainer = document.createElement('div')
+                let firstRowContainer = document.createElement('div');
+                let firstPicturesContainer = document.createElement('div');
+                let secondPicturesContainer = document.createElement('div');
+                let thirdPicturesContainer = document.createElement('div');
+
+                let mainPicture = document.createElement('img');
+                mainPicture.src = currentElement.pictures[0];
+
+                let picture1 = document.createElement('img');
+                picture1.src = currentElement.pictures[1];
+
+                let picture2 = document.createElement('img');
+                picture2.src = currentElement.pictures[2];
+
+                let picture3 = document.createElement('img');
+                picture3.src = currentElement.pictures[3];
+
+                let picture4 = document.createElement('img');
+                picture4.src = currentElement.pictures[4];
+
+                let picture5 = document.createElement('img');
+                picture5.src = currentElement.pictures[5];
+
+                let picture6 = document.createElement('img');
+                picture6.src = currentElement.pictures[6];
+
+                let picture7 = document.createElement('img');
+                picture7.src = currentElement.pictures[7];
+
+                let facilitiesUnderThePictures = document.createElement('div');
+
+                let facility1container = document.createElement('div');
+                let facility2container = document.createElement('div');
+                let facility3container = document.createElement('div');
+                let facility4container = document.createElement('div');
+                let facility5container = document.createElement('div');
+
+                let facility1img = document.createElement('img');
+                let facility1Text = document.createElement('p');
+                facility1Text = 'Апартаменти';
+
+                let facility2img = document.createElement('img');
+                let facility2Text = document.createElement('p');
+                facility2Text = 'Кухня';
+
+                let facility3img = document.createElement('img');
+                let facility3Text = document.createElement('p');
+                facility3Text = 'Гледка';
+
+                let facility4img = document.createElement('img');
+                let facility4Text = document.createElement('p');
+                facility4Text = 'Допускат се домашни любимци';
+
+                let facility5img = document.createElement('img');
+                let facility5Text = document.createElement('p');
+                facility5Text = 'Безплатен WiFi';
+
+                hotelPageContainer.append(hotelCardContainer);
+                hotelCardContainer.append(hotelCardNavigation, hotelHeadingContainer, addressContainer, hotelPicturesContainer, facilitiesUnderThePictures);
+                hotelCardNavigation.append(cardNav)
+                cardNav.append(navBarItem1, navBarItem2, navBarItem3, navBarItem4, navBarItem5)
+                hotelHeadingContainer.append(hotelType, hotelName, reserveBtn);
+                addressContainer.append(hotelAddress, returnMoney);
+                hotelPicturesContainer.append(firstRowContainer, thirdPicturesContainer)
+                firstRowContainer.append(firstPicturesContainer, secondPicturesContainer)
+                firstPicturesContainer.append(picture1, picture2);
+                secondPicturesContainer.append(mainPicture)
+                thirdPicturesContainer.append(picture3, picture4, picture5, picture6, picture7)
+                facilitiesUnderThePictures.append(facility1container, facility2container, facility3container, facility4container, facility5container)
+                facility1container.append(facility1img, facility1Text)
+                facility2container.append(facility2img, facility2Text)
+                facility3container.append(facility3img, facility3Text)
+                facility4container.append(facility4img, facility4Text)
+                facility5container.append(facility5img, facility5Text)
+            })
         })
     }
 
@@ -291,6 +398,7 @@
             printHotelsByDestination(SEARCH_BOX.value, hotelsByDestinationContainer);
         }
     })
-    
+
+
 })();
 
