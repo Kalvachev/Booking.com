@@ -39,4 +39,5 @@ PASSWORD_INPUT_REG = document.getElementById('passwordInputReg');
 REPEAT_PASSWORD_INPUT = document.getElementById('repeatPasswordInputReg');
 EMAIL_INPUT_REG = document.getElementById('emailInputReg');
 
-const hotelPageContainer = document.getElementById('hotelPageContainer');
+const HOTEL_PAGE_CONTAINER = document.getElementById('hotelPageContainer');
+const ALL_HOTELS_BY_DESTINATION = document.getElementById('allHotelsByDestination')

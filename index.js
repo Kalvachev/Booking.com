@@ -265,6 +265,8 @@
             container.append(hotelCard);
 
             hotelCard.addEventListener('click', function printHotelPage() {
+                ALL_HOTELS_BY_DESTINATION.style.display = 'none';
+
                 const hotelCardContainer = document.createElement('div');
                 const hotelCardNavigation = document.createElement('div');
                 const cardNav = document.createElement('ul');
