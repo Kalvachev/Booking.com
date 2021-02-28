@@ -272,7 +272,7 @@
 
             // Single Page Show
             //----------------------------------------------------------
-            
+
             hotelCard.addEventListener('click', function printHotelPage() {
                 HOTEL_PAGE_CONTAINER.innerText = '';
                 ALL_HOTELS_BY_DESTINATION.style.display = 'none';
@@ -304,7 +304,7 @@
                 let hotelType = document.createElement('span');
                 hotelType.innerText = currentElement.type;
                 hotelType.setAttribute('class', 'singleCardHotelType');
-                
+
                 let hotelName = document.createElement('h1');
                 hotelName.innerText = currentElement.name;
                 hotelName.setAttribute('class', 'singleCardHotelName');
@@ -330,62 +330,104 @@
                 returnMoney.setAttribute('class', 'singleCardreturnMoney');
 
                 let hotelPicturesContainer = document.createElement('div')
+                returnMoney.setAttribute('class', 'hotelPicturesContainer');
+
                 let firstRowContainer = document.createElement('div');
+                firstRowContainer.setAttribute('class', 'firstRowContainer');
+
                 let firstPicturesContainer = document.createElement('div');
+                firstPicturesContainer.setAttribute('class', 'firstPicturesContainer');
+
                 let secondPicturesContainer = document.createElement('div');
+                secondPicturesContainer.setAttribute('class', 'secondPicturesContainer');
+
                 let thirdPicturesContainer = document.createElement('div');
+                thirdPicturesContainer.setAttribute('class', 'thirdPicturesContainer');
 
                 let mainPicture = document.createElement('img');
                 mainPicture.src = currentElement.pictures[0];
+                mainPicture.setAttribute('class', 'mainPicture');
 
                 let picture1 = document.createElement('img');
                 picture1.src = currentElement.pictures[1];
+                picture1.setAttribute('class', 'picture1');
 
                 let picture2 = document.createElement('img');
                 picture2.src = currentElement.pictures[2];
+                picture2.setAttribute('class', 'picture2');
 
                 let picture3 = document.createElement('img');
                 picture3.src = currentElement.pictures[3];
+                picture3.setAttribute('class', 'picture3');
 
                 let picture4 = document.createElement('img');
                 picture4.src = currentElement.pictures[4];
+                picture4.setAttribute('class', 'picture4');
 
                 let picture5 = document.createElement('img');
                 picture5.src = currentElement.pictures[5];
+                picture5.setAttribute('class', 'picture5');
 
                 let picture6 = document.createElement('img');
                 picture6.src = currentElement.pictures[6];
+                picture6.setAttribute('class', 'picture6');
 
                 let picture7 = document.createElement('img');
                 picture7.src = currentElement.pictures[7];
+                picture7.setAttribute('class', 'picture7');
 
                 let facilitiesUnderThePictures = document.createElement('div');
+                facilitiesUnderThePictures.setAttribute('class', 'facilitiesUnderThePictures');
 
                 let facility1container = document.createElement('div');
+                facility1container.setAttribute('class', 'facilityContainer');
+
                 let facility2container = document.createElement('div');
+                facility2container.setAttribute('class', 'facilityContainer');
+
                 let facility3container = document.createElement('div');
+                facility3container.setAttribute('class', 'facilityContainer');
+
                 let facility4container = document.createElement('div');
+                facility4container.setAttribute('class', 'facilityContainer');
+
                 let facility5container = document.createElement('div');
+                facility5container.setAttribute('class', 'facilityContainer');
 
                 let facility1img = document.createElement('img');
+                facility1img.src = `assets/images/FacilitiesInSingleHotels/hotel.png`;
+                facility1img.setAttribute('class', 'facilityIcon1');
+
                 let facility1Text = document.createElement('p');
-                facility1Text = 'Апартаменти';
+                facility1Text.innerText = 'Апартаменти';
 
                 let facility2img = document.createElement('img');
+                facility2img.src = `assets/images/FacilitiesInSingleHotels/kitchen.png`;
+                facility2img.setAttribute('class', 'facilityIcon2');
+
                 let facility2Text = document.createElement('p');
-                facility2Text = 'Кухня';
+                facility2Text.innerText = 'Кухня';
 
                 let facility3img = document.createElement('img');
+                facility3img.src = `assets/images/FacilitiesInSingleHotels/view.png`;
+                facility3img.setAttribute('class', 'facilityIcon3');
+
                 let facility3Text = document.createElement('p');
-                facility3Text = 'Гледка';
+                facility3Text.innerText = 'Гледка';
 
                 let facility4img = document.createElement('img');
+                facility4img.src = `assets/images/FacilitiesInSingleHotels/laundry.png`;
+                facility4img.setAttribute('class', 'facilityIcon4');
+
                 let facility4Text = document.createElement('p');
-                facility4Text = 'Допускат се домашни любимци';
+                facility4Text.innerText = 'Пералня';
 
                 let facility5img = document.createElement('img');
+                facility5img.src = `assets/images/FacilitiesInSingleHotels/wifi.png`;
+                facility5img.setAttribute('class', 'facilityIcon5');
+
                 let facility5Text = document.createElement('p');
-                facility5Text = 'Безплатен WiFi';
+                facility5Text.innerText = 'Безплатен WiFi';
 
                 hotelPageContainer.append(hotelCardContainer);
                 hotelCardContainer.append(hotelCardNavigation, hotelHeadingContainer, addressContainer, hotelPicturesContainer, facilitiesUnderThePictures);
