@@ -498,7 +498,8 @@
         if (!validLocations.includes(SEARCH_BOX.value)) {
             window.location = sliced[0] + '#errorPage';
         } else {
-            // allHotelsByDestination.style.display = 'block'
+            // Shouldn't show the page more than once
+            // allHotelsByDestination.style.display = 'block' 
             printHotelsByDestination(SEARCH_BOX.value, hotelsByDestinationContainer);
         }
     })
