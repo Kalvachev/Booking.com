@@ -20,6 +20,8 @@
     function onHashChange() {
         const hash = location.hash.substring(1);
 
+        printHotelsByDestination('', hotelsByDestinationContainer);
+
         switch (hash) {
             case 'home':
                 HOME_PAGE.style.display = 'block';
@@ -28,6 +30,7 @@
                 TAXI_PAGE.style.display = 'none';
                 allHotelsByDestination.style.display = 'none';
                 HOTEL_PAGE_CONTAINER.style.display = 'none';
+                ERROR_PAGE.style.display = 'none';
                 break;
             case 'rent':
                 HOME_PAGE.style.display = 'none';
@@ -36,6 +39,7 @@
                 TAXI_PAGE.style.display = 'none';
                 allHotelsByDestination.style.display = 'none';
                 HOTEL_PAGE_CONTAINER.style.display = 'none';
+                ERROR_PAGE.style.display = 'none';
                 break;
             case 'attractions':
                 HOME_PAGE.style.display = 'none';
@@ -44,6 +48,7 @@
                 TAXI_PAGE.style.display = 'none';
                 allHotelsByDestination.style.display = 'none';
                 HOTEL_PAGE_CONTAINER.style.display = 'none';
+                ERROR_PAGE.style.display = 'none';
                 break;
             case 'taxis':
                 HOME_PAGE.style.display = 'none';
@@ -52,6 +57,7 @@
                 TAXI_PAGE.style.display = 'block';
                 allHotelsByDestination.style.display = 'none';
                 HOTEL_PAGE_CONTAINER.style.display = 'none';
+                ERROR_PAGE.style.display = 'none';
                 break;
             case 'displayHomes':
                 HOME_PAGE.style.display = 'none';
@@ -60,6 +66,17 @@
                 TAXI_PAGE.style.display = 'none';
                 allHotelsByDestination.style.display = 'block';
                 HOTEL_PAGE_CONTAINER.style.display = 'none';
+                ERROR_PAGE.style.display = 'none';
+                break;
+            case 'errorPage':
+                HOME_PAGE.style.display = 'none';
+                RENT_CAR_PAGE.style.display = 'none';
+                ATTRACTIONS_PAGE.style.display = 'none';
+                TAXI_PAGE.style.display = 'none';
+                allHotelsByDestination.style.display = 'none';
+                HOTEL_PAGE_CONTAINER.style.display = 'none';
+                ERROR_PAGE.style.display = 'block';
+                break;
             default:
                 HOME_PAGE.style.display = 'block';
                 RENT_CAR_PAGE.style.display = 'none';
@@ -67,6 +84,7 @@
                 TAXI_PAGE.style.display = 'none';
                 allHotelsByDestination.style.display = 'none';
                 HOTEL_PAGE_CONTAINER.style.display = 'none';
+                ERROR_PAGE.style.display = 'none';
                 break;
         }
     }
@@ -140,6 +158,11 @@
     printLikedHomes();
 
     function printHotelsByDestination(searchInput, container) {
+
+        if (!searchInput) {
+            searchInput = localStorage.getItem('city')
+        }
+
         container.innerHTML = '';
         let filtered = hotels.map(el => {
             if (el.destination.toLowerCase() === searchInput.toLowerCase()) {
@@ -450,6 +473,16 @@
         })
     }
 
+    // window.addEventListener('hashchange', function() {
+    //     let sliced = String(window.location).split('#');
+    //     window.location = sliced[0] + '#displayHomes';
+    //     switch(sliced) {
+    //         case 'home':
+    //             homeController()
+    //             break;
+    //     }
+    // })
+
     homepageSearchButton.addEventListener('click', function (ev) {
         ev.preventDefault();
 
@@ -458,20 +491,14 @@
 
         HOME_PAGE.style.display = 'none';
 
-        if (SEARCH_BOX.value !== 'Милано' && SEARCH_BOX.value !== 'Керамоти'
-            && SEARCH_BOX.value !== 'Лас Палмас де Гран Канария' && SEARCH_BOX.value !== 'Рио де Жанейро'
-            && SEARCH_BOX.value !== 'Пукет' && SEARCH_BOX.value !== 'Виена'
-            && SEARCH_BOX.value !== 'Лондон' && SEARCH_BOX.value !== 'Париж'
-            && SEARCH_BOX.value !== 'Созопол' && SEARCH_BOX.value !== 'Атина') {
-            ERROR_PAGE.style.display = 'flex';
+        localStorage.setItem('city', SEARCH_BOX.value);
 
-            setTimeout(function () {
-                HOME_PAGE.style.display = 'block';
-                ERROR_PAGE.style.display = 'none';
-                window.location = sliced[0] + '#home';
-            }, 3000);
+        const validLocations = ['Милано', 'Керамоти', 'Лас Палмас де Гран Канария', 'Рио де Жанейро', 'Пукет', 'Виена', 'Лондон', 'Париж', 'Созопол', 'Атина'];
+
+        if (!validLocations.includes(SEARCH_BOX.value)) {
+            window.location = sliced[0] + '#errorPage';
         } else {
-            allHotelsByDestination.style.display = 'block'
+            // allHotelsByDestination.style.display = 'block'
             printHotelsByDestination(SEARCH_BOX.value, hotelsByDestinationContainer);
         }
     })
