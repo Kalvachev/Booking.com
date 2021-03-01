@@ -311,18 +311,30 @@
                 cardNav.setAttribute('class', 'singleCardNavigationList');
 
                 let navBarItem1 = document.createElement('li');
-                navBarItem1.innerText = 'Информация и цени';
+                let navBarLinkItem1 = document.createElement('a');
+                navBarLinkItem1.innerText = 'Информация и цени';
+
                 let navBarItem2 = document.createElement('li');
-                navBarItem2.innerText = 'Удобства';
+                let navBarLinkItem2 = document.createElement('a');
+                navBarLinkItem2.innerText = 'Удобства';
+
                 let navBarItem3 = document.createElement('li');
-                navBarItem3.innerText = 'Важна информация';
+                let navBarLinkItem3 = document.createElement('a');
+                navBarLinkItem3.innerText = 'Важна информация';
+
                 let navBarItem4 = document.createElement('li');
-                navBarItem4.innerText = 'С дребния шрифт';
+                let navBarLinkItem4 = document.createElement('a');
+                navBarLinkItem4.innerText = 'С дребния шрифт';
+
                 let navBarItem5 = document.createElement('li');
-                navBarItem5.innerText = 'Отзиви от гости';
+                let navBarLinkItem5 = document.createElement('a');
+                navBarLinkItem5.innerText = 'Отзиви от гости';
 
                 let hotelHeadingContainer = document.createElement('div');
                 hotelHeadingContainer.setAttribute('class', 'singleCardHeadingContainer');
+
+                let firstHeadingPart = document.createElement('div');
+                firstHeadingPart.setAttribute('class', 'singleCardFirstHeadingPart');
 
                 let hotelType = document.createElement('span');
                 hotelType.innerText = currentElement.type;
@@ -343,17 +355,27 @@
 
                 // let hotelAddressIcon = document.createElement('span');
                 // hotelAddressIcon.setAttribute('class', 'singleCardAddressIcon')
+                
+                let hotelAddressContainer = document.createElement('div');
+                hotelAddressContainer.setAttribute('class', 'singleHotelCardAddressContainer');
 
+                let addressIcon = document.createElement('img');
                 let hotelAddress = document.createElement('p');
+                addressIcon.src = 'assets/images/FacilitiesInSingleHotels/addressIcon.png'
+
                 hotelAddress.innerText = currentElement.address;
                 hotelAddress.setAttribute('class', 'singleCardAddress');
 
                 let returnMoney = document.createElement('div');
-                returnMoney.innerText = 'Ние връщаме разликата в цената.';
-                returnMoney.setAttribute('class', 'singleCardreturnMoney');
+                let verifiedIcon = document.createElement('img');
+                verifiedIcon.src = 'assets/images/FacilitiesInSingleHotels/verified.png'
+                let returnMoneyText = document.createElement('p');
+
+                returnMoneyText.innerText = 'Ние връщаме разликата в цената.';
+                returnMoney.setAttribute('class', 'singleCardReturnMoney');
 
                 let hotelPicturesContainer = document.createElement('div')
-                returnMoney.setAttribute('class', 'hotelPicturesContainer');
+                hotelPicturesContainer.setAttribute('class', 'hotelPicturesContainer');
 
                 let firstRowContainer = document.createElement('div');
                 firstRowContainer.setAttribute('class', 'firstRowContainer');
@@ -454,10 +476,23 @@
 
                 hotelPageContainer.append(hotelCardContainer);
                 hotelCardContainer.append(hotelCardNavigation, hotelHeadingContainer, addressContainer, hotelPicturesContainer, facilitiesUnderThePictures);
-                hotelCardNavigation.append(cardNav)
-                cardNav.append(navBarItem1, navBarItem2, navBarItem3, navBarItem4, navBarItem5)
-                hotelHeadingContainer.append(hotelType, hotelName, reserveBtn);
-                addressContainer.append(hotelAddress, returnMoney);
+                hotelCardNavigation.append(cardNav);
+                navBarItem1.append(navBarLinkItem1);
+                navBarItem2.append(navBarLinkItem2);
+                navBarItem3.append(navBarLinkItem3);
+                navBarItem4.append(navBarLinkItem4);
+                navBarItem5.append(navBarLinkItem5);
+                cardNav.append(navBarItem1, navBarItem2, navBarItem3, navBarItem4, navBarItem5);
+
+                firstHeadingPart.append(hotelType, hotelName);
+                
+                hotelHeadingContainer.append(firstHeadingPart, reserveBtn);
+                
+                returnMoney.append(verifiedIcon, returnMoneyText);
+
+                hotelAddressContainer.append(addressIcon, hotelAddress);
+
+                addressContainer.append(hotelAddressContainer, returnMoney);
                 hotelPicturesContainer.append(firstRowContainer, thirdPicturesContainer)
                 firstRowContainer.append(firstPicturesContainer, secondPicturesContainer)
                 firstPicturesContainer.append(picture1, picture2);

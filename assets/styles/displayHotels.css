@@ -36,7 +36,7 @@
 }
 
 .destinationHotelCard:hover {
-    background: rgb(91, 186, 255);
+    background: rgb(224, 243, 255);
     cursor: pointer;
     transition: 0.4ms;
 }
@@ -214,18 +214,26 @@
 .singleCardNavigationList {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
+    margin: 20px 3px;
+    width: 100%;
 }
 
-.singleCardNavigationList li {
+.singleCardNavigationList li a {
     font-weight: bold;
     text-align: center;
-    padding: 10px;
+    padding: 10px 22.5px;
     text-decoration: none;
     position: relative;
     color: #0071c2;
     font-size: 14px;
     background-color: #dfecff;
+    height: 17px;
+    cursor: pointer;
+}
+
+.singleCardNavigationList li a:hover {
+    color: #000000;
 }
 
 /* ----------------------- */
@@ -240,7 +248,12 @@
 .singleCardHeadingContainer {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     margin: 15px 0 0 0;
+}
+
+.singleCardFirstHeadingPart {
+    display: flex;
 }
 
 .singleCardHeadingContainer span {
@@ -262,6 +275,23 @@
     align-self: center;
 }
 
+.singleCardReturnMoney {
+    display: flex;
+    align-items: center;
+}
+
+.singleCardReturnMoney img {
+    width: 16px;
+    height: 16px;
+    margin: 0 5px 0 0;
+}
+
+.singleCardReturnMoney p {
+    font-size: 12px;
+    font-weight: bold;
+    font-style: italic;
+}
+
 .singleCardReserveButton {
     max-width: 276px;
     border: 1px solid #0071c2;
@@ -280,7 +310,6 @@
     text-align: left;
     padding: 7px 15px;
     cursor: pointer;
-    margin: 0 0 0 365px;
 }
 
 .singleCardAddressContainer {
@@ -288,6 +317,17 @@
     flex-direction: row;
     justify-content: space-between;
     margin: 15px 0;
+}
+
+.singleHotelCardAddressContainer {
+    display: flex;
+    align-items: center;
+}
+
+.singleHotelCardAddressContainer img{
+    width: 20px;
+    height: 20px;
+    margin: 0 2px 0 0;
 }
 
 .singleCardAddress {
