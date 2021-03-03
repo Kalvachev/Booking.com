@@ -153,7 +153,6 @@
             hotelCard.append(hotelPictureContainer, hotelNameAndDestination, hotelPriceContainer, hotelRatingsContainer);
             likedHomesContainer.append(hotelCard);
 
-            // hotelCard.addEventListener('click', printHotelsByDestination(currentElement, HOTEL_PAGE_CONTAINER));
         }
     }
 
@@ -166,7 +165,6 @@
         }
 
         container.innerHTML = '';
-        
         let filtered = hotels.map(el => {
             if (el.destination.toLowerCase() === searchInput.toLowerCase()) {
                 return el;
@@ -299,184 +297,211 @@
             // Single Page Show
             //----------------------------------------------------------
 
-            function printHotelPage() {
+            hotelCard.addEventListener('click', function printHotelPage() {
                 HOTEL_PAGE_CONTAINER.innerText = '';
                 ALL_HOTELS_BY_DESTINATION.style.display = 'none';
                 HOTEL_PAGE_CONTAINER.style.display = 'flex';
-        
+
                 const hotelCardContainer = document.createElement('div');
                 hotelCardContainer.setAttribute('class', 'singleCardContainer');
-        
+
                 const hotelCardNavigation = document.createElement('div');
                 hotelCardNavigation.setAttribute('class', 'singleCardNavigationContainer');
-        
+
                 const cardNav = document.createElement('ul');
                 cardNav.setAttribute('class', 'singleCardNavigationList');
-        
+
                 let navBarItem1 = document.createElement('li');
                 let navBarLinkItem1 = document.createElement('a');
                 navBarLinkItem1.innerText = 'Информация и цени';
-        
+
                 let navBarItem2 = document.createElement('li');
                 let navBarLinkItem2 = document.createElement('a');
                 navBarLinkItem2.innerText = 'Удобства';
-        
+
                 let navBarItem3 = document.createElement('li');
                 let navBarLinkItem3 = document.createElement('a');
                 navBarLinkItem3.innerText = 'Важна информация';
-        
+
                 let navBarItem4 = document.createElement('li');
                 let navBarLinkItem4 = document.createElement('a');
                 navBarLinkItem4.innerText = 'С дребния шрифт';
-        
+
                 let navBarItem5 = document.createElement('li');
                 let navBarLinkItem5 = document.createElement('a');
                 navBarLinkItem5.innerText = 'Отзиви от гости';
-        
+
                 let hotelHeadingContainer = document.createElement('div');
                 hotelHeadingContainer.setAttribute('class', 'singleCardHeadingContainer');
-        
+
                 let firstHeadingPart = document.createElement('div');
                 firstHeadingPart.setAttribute('class', 'singleCardFirstHeadingPart');
-        
+
                 let hotelType = document.createElement('span');
                 hotelType.innerText = currentElement.type;
                 hotelType.setAttribute('class', 'singleCardHotelType');
-        
+
                 let hotelName = document.createElement('h1');
                 hotelName.innerText = currentElement.name;
                 hotelName.setAttribute('class', 'singleCardHotelName');
-        
+
+
                 // Stars
                 let reserveBtn = document.createElement('button');
                 reserveBtn.innerText = 'Резервирайте';
                 reserveBtn.setAttribute('class', 'singleCardReserveButton');
-        
+
                 let addressContainer = document.createElement('div');
                 addressContainer.setAttribute('class', 'singleCardAddressContainer');
-        
+
                 // let hotelAddressIcon = document.createElement('span');
                 // hotelAddressIcon.setAttribute('class', 'singleCardAddressIcon')
-        
+
                 let hotelAddressContainer = document.createElement('div');
                 hotelAddressContainer.setAttribute('class', 'singleHotelCardAddressContainer');
-        
+
                 let addressIcon = document.createElement('img');
                 let hotelAddress = document.createElement('p');
                 addressIcon.src = 'assets/images/FacilitiesInSingleHotels/addressIcon.png'
-        
+
                 hotelAddress.innerText = currentElement.address;
                 hotelAddress.setAttribute('class', 'singleCardAddress');
-        
+
                 let returnMoney = document.createElement('div');
                 let verifiedIcon = document.createElement('img');
                 verifiedIcon.src = 'assets/images/FacilitiesInSingleHotels/verified.png'
                 let returnMoneyText = document.createElement('p');
-        
+
                 returnMoneyText.innerText = 'Ние връщаме разликата в цената.';
                 returnMoney.setAttribute('class', 'singleCardReturnMoney');
-        
+
                 let hotelPicturesContainer = document.createElement('div')
                 hotelPicturesContainer.setAttribute('class', 'hotelPicturesContainer');
-        
+
                 let firstRowContainer = document.createElement('div');
                 firstRowContainer.setAttribute('class', 'firstRowContainer');
-        
+
                 let firstPicturesContainer = document.createElement('div');
                 firstPicturesContainer.setAttribute('class', 'firstPicturesContainer');
-        
+
                 let secondPicturesContainer = document.createElement('div');
                 secondPicturesContainer.setAttribute('class', 'secondPicturesContainer');
-        
+
                 let thirdPicturesContainer = document.createElement('div');
                 thirdPicturesContainer.setAttribute('class', 'thirdPicturesContainer');
-        
+
                 let mainPicture = document.createElement('img');
                 mainPicture.src = currentElement.pictures[0];
                 mainPicture.setAttribute('class', 'mainPicture');
-        
+
                 let picture1 = document.createElement('img');
                 picture1.src = currentElement.pictures[1];
                 picture1.setAttribute('class', 'picture1');
-        
+
                 let picture2 = document.createElement('img');
                 picture2.src = currentElement.pictures[2];
                 picture2.setAttribute('class', 'picture2');
-        
+
                 let picture3 = document.createElement('img');
                 picture3.src = currentElement.pictures[3];
                 picture3.setAttribute('class', 'picture3');
-        
+
                 let picture4 = document.createElement('img');
                 picture4.src = currentElement.pictures[4];
                 picture4.setAttribute('class', 'picture4');
-        
+
                 let picture5 = document.createElement('img');
                 picture5.src = currentElement.pictures[5];
                 picture5.setAttribute('class', 'picture5');
-        
+
                 let picture6 = document.createElement('img');
                 picture6.src = currentElement.pictures[6];
                 picture6.setAttribute('class', 'picture6');
-        
+
                 let picture7 = document.createElement('img');
                 picture7.src = currentElement.pictures[7];
                 picture7.setAttribute('class', 'picture7');
-        
+
                 let facilitiesUnderThePictures = document.createElement('div');
                 facilitiesUnderThePictures.setAttribute('class', 'facilitiesUnderThePictures');
-        
+
                 let facility1container = document.createElement('div');
                 facility1container.setAttribute('class', 'facilityContainer');
-        
+
                 let facility2container = document.createElement('div');
                 facility2container.setAttribute('class', 'facilityContainer');
-        
+
                 let facility3container = document.createElement('div');
                 facility3container.setAttribute('class', 'facilityContainer');
-        
+
                 let facility4container = document.createElement('div');
                 facility4container.setAttribute('class', 'facilityContainer');
-        
+
                 let facility5container = document.createElement('div');
                 facility5container.setAttribute('class', 'facilityContainer');
-        
+
                 let facility1img = document.createElement('img');
                 facility1img.src = `assets/images/FacilitiesInSingleHotels/hotel.png`;
                 facility1img.setAttribute('class', 'facilityIcon1');
-        
+
                 let facility1Text = document.createElement('p');
                 facility1Text.innerText = 'Апартаменти';
-        
+
                 let facility2img = document.createElement('img');
                 facility2img.src = `assets/images/FacilitiesInSingleHotels/kitchen.png`;
                 facility2img.setAttribute('class', 'facilityIcon2');
-        
+
                 let facility2Text = document.createElement('p');
                 facility2Text.innerText = 'Кухня';
-        
+
                 let facility3img = document.createElement('img');
                 facility3img.src = `assets/images/FacilitiesInSingleHotels/view.png`;
                 facility3img.setAttribute('class', 'facilityIcon3');
-        
+
                 let facility3Text = document.createElement('p');
                 facility3Text.innerText = 'Гледка';
-        
+
                 let facility4img = document.createElement('img');
                 facility4img.src = `assets/images/FacilitiesInSingleHotels/laundry.png`;
                 facility4img.setAttribute('class', 'facilityIcon4');
-        
+
                 let facility4Text = document.createElement('p');
                 facility4Text.innerText = 'Пералня';
-        
+
                 let facility5img = document.createElement('img');
                 facility5img.src = `assets/images/FacilitiesInSingleHotels/wifi.png`;
                 facility5img.setAttribute('class', 'facilityIcon5');
-        
+
                 let facility5Text = document.createElement('p');
                 facility5Text.innerText = 'Безплатен WiFi';
-        
-                hotelPageContainer.append(hotelCardContainer);
+
+                let downPartContainer = document.createElement('div');
+
+                let leftPartContainer = document.createElement('div');
+                let descriptionContainer = document.createElement('div');
+                let descriptionHeading = document.createElement('h1');
+                descriptionHeading.innerText = `Едно от най-популярните ни места за настаняване в ${currentElement.destination}`;
+                let descriptionParagraph = document.createElement('p');
+                descriptionParagraph.innerText = currentElement.description;
+
+                let mostPopularFacilitiesContainer = document.createElement('div');
+                //facilities.forEach ??
+
+                let rightPartContainer = document.createElement('div');
+                let rightPartHeading = document.createElement('h2');
+                rightPartHeading.innerText = 'Перфектен избор за 1-седмичен престой!';
+                let rightPartText = document.createElement('p');
+                rightPartText.innerText = `Разположено в най-оживената част на ${currentElement.destination}, това място за настаняване има отлична оценка за местоположение от 9.5`;
+                let roomInfo = document.createElement('h2');
+                roomInfo.innerText = 'Стаи с:';
+                let roomInfoContainer = document.createElement('div');
+                let viewImage = document.createElement('img');
+                let viewInfo = document.createElement('p');
+                viewInfo.innerText = 'Гледка към града';
+                let reserveBtnRight = document.createElement('button');
+                reserveBtnRight.innerText = 'Резервирайте';
+
+                hotelPageContainer.append(hotelCardContainer, downPartContainer);
                 hotelCardContainer.append(hotelCardNavigation, hotelHeadingContainer, addressContainer, hotelPicturesContainer, facilitiesUnderThePictures);
                 hotelCardNavigation.append(cardNav);
                 navBarItem1.append(navBarLinkItem1);
@@ -485,15 +510,15 @@
                 navBarItem4.append(navBarLinkItem4);
                 navBarItem5.append(navBarLinkItem5);
                 cardNav.append(navBarItem1, navBarItem2, navBarItem3, navBarItem4, navBarItem5);
-        
+
                 firstHeadingPart.append(hotelType, hotelName);
-        
+
                 hotelHeadingContainer.append(firstHeadingPart, reserveBtn);
-        
+
                 returnMoney.append(verifiedIcon, returnMoneyText);
-        
+
                 hotelAddressContainer.append(addressIcon, hotelAddress);
-        
+
                 addressContainer.append(hotelAddressContainer, returnMoney);
                 hotelPicturesContainer.append(firstRowContainer, thirdPicturesContainer)
                 firstRowContainer.append(firstPicturesContainer, secondPicturesContainer)
@@ -506,10 +531,14 @@
                 facility3container.append(facility3img, facility3Text)
                 facility4container.append(facility4img, facility4Text)
                 facility5container.append(facility5img, facility5Text)
-            }
 
-            hotelCard.addEventListener('click', printHotelPage);
-
+                downPartContainer.append(leftPartContainer, rightPartContainer);
+                leftPartContainer.append(descriptionContainer);
+                descriptionContainer.append(descriptionHeading, descriptionParagraph);
+                rightPartContainer.append(rightPartHeading, rightPartText, roomInfo, reserveBtnRight);
+                roomInfo.append(roomInfoContainer)
+                roomInfoContainer.append(viewImage, viewInfo)
+            })
         })
     }
 
@@ -543,6 +572,7 @@
             printHotelsByDestination(SEARCH_BOX.value, hotelsByDestinationContainer);
         }
     })
+
 
 })();
 
