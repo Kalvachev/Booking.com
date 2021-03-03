@@ -501,14 +501,94 @@
         let descriptionHeading = document.createElement('h1');
         descriptionHeading.innerText = `Едно от най-популярните ни места за настаняване в ${currentElement.destination}`;
         descriptionHeading.setAttribute('class', 'singleCardDownLeftPartDescriptionHeading');
-        
+
         let descriptionParagraph = document.createElement('p');
         descriptionParagraph.innerText = currentElement.description;
         descriptionParagraph.setAttribute('class', 'singleCardDownLeftPartDescriptionText');
 
+        let mostPopularFacilitiesContainer = document.createElement('div');
+        mostPopularFacilitiesContainer.setAttribute('class', 'mostPopularFacilitiesContainer');
 
-        // let mostPopularFacilitiesContainer = document.createElement('div');
-        //facilities.forEach ??
+        let mostPopularFacilitiesHeadingContainer = document.createElement('div');
+        mostPopularFacilitiesHeadingContainer.setAttribute('class', 'mostPopularFacilitiesHeadingContainer');
+
+
+        let mostPopularFacilitiesHeading = document.createElement('p');
+        mostPopularFacilitiesHeading.innerText = 'Най-популярните удобства';
+
+        // mostPopularFacilitiesContainer.setAttribute('class', 'mostPopularFacilitiesContainer');
+        
+        let currentFacilityContainer = document.createElement('div');
+        currentFacilityContainer.setAttribute('class', 'currentFacilityContainer');
+
+        currentElement.facilities.forEach(currentFacility => {
+            let currentFacilityImage = document.createElement('img');
+            let currentFacilityName = document.createElement('p');
+
+            currentFacilityName.innerText = currentFacility;
+
+            if (currentFacility === '2 Pools' || 'Pool') {
+                currentFacilityImage.src = 'assets/images/HotelFacilities/poolIcon.png';
+            }
+
+            if (currentFacility === 'Family Rooms') {
+                currentFacilityImage.src = 'assets/images/HotelFacilities/familyIcon.png';
+            }
+
+            if (currentFacility === 'Airport Transfer') {
+                currentFacilityImage.src = 'assets/images/HotelFacilities/airportIcon.png';
+            }
+
+            if (currentFacility === 'Fitness Center') {
+                currentFacilityImage.src = 'assets/images/HotelFacilities/fitnessIcon.png';
+            }
+
+            if (currentFacility === 'Parking') {
+                currentFacilityImage.src = 'assets/images/HotelFacilities/parkingIcon.png';
+            }
+
+            if (currentFacility === 'Roomservice') {
+                currentFacilityImage.src = 'assets/images/HotelFacilities/roomServiceIcon.png';
+            }
+
+            if (currentFacility === 'Free Wi Fi') {
+                currentFacilityImage.src = 'assets/images/HotelFacilities/wifiIcon.png';
+            }
+
+            if (currentFacility === 'Bar') {
+                currentFacilityImage.src = 'assets/images/HotelFacilities/barIcon.png';
+            }
+
+            if (currentFacility === 'Breakfast') {
+                currentFacilityImage.src = 'assets/images/HotelFacilities/breakfastIcon.png';
+            }
+
+            if (currentFacility === 'Right on the Beach') {
+                currentFacilityImage.src = 'assets/images/HotelFacilities/rightOnTheBeachIcon.png';
+            }
+
+            if (currentFacility === 'Own Beach') {
+                currentFacilityImage.src = 'assets/images/HotelFacilities/onBeachIcon.png';
+            }
+
+            if (currentFacility === 'Pets Allowed') {
+                currentFacilityImage.src = 'assets/images/HotelFacilities/petsAllowed.png';
+            }
+
+            if (currentFacility === 'Coffe Machine') {
+                currentFacilityImage.src = 'assets/images/HotelFacilities/coffeeMachine.png';
+            }
+
+            if (currentFacility === 'Spa Center') {
+                currentFacilityImage.src = 'assets/images/HotelFacilities/spaIcon.png';
+            }
+
+            if (currentFacility === 'Non-Smoker Rooms') {
+                currentFacilityImage.src = 'assets/images/HotelFacilities/nonSmokerIcon.png';
+            }
+
+            currentFacilityContainer.append(currentFacilityImage, currentFacilityName)
+        })
 
         let rightPartContainer = document.createElement('div');
         rightPartContainer.setAttribute('class', 'singleCardDownRightPartContainer');
@@ -520,7 +600,7 @@
         let rightPartText = document.createElement('p');
         rightPartText.innerText = `Разположено в най-оживената част на ${currentElement.destination}, това място за настаняване има отлична оценка за местоположение от 9.5`;
         rightPartText.setAttribute('class', 'singleCardDownRightPartText');
-        
+
         let roomInfo = document.createElement('h2');
         roomInfo.innerText = 'Стаи с:';
         roomInfo.setAttribute('class', 'singleCardDownRightRoomInfoHeading');
@@ -602,11 +682,11 @@
         facility5container.append(facility5img, facility5Text)
 
         downPartContainer.append(leftPartContainer, rightPartContainer);
-        leftPartContainer.append(descriptionContainer);
+        leftPartContainer.append(descriptionContainer, mostPopularFacilitiesContainer);
         descriptionContainer.append(descriptionHeading, descriptionParagraph);
-        
+
         roomWithContainer.append(roomInfo, firstRowViewContainer, secondRowViewContainer, thirdRowViewContainer);
-        
+
         firstRowViewContainer.append(firstViewImage, firstViewInfo);
         secondRowViewContainer.append(secondViewImage, secondViewInfo);
         thirdRowViewContainer.append(thirdViewImage, thirdViewInfo);
@@ -614,8 +694,11 @@
         firstRowViewContainer.append(firstViewImage, firstViewInfo);
         secondRowViewContainer.append(secondViewImage, secondViewInfo);
         thirdRowViewContainer.append(thirdViewImage, thirdViewInfo);
-        
+
         rightPartContainer.append(rightPartHeading, rightPartText, roomWithContainer, reserveBtnRight);
+
+        mostPopularFacilitiesHeadingContainer.append(mostPopularFacilitiesHeading);
+        mostPopularFacilitiesContainer.append(mostPopularFacilitiesHeadingContainer, currentFacilityContainer);
     };
 
 
