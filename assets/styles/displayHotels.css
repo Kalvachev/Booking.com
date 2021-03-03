@@ -197,6 +197,13 @@
     display: none;
 }
 
+.wholeCardContainer {
+    width: 815px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
 .singleCardContainer {
     display: flex;
     flex-direction: column;
@@ -324,7 +331,7 @@
     align-items: center;
 }
 
-.singleHotelCardAddressContainer img{
+.singleHotelCardAddressContainer img {
     width: 20px;
     height: 20px;
     margin: 0 2px 0 0;
@@ -417,6 +424,99 @@
     margin: 15px 0 5px 0;
 }
 
-.facilityContainer p{
+.facilityContainer p {
     padding: 0 0 15px 0;
+}
+
+.singleCardDownPartContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.singleCardDownLeftPartDescriptionContainer {
+    width: 504px;
+    margin: 14px 0;
+}
+
+.singleCardDownLeftPartDescriptionHeading {
+    font-size: 15px;
+    font-weight: bold;
+    color: #b65800;
+    margin: 20px 0 15px 0;
+}
+
+.singleCardDownLeftPartDescriptionText {
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.singleCardDownRightPartContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 232px;
+    background: #ebf3ff;
+    border: 1px solid #ebf3ff;
+    border-radius: 3px;
+    padding: 15px;
+    clear: both;
+    height: 280px;
+    margin: 15px 0 15px 0;
+}
+
+.singleCardDownRightPartHeading, .singleCardDownRightRoomInfoHeading {
+    font-weight: bold;
+    padding: 0 0 5px 0;
+    margin: 0 0 3px 0;
+    color: #838383;
+    font-size: 13px;
+}
+
+.singleCardDownRightPartText {
+    font-size: 13px;
+    line-height: 1.2;
+    padding: 10px 0;
+}
+
+.singleCardDownRightRoomInfoContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.singleCardDownRightRoomFirstRowContainer, .singleCardDownRightRoomSecondRowContainer, .singleCardDownRightRoomThirdRowContainer {
+    display: flex;
+    flex-direction: row;
+    margin: 6px 0;
+}
+
+.singleCardDownRightFirstViewImage, .singleCardDownRightSecondViewImage, .singleCardDownRightThirdViewImage {
+    width: 16px;
+    height: 16px;
+    margin: 0 5px 0 0;
+}
+
+.singleCardDownRightFirstViewInfo, .singleCardDownRightSecondViewInfo, .singleCardDownRightThirdViewInfo {
+    font-size: 13px;
+    line-height: 1.2;
+}
+
+.singleCardReserveButtonRight {
+    max-width: 276px;
+    border: 1px solid #0071c2;
+    border-radius: 2px;
+    box-sizing: border-box;
+    vertical-align: middle;
+    position: relative;
+    color: #fff;
+    background-color: #0071c2;
+    min-height: 36px;
+    min-width: 36px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    justify-content: center;
+    text-align: center;
+    padding: 7px 40px;
+    margin: 10px 0;
+    cursor: pointer;
 }
