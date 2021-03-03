@@ -517,11 +517,15 @@
         mostPopularFacilitiesHeading.innerText = 'Най-популярните удобства';
 
         // mostPopularFacilitiesContainer.setAttribute('class', 'mostPopularFacilitiesContainer');
-        
+
         let currentFacilityContainer = document.createElement('div');
         currentFacilityContainer.setAttribute('class', 'currentFacilityContainer');
 
+
         currentElement.facilities.forEach(currentFacility => {
+            let currentFacilityImageAndText = document.createElement('div');
+            currentFacilityImageAndText.setAttribute('class', 'currentFacilityImageAndText');
+
             let currentFacilityImage = document.createElement('img');
             let currentFacilityName = document.createElement('p');
 
@@ -587,7 +591,8 @@
                 currentFacilityImage.src = 'assets/images/HotelFacilities/nonSmokerIcon.png';
             }
 
-            currentFacilityContainer.append(currentFacilityImage, currentFacilityName)
+            currentFacilityImageAndText.append(currentFacilityImage, currentFacilityName);
+            currentFacilityContainer.append(currentFacilityImageAndText)
         })
 
         let rightPartContainer = document.createElement('div');
