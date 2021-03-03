@@ -3484,19 +3484,19 @@ const hotels = [
             'Roomservice', 'Free Wi Fi', 'Bar', 'Breakfast'
         ],
         pictures: [
-            'https://cf.bstatic.com/images/hotel/max1280x900/282/282790115.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/205/20533565.jpg',
             'https://cf.bstatic.com/images/hotel/max1280x900/264/264601887.jpg',
-            'https://cf.bstatic.com/images/hotel/max1280x900/264/264601890.jpg',
             'https://cf.bstatic.com/images/hotel/max1280x900/264/264601897.jpg',
             'https://cf.bstatic.com/images/hotel/max1280x900/264/264601900.jpg',
             'https://cf.bstatic.com/images/hotel/max1280x900/264/264601909.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/264/264601890.jpg',
             'https://cf.bstatic.com/images/hotel/max1280x900/264/264601912.jpg',
             'https://cf.bstatic.com/images/hotel/max1280x900/253/253357579.jpg',
-            'https://cf.bstatic.com/images/hotel/max1280x900/205/20533565.jpg',
             'https://cf.bstatic.com/images/hotel/max1280x900/205/20533487.jpg',
             'https://cf.bstatic.com/images/hotel/max1280x900/251/251082377.jpg',
             'https://cf.bstatic.com/images/hotel/max1280x900/251/251082371.jpg',
             'https://cf.bstatic.com/images/hotel/max1280x900/251/251082374.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/282/282790115.jpg',
             'https://cf.bstatic.com/images/hotel/max1280x900/261/261784940.jpg',
             'https://cf.bstatic.com/images/hotel/max1280x900/261/261784937.jpg'
         ],
