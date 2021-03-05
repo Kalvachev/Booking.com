@@ -190,6 +190,12 @@
             hotelsByDestinationContainer.innerHTML = '';
             if (this.checked) {
                 let typeHotel = filtered.filter(f => f.type === 'Hotel');
+
+                let heading = document.createElement('h1');
+                heading.innerText = `${searchInput}: намерени са ${typeHotel.length} места за настаняване.`
+                heading.setAttribute('class', 'destinationHeadingText');
+                container.append(heading);
+
                 typeHotel.forEach(currentElement => {
                     allCards(currentElement, hotelsByDestinationContainer)
                 })
