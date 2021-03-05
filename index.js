@@ -264,7 +264,7 @@
         VILLAS_FILTER.addEventListener('change', function () {
             hotelsByDestinationContainer.innerHTML = '';
             if (this.checked) {
-                let typeHotel = filtered.filter(f => f.type = 'Villa');
+                let typeHotel = filtered.filter(f => f.type === 'Villa');
 
                 let heading = document.createElement('h1');
                 heading.innerText = `${searchInput}: намерени са ${typeHotel.length} места за настаняване.`
