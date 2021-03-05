@@ -566,3 +566,7 @@
 .currentHotel {
     display: none;
 }
+
+#allHotelsByDestinationContainer {
+    min-height: 950px;
+}

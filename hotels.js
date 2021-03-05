@@ -388,10 +388,10 @@ const hotels = [
             'Bar', 'Right on the beach'
         ],
         pictures: [
-            'https://cf.bstatic.com/images/hotel/max1280x900/284/28412789.jpg',
             'https://cf.bstatic.com/images/hotel/max1280x900/153/153357911.jpg',
             'https://cf.bstatic.com/images/hotel/max1280x900/153/153054671.jpg',
             'https://cf.bstatic.com/images/hotel/max1280x900/153/153357507.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/284/28412789.jpg',
             'https://cf.bstatic.com/images/hotel/max1280x900/153/153357509.jpg',
             'https://cf.bstatic.com/images/hotel/max1280x900/153/153357511.jpg',
             'https://cf.bstatic.com/images/hotel/max1280x900/153/153356960.jpg',
