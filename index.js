@@ -361,6 +361,14 @@
 
 
         // Stars
+        let reserveContainer = document.createElement('div');
+        reserveContainer.setAttribute('class', 'singleCardReserveContainer');
+
+        let addInFavourites = document.createElement('div');
+        addInFavourites.innerHTML = `<i class="fas fa-heart fa-lg"></i>`;
+        addInFavourites.setAttribute('class', 'singleCardAddInFavourites');
+
+
         let reserveBtn = document.createElement('button');
         reserveBtn.innerText = 'Резервирайте';
         reserveBtn.setAttribute('class', 'singleCardReserveButton');
@@ -667,7 +675,7 @@
 
         firstHeadingPart.append(hotelType, hotelName);
 
-        hotelHeadingContainer.append(firstHeadingPart, reserveBtn);
+        hotelHeadingContainer.append(firstHeadingPart, reserveContainer);
 
         returnMoney.append(verifiedIcon, returnMoneyText);
 
@@ -704,6 +712,8 @@
 
         mostPopularFacilitiesHeadingContainer.append(mostPopularFacilitiesHeading);
         mostPopularFacilitiesContainer.append(mostPopularFacilitiesHeadingContainer, currentFacilityContainer);
+    
+        reserveContainer.append(addInFavourites, reserveBtn);
     };
 
 
