@@ -17,6 +17,16 @@ function getCurrentImage(currentName) {
     }
 }
 
+function oneOrMoreFiltered(filtered, headingText, searchInput) {
+    if (filtered.length === 0) {
+        return headingText.innerHTML = `Няма резултати, които да отговарят на търсенето.`
+    } else if (filtered.length === 1) {
+        return headingText.innerHTML = `${searchInput}: намеренo e ${filtered.length} място за настаняване.`
+    } else {
+        return headingText.innerHTML = `${searchInput}: намерени са ${filtered.length} места за настаняване.`;
+    }
+}
+
 function addToFavourites(x) {
     if (x.classList.contains("fa-heart")) {
         x.classList.remove("fa-heart");

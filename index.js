@@ -192,7 +192,7 @@
                 let typeHotel = filtered.filter(f => f.type === 'Hotel');
 
                 let heading = document.createElement('h1');
-                heading.innerText = `${searchInput}: намерени са ${typeHotel.length} места за настаняване.`
+                oneOrMoreFiltered(typeHotel, heading, searchInput);
                 heading.setAttribute('class', 'destinationHeadingText');
                 container.append(heading);
 
@@ -201,7 +201,7 @@
                 })
             } else {
                 let heading = document.createElement('h1');
-                heading.innerText = `${searchInput}: намерени са ${filtered.length} места за настаняване.`
+                oneOrMoreFiltered(filtered, heading, searchInput);
                 heading.setAttribute('class', 'destinationHeadingText');
                 container.append(heading);
 
@@ -217,7 +217,7 @@
                 let typeHotel = filtered.filter(f => f.type === 'Guest House');
 
                 let heading = document.createElement('h1');
-                heading.innerText = `${searchInput}: намерени са ${typeHotel.length} места за настаняване.`
+                oneOrMoreFiltered(typeHotel, heading, searchInput);
                 heading.setAttribute('class', 'destinationHeadingText');
                 container.append(heading);
 
@@ -226,7 +226,7 @@
                 })
             } else {
                 let heading = document.createElement('h1');
-                heading.innerText = `${searchInput}: намерени са ${filtered.length} места за настаняване.`
+                oneOrMoreFiltered(filtered, heading, searchInput);
                 heading.setAttribute('class', 'destinationHeadingText');
                 container.append(heading);
 
@@ -242,7 +242,7 @@
                 let typeHotel = filtered.filter(f => f.facilities.includes('Pool' || '2 Pools'));
 
                 let heading = document.createElement('h1');
-                heading.innerText = `${searchInput}: намерени са ${typeHotel.length} места за настаняване.`
+                oneOrMoreFiltered(typeHotel, heading, searchInput);
                 heading.setAttribute('class', 'destinationHeadingText');
                 container.append(heading);
 
@@ -251,7 +251,7 @@
                 })
             } else {
                 let heading = document.createElement('h1');
-                heading.innerText = `${searchInput}: намерени са ${filtered.length} места за настаняване.`
+                oneOrMoreFiltered(filtered, heading, searchInput);
                 heading.setAttribute('class', 'destinationHeadingText');
                 container.append(heading);
 
@@ -267,7 +267,7 @@
                 let typeHotel = filtered.filter(f => f.type === 'Villa');
 
                 let heading = document.createElement('h1');
-                heading.innerText = `${searchInput}: намерени са ${typeHotel.length} места за настаняване.`
+                oneOrMoreFiltered(typeHotel, heading, searchInput);
                 heading.setAttribute('class', 'destinationHeadingText');
                 container.append(heading);
 
@@ -276,7 +276,7 @@
                 })
             } else {
                 let heading = document.createElement('h1');
-                heading.innerText = `${searchInput}: намерени са ${filtered.length} места за настаняване.`
+                oneOrMoreFiltered(filtered, heading, searchInput);
                 heading.setAttribute('class', 'destinationHeadingText');
                 container.append(heading);
 
@@ -292,7 +292,7 @@
                 let typeHotel = filtered.filter(f => f.facilities.includes('Spa Center'));
 
                 let heading = document.createElement('h1');
-                heading.innerText = `${searchInput}: намерени са ${typeHotel.length} места за настаняване.`
+                oneOrMoreFiltered(typeHotel, heading, searchInput);
                 heading.setAttribute('class', 'destinationHeadingText');
                 container.append(heading);
 
@@ -301,7 +301,7 @@
                 })
             } else {
                 let heading = document.createElement('h1');
-                heading.innerText = `${searchInput}: намерени са ${filtered.length} места за настаняване.`
+                oneOrMoreFiltered(filtered, heading, searchInput);
                 heading.setAttribute('class', 'destinationHeadingText');
                 container.append(heading);
 
@@ -317,7 +317,7 @@
                 let typeHotel = filtered.filter(f => f.stars === 1);
 
                 let heading = document.createElement('h1');
-                heading.innerText = `${searchInput}: намерени са ${typeHotel.length} места за настаняване.`
+                oneOrMoreFiltered(typeHotel, heading, searchInput);
                 heading.setAttribute('class', 'destinationHeadingText');
                 container.append(heading);
 
@@ -326,7 +326,7 @@
                 })
             } else {
                 let heading = document.createElement('h1');
-                heading.innerText = `${searchInput}: намерени са ${filtered.length} места за настаняване.`
+                oneOrMoreFiltered(filtered, heading, searchInput);
                 heading.setAttribute('class', 'destinationHeadingText');
                 container.append(heading);
 
@@ -341,7 +341,7 @@
                 let typeHotel = filtered.filter(f => f.stars === 2);
 
                 let heading = document.createElement('h1');
-                heading.innerText = `${searchInput}: намерени са ${typeHotel.length} места за настаняване.`
+                oneOrMoreFiltered(typeHotel, heading, searchInput);
                 heading.setAttribute('class', 'destinationHeadingText');
                 container.append(heading);
 
@@ -350,7 +350,7 @@
                 })
             } else {
                 let heading = document.createElement('h1');
-                heading.innerText = `${searchInput}: намерени са ${filtered.length} места за настаняване.`
+                oneOrMoreFiltered(filtered, heading, searchInput);
                 heading.setAttribute('class', 'destinationHeadingText');
                 container.append(heading);
 
@@ -365,7 +365,7 @@
                 let typeHotel = filtered.filter(f => f.stars === 3);
 
                 let heading = document.createElement('h1');
-                heading.innerText = `${searchInput}: намерени са ${typeHotel.length} места за настаняване.`
+                oneOrMoreFiltered(typeHotel, heading, searchInput);
                 heading.setAttribute('class', 'destinationHeadingText');
                 container.append(heading);
 
@@ -374,7 +374,7 @@
                 })
             } else {
                 let heading = document.createElement('h1');
-                heading.innerText = `${searchInput}: намерени са ${filtered.length} места за настаняване.`
+                oneOrMoreFiltered(filtered, heading, searchInput);
                 heading.setAttribute('class', 'destinationHeadingText');
                 container.append(heading);
 
@@ -389,7 +389,7 @@
                 let typeHotel = filtered.filter(f => f.stars === 4);
 
                 let heading = document.createElement('h1');
-                heading.innerText = `${searchInput}: намерени са ${typeHotel.length} места за настаняване.`
+                oneOrMoreFiltered(typeHotel, heading, searchInput);
                 heading.setAttribute('class', 'destinationHeadingText');
                 container.append(heading);
 
@@ -398,7 +398,7 @@
                 })
             } else {
                 let heading = document.createElement('h1');
-                heading.innerText = `${searchInput}: намерени са ${filtered.length} места за настаняване.`
+                oneOrMoreFiltered(filtered, heading, searchInput);
                 heading.setAttribute('class', 'destinationHeadingText');
                 container.append(heading);
 
@@ -413,7 +413,7 @@
                 let typeHotel = filtered.filter(f => f.stars === 5);
 
                 let heading = document.createElement('h1');
-                heading.innerText = `${searchInput}: намерени са ${typeHotel.length} места за настаняване.`
+                oneOrMoreFiltered(typeHotel, heading, searchInput);
                 heading.setAttribute('class', 'destinationHeadingText');
                 container.append(heading);
 
@@ -422,7 +422,7 @@
                 })
             } else {
                 let heading = document.createElement('h1');
-                heading.innerText = `${searchInput}: намерени са ${filtered.length} места за настаняване.`
+                oneOrMoreFiltered(filtered, heading, searchInput);
                 heading.setAttribute('class', 'destinationHeadingText');
                 container.append(heading);
 
@@ -437,7 +437,7 @@
                 let typeHotel = filtered.filter(f => f.facilities.includes('Pets Allowed'));
 
                 let heading = document.createElement('h1');
-                heading.innerText = `${searchInput}: намерени са ${typeHotel.length} места за настаняване.`
+                oneOrMoreFiltered(typeHotel, heading, searchInput);
                 heading.setAttribute('class', 'destinationHeadingText');
                 container.append(heading);
 
@@ -446,7 +446,7 @@
                 })
             } else {
                 let heading = document.createElement('h1');
-                heading.innerText = `${searchInput}: намерени са ${filtered.length} места за настаняване.`
+                oneOrMoreFiltered(filtered, heading, searchInput);
                 heading.setAttribute('class', 'destinationHeadingText');
                 container.append(heading);
 
@@ -461,7 +461,7 @@
                 let typeHotel = filtered.filter(f => f.facilities.includes('Breakfast'));
 
                 let heading = document.createElement('h1');
-                heading.innerText = `${searchInput}: намерени са ${typeHotel.length} места за настаняване.`
+                oneOrMoreFiltered(typeHotel, heading, searchInput);
                 heading.setAttribute('class', 'destinationHeadingText');
                 container.append(heading);
 
@@ -470,7 +470,7 @@
                 })
             } else {
                 let heading = document.createElement('h1');
-                heading.innerText = `${searchInput}: намерени са ${filtered.length} места за настаняване.`
+                oneOrMoreFiltered(filtered, heading, searchInput);
                 heading.setAttribute('class', 'destinationHeadingText');
                 container.append(heading);
 
@@ -485,7 +485,7 @@
                 let typeHotel = filtered.filter(f => f.facilities.includes('Fitness Center'));
 
                 let heading = document.createElement('h1');
-                heading.innerText = `${searchInput}: намерени са ${typeHotel.length} места за настаняване.`
+                oneOrMoreFiltered(typeHotel, heading, searchInput);
                 heading.setAttribute('class', 'destinationHeadingText');
                 container.append(heading);
 
@@ -494,7 +494,7 @@
                 })
             } else {
                 let heading = document.createElement('h1');
-                heading.innerText = `${searchInput}: намерени са ${filtered.length} места за настаняване.`
+                oneOrMoreFiltered(filtered, heading, searchInput);
                 heading.setAttribute('class', 'destinationHeadingText');
                 container.append(heading);
 
@@ -510,7 +510,7 @@
                 let typeHotel = filtered.filter(f => f.rating >= 9.4);
 
                 let heading = document.createElement('h1');
-                heading.innerText = `${searchInput}: намерени са ${typeHotel.length} места за настаняване.`
+                oneOrMoreFiltered(typeHotel, heading, searchInput);
                 heading.setAttribute('class', 'destinationHeadingText');
                 container.append(heading);
 
@@ -519,7 +519,7 @@
                 })
             } else {
                 let heading = document.createElement('h1');
-                heading.innerText = `${searchInput}: намерени са ${filtered.length} места за настаняване.`
+                oneOrMoreFiltered(filtered, heading, searchInput);
                 heading.setAttribute('class', 'destinationHeadingText');
                 container.append(heading);
 
@@ -535,7 +535,7 @@
                 let typeHotel = filtered.filter(f => f.rating >= 9);
 
                 let heading = document.createElement('h1');
-                heading.innerText = `${searchInput}: намерени са ${typeHotel.length} места за настаняване.`
+                oneOrMoreFiltered(typeHotel, heading, searchInput);
                 heading.setAttribute('class', 'destinationHeadingText');
                 container.append(heading);
 
@@ -544,7 +544,7 @@
                 })
             } else {
                 let heading = document.createElement('h1');
-                heading.innerText = `${searchInput}: намерени са ${filtered.length} места за настаняване.`
+                oneOrMoreFiltered(filtered, heading, searchInput);
                 heading.setAttribute('class', 'destinationHeadingText');
                 container.append(heading);
 
@@ -559,7 +559,7 @@
                 let typeHotel = filtered.filter(f => f.rating >= 8.7);
 
                 let heading = document.createElement('h1');
-                heading.innerText = `${searchInput}: намерени са ${typeHotel.length} места за настаняване.`
+                oneOrMoreFiltered(typeHotel, heading, searchInput);
                 heading.setAttribute('class', 'destinationHeadingText');
                 container.append(heading);
 
@@ -568,7 +568,7 @@
                 })
             } else {
                 let heading = document.createElement('h1');
-                heading.innerText = `${searchInput}: намерени са ${filtered.length} места за настаняване.`
+                oneOrMoreFiltered(filtered, heading, searchInput);
                 heading.setAttribute('class', 'destinationHeadingText');
                 container.append(heading);
 
@@ -583,7 +583,7 @@
                 let typeHotel = filtered.filter(f => f.rating >= 8);
 
                 let heading = document.createElement('h1');
-                heading.innerText = `${searchInput}: намерени са ${typeHotel.length} места за настаняване.`
+                oneOrMoreFiltered(typeHotel, heading, searchInput);
                 heading.setAttribute('class', 'destinationHeadingText');
                 container.append(heading);
 
@@ -592,7 +592,7 @@
                 })
             } else {
                 let heading = document.createElement('h1');
-                heading.innerText = `${searchInput}: намерени са ${filtered.length} места за настаняване.`
+                oneOrMoreFiltered(filtered, heading, searchInput);
                 heading.setAttribute('class', 'destinationHeadingText');
                 container.append(heading);
 
@@ -607,7 +607,7 @@
                 let typeHotel = filtered.filter(f => f.rating >= 7.5);
 
                 let heading = document.createElement('h1');
-                heading.innerText = `${searchInput}: намерени са ${typeHotel.length} места за настаняване.`
+                oneOrMoreFiltered(typeHotel, heading, searchInput);
                 heading.setAttribute('class', 'destinationHeadingText');
                 container.append(heading);
 
@@ -616,7 +616,7 @@
                 })
             } else {
                 let heading = document.createElement('h1');
-                heading.innerText = `${searchInput}: намерени са ${filtered.length} места за настаняване.`
+                oneOrMoreFiltered(filtered, heading, searchInput);
                 heading.setAttribute('class', 'destinationHeadingText');
                 container.append(heading);
 
@@ -785,6 +785,5 @@
             hotelManager.printHotelPage(currentElement);
         })
     }
-
 })();
 
