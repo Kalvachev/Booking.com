@@ -59,3 +59,10 @@ const FIVE_STAR_FILTER = document.getElementById('fiveStarsFilter');
 const PETS_FILTER = document.getElementById('petsFilter');
 const BREAKFAST_FILTER = document.getElementById('breakfastFilter');
 const FITNESS_FILTER = document.getElementById('fitnessFilter');
+
+const FANTASTIC_FILTER = document.getElementById('fantasticFilter')
+const SUPERB_FILTER = document.getElementById('superbFilter')
+const EXCELLENT_FILTER = document.getElementById('excellentFilter')
+const VERY_GOOD_FILTER = document.getElementById('veryGoodFilter')
+const GOOD_FILTER = document.getElementById('goodFilter')
+
