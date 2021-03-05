@@ -210,6 +210,106 @@
                 })
             }
         })
+
+        GUEST_HOUSE_FILTER.addEventListener('change', function () {
+            hotelsByDestinationContainer.innerHTML = '';
+            if (this.checked) {
+                let typeHotel = filtered.filter(f => f.type === 'Guest House');
+
+                let heading = document.createElement('h1');
+                heading.innerText = `${searchInput}: намерени са ${typeHotel.length} места за настаняване.`
+                heading.setAttribute('class', 'destinationHeadingText');
+                container.append(heading);
+
+                typeHotel.forEach(currentElement => {
+                    allCards(currentElement, hotelsByDestinationContainer)
+                })
+            } else {
+                let heading = document.createElement('h1');
+                heading.innerText = `${searchInput}: намерени са ${filtered.length} места за настаняване.`
+                heading.setAttribute('class', 'destinationHeadingText');
+                container.append(heading);
+
+                filtered.forEach(currentElement => {
+                    allCards(currentElement, container);
+                })
+            }
+        })
+
+        POOL_FILTER.addEventListener('change', function () {
+            hotelsByDestinationContainer.innerHTML = '';
+            if (this.checked) {
+                let typeHotel = filtered.filter(f => f.facilities.includes('Pool' || '2 Pools'));
+
+                let heading = document.createElement('h1');
+                heading.innerText = `${searchInput}: намерени са ${typeHotel.length} места за настаняване.`
+                heading.setAttribute('class', 'destinationHeadingText');
+                container.append(heading);
+
+                typeHotel.forEach(currentElement => {
+                    allCards(currentElement, hotelsByDestinationContainer)
+                })
+            } else {
+                let heading = document.createElement('h1');
+                heading.innerText = `${searchInput}: намерени са ${filtered.length} места за настаняване.`
+                heading.setAttribute('class', 'destinationHeadingText');
+                container.append(heading);
+
+                filtered.forEach(currentElement => {
+                    allCards(currentElement, container);
+                })
+            }
+        })
+
+        VILLAS_FILTER.addEventListener('change', function () {
+            hotelsByDestinationContainer.innerHTML = '';
+            if (this.checked) {
+                let typeHotel = filtered.filter(f => f.type = 'Villa');
+
+                let heading = document.createElement('h1');
+                heading.innerText = `${searchInput}: намерени са ${typeHotel.length} места за настаняване.`
+                heading.setAttribute('class', 'destinationHeadingText');
+                container.append(heading);
+
+                typeHotel.forEach(currentElement => {
+                    allCards(currentElement, hotelsByDestinationContainer)
+                })
+            } else {
+                let heading = document.createElement('h1');
+                heading.innerText = `${searchInput}: намерени са ${filtered.length} места за настаняване.`
+                heading.setAttribute('class', 'destinationHeadingText');
+                container.append(heading);
+
+                filtered.forEach(currentElement => {
+                    allCards(currentElement, container);
+                })
+            }
+        })
+
+        SPA_FILTER.addEventListener('change', function () {
+            hotelsByDestinationContainer.innerHTML = '';
+            if (this.checked) {
+                let typeHotel = filtered.filter(f => f.facilities.includes('Spa Center'));
+
+                let heading = document.createElement('h1');
+                heading.innerText = `${searchInput}: намерени са ${typeHotel.length} места за настаняване.`
+                heading.setAttribute('class', 'destinationHeadingText');
+                container.append(heading);
+
+                typeHotel.forEach(currentElement => {
+                    allCards(currentElement, hotelsByDestinationContainer)
+                })
+            } else {
+                let heading = document.createElement('h1');
+                heading.innerText = `${searchInput}: намерени са ${filtered.length} места за настаняване.`
+                heading.setAttribute('class', 'destinationHeadingText');
+                container.append(heading);
+
+                filtered.forEach(currentElement => {
+                    allCards(currentElement, container);
+                })
+            }
+        })
     }
 
 

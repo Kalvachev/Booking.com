@@ -44,4 +44,14 @@ const ALL_HOTELS_BY_DESTINATION = document.getElementById('allHotelsByDestinatio
 
 const SHOW_CURRENT_PAGE = document.getElementById('showCurrentHotel');
 
-const HOTEL_TYPE_FILTER = document.getElementById('hotelsTypeFiltration');
+const HOTEL_TYPE_FILTER = document.getElementById('hotelsTypeFiltration')
+const GUEST_HOUSE_FILTER = document.getElementById('guestHouseFiltration');
+const POOL_FILTER = document.getElementById('poolFiltration');
+const VILLAS_FILTER = document.getElementById('villasFiltration');
+const SPA_FILTER = document.getElementById('spaFiltration');
+
+const ONE_STAR_FILTER = document.getElementById('oneStarFilter');
+const TWO_STAR_FILTER = document.getElementById('twoStarFilter');
+const THREE_STAR_FILTER = document.getElementById('threeStarFilter');
+const FOUR_STAR_FILTER = document.getElementById('fourStarFilter');
+const FIVE_STAR_FILTER = document.getElementById('fiveStarFilter');
