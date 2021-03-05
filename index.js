@@ -182,7 +182,7 @@
         container.append(heading);
 
         filtered.forEach(currentElement => {
-           allCards(currentElement, container);
+            allCards(currentElement, container);
         })
 
         // ---------------------------------
@@ -194,9 +194,14 @@
                     allCards(currentElement, hotelsByDestinationContainer)
                 })
             } else {
+                let heading = document.createElement('h1');
+                heading.innerText = `${searchInput}: намерени са ${filtered.length} места за настаняване.`
+                heading.setAttribute('class', 'destinationHeadingText');
+                container.append(heading);
+
                 filtered.forEach(currentElement => {
                     allCards(currentElement, container);
-                 })
+                })
             }
         })
     }
