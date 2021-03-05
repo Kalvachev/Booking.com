@@ -379,6 +379,40 @@ const hotels = [
         Двойките харесват местоположението - те му дават оценка от 9.6 за пътуване за двама.`
     },
     {
+        name: 'Hotel Katerina',
+        address: 'Keramoti Nestou Kavalas, Керамоти, 64011, Гърция',
+        rating: 9.4,
+        stars: 3,
+        facilities: [
+            'Non-Smoker Rooms', 'Parking', 'Free Wi Fi', 'Family Rooms',
+            'Bar', 'Right on the beach'
+        ],
+        pictures: [
+            'https://cf.bstatic.com/images/hotel/max1280x900/284/28412789.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/153/153357911.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/153/153054671.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/153/153357507.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/153/153357509.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/153/153357511.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/153/153356960.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/153/153057093.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/284/28410502.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/153/153054122.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/153/153053263.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/153/153053259.jpg'
+        ],
+        type: 'Hotel',
+        price: 50,
+        destination: 'Керамоти',
+        description: `Хотел Katerina се намира в Керамоти, на 100 метра от плажа на Керамоти. Предлага помещения за настаняване с безплатен WiFi, климатик и достъп до градина.
+
+        Помещенията за настаняване разполагат с балкон с изглед към градината, телевизор с плосък екран и сателитна телевизия, добре оборудвана кухня и собствена баня с вана или душ, сешоар и безплатни тоалетни принадлежности. Удобствата включват също хладилник и кафемашина.
+        
+        Всеки ден в апартхотела се сервира закуска на шведска маса.
+        
+        Международно летище Кавала „Александър Велики“ е най-близкото летище и е разположено на 10 км от Hotel Katerina.`
+    },
+    {
         name: 'Daniela sunshine pool apartments',
         address: 'Keramoti, Керамоти, 64200, Гърция',
         rating: 8.9,
