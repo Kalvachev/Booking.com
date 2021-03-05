@@ -562,3 +562,7 @@
     display: flex;
     align-items: center;
 }
+
+.currentHotel {
+    display: none;
+}

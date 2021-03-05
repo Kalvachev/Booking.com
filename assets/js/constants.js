@@ -41,3 +41,5 @@ EMAIL_INPUT_REG = document.getElementById('emailInputReg');
 
 const HOTEL_PAGE_CONTAINER = document.getElementById('hotelPageContainer');
 const ALL_HOTELS_BY_DESTINATION = document.getElementById('allHotelsByDestination')
+
+const SHOW_CURRENT_PAGE = document.getElementById('showCurrentHotel');
