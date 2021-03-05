@@ -51,7 +51,11 @@ const VILLAS_FILTER = document.getElementById('villasFiltration');
 const SPA_FILTER = document.getElementById('spaFiltration');
 
 const ONE_STAR_FILTER = document.getElementById('oneStarFilter');
-const TWO_STAR_FILTER = document.getElementById('twoStarFilter');
-const THREE_STAR_FILTER = document.getElementById('threeStarFilter');
-const FOUR_STAR_FILTER = document.getElementById('fourStarFilter');
-const FIVE_STAR_FILTER = document.getElementById('fiveStarFilter');
+const TWO_STAR_FILTER = document.getElementById('twoStarsFilter');
+const THREE_STAR_FILTER = document.getElementById('threeStarsFilter');
+const FOUR_STAR_FILTER = document.getElementById('fourStarsFilter');
+const FIVE_STAR_FILTER = document.getElementById('fiveStarsFilter');
+
+const PETS_FILTER = document.getElementById('petsFilter');
+const BREAKFAST_FILTER = document.getElementById('breakfastFilter');
+const FITNESS_FILTER = document.getElementById('fitnessFilter');
