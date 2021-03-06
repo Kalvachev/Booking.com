@@ -104,6 +104,7 @@
             let currentElement = favouriteHotels[randomNumber];
 
             let hotelCard = document.createElement('div');
+            hotelCard.style.cursor = 'pointer';
             hotelCard.setAttribute('class', 'hotelCard');
 
             let hotelPictureContainer = document.createElement('div');
