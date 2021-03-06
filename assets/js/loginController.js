@@ -60,9 +60,21 @@ LOGIN_BTN_MODAL.addEventListener('click', function (ev) {
         LOGIN_BTN.style.display = 'none';
         CREATE_PROFILE_BTN.style.display = 'none';
         PROFILE_BUTTON.style.display = 'block';
+        LOGOUT_BUTTON.style.display = 'block';
+
     } else {
         alert('Invalid username or password!');
         USERNAME_INPUT.value = '';
         PASSWORD_INPUT.value = '';
     }
+})
+
+LOGOUT_BUTTON.addEventListener('click', function (ev) {
+    ev.preventDefault();
+    userService.logout();
+
+    LOGIN_BTN.style.display = 'block';
+    CREATE_PROFILE_BTN.style.display = 'block';
+    PROFILE_BUTTON.style.display = 'none';
+    LOGOUT_BUTTON.style.display = 'none';
 })

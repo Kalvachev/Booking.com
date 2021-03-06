@@ -786,5 +786,17 @@
             hotelManager.printHotelPage(currentElement);
         })
     }
+
+    if (userService.getCurrentUser()) {
+        LOGIN_BTN.style.display = 'none';
+        CREATE_PROFILE_BTN.style.display = 'none';
+        PROFILE_BUTTON.style.display = 'block';
+        LOGOUT_BUTTON.style.display = 'block';
+    } else {
+        LOGIN_BTN.style.display = 'block';
+        CREATE_PROFILE_BTN.style.display = 'block';
+        PROFILE_BUTTON.style.display = 'none';
+        LOGOUT_BUTTON.style.display = 'none';
+    }
 })();
 

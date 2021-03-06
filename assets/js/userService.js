@@ -37,6 +37,7 @@ const userService = (function () {
 
             if (currentUser) {
                 currentUser.isLoggedIn = true;
+                
                 this.users.forEach(user => {
                     if (user => user.username === username && user.password === password) {
                         user.isLoggedIn = true;
@@ -44,13 +45,26 @@ const userService = (function () {
                         user.isLoggedIn = false;
                     }
                 });
+
                 localStorage.setItem('users', JSON.stringify(this.users));
             }
+            
             return !!currentUser;
         }
 
         getCurrentUser() {
             return this.users.find(user => user.isLoggedIn);
+        }
+
+        logout() {
+            let currentUser = userService.getCurrentUser()
+            currentUser.isLoggedIn = false;
+
+            this.users.forEach(user => {
+                user.isLoggedIn = false;
+            })
+
+            localStorage.setItem('users', JSON.stringify(this.users));
         }
     }
 

@@ -26,6 +26,7 @@ const GO_TO_REGISTER_BTN = document.getElementById('goToRegistrationButton');
 const SUBMIT_BTN_REG = document.getElementById('submitBtnReg');
 const LOGIN_BTN_MODAL = document.getElementById('loginBtnModal');
 const PROFILE_BUTTON = document.querySelector('.profileButton');
+const LOGOUT_BUTTON = document.querySelector('.logoutButton');
 
 const MODAL_CLOSE_LOGIN = document.getElementById('modal-close-login');
 const MODAL_CLOSE_REGISTER = document.getElementById('modal-close-register');
