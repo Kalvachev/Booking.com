@@ -5,41 +5,51 @@ const userService = (function () {
             this.username = username;
             this.password = password;
             this.email = email;
+            this.favourites = [];
+            this.isLoggedIn = false;
         }
     }
 
-    const testUsers = [
-        new User('goshko', 'goshotarikat', 'goshko@abv.bg'),
-        new User('pencho', 'pencho123', 'pencho@gmail.com')
-    ];
-
     class UserService {
         constructor() {
-            this.users = testUsers;
+            if (localStorage.getItem('users')) {
+                this.users = JSON.parse(localStorage.getItem('users'));
+            } else {
+                this.users = [];
+            }
         }
+
         register(username, password, email) {
 
             const isUserRegistered = this.users.some(user => user.email === email || user.username === username)
 
             if (!isUserRegistered) {
                 this.users.push(new User(username, password, email));
+
+                localStorage.setItem('users', JSON.stringify(this.users))
             } else {
-                alert('User is already registered!')
+                alert('User is already registered!');
             }
         }
 
         login(username, password) {
-            const isUserLoggedIn = this.users.some(
-                user => user.username === username && user.password === password
-            );
-            return isUserLoggedIn;
+            let currentUser = this.users.find(user => user.username === username && user.password === password)
+
+            if (currentUser) {
+                currentUser.isLoggedIn = true;
+                this.users.forEach(user => {
+                    if (user => user.username === username && user.password === password) {
+                        user.isLoggedIn = true;
+                    } else {
+                        user.isLoggedIn = false;
+                    }
+                })
+            }
+            return !!currentUser;
         }
 
-        validate(username, password) {
-            if (username.trim().length > 3 && password.trim().length > 3) {
-                return true;
-            }
-            return false;
+        getCurrentUser() {
+            return this.users.find(user => user.isLoggedIn);
         }
     }
 
