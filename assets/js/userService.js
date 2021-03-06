@@ -37,7 +37,7 @@ const userService = (function () {
 
             if (currentUser) {
                 currentUser.isLoggedIn = true;
-                
+
                 // this.users.forEach(user => {
                 //     if (user => user.username === username && user.password === password) {
                 //         user.isLoggedIn = true;
@@ -48,7 +48,7 @@ const userService = (function () {
 
                 localStorage.setItem('users', JSON.stringify(this.users));
             }
-            
+
             return !!currentUser;
         }
 
@@ -65,6 +65,21 @@ const userService = (function () {
             // })
 
             localStorage.setItem('users', JSON.stringify(this.users));
+        }
+
+        addToFavourites(currentHotel) {
+            let currentUser = userService.getCurrentUser();
+            let isAlreadyLiked = currentUser.favourites.find(hotel => hotel.name === currentHotel.name)
+
+            console.log(currentUser);
+            if (!isAlreadyLiked) {
+                currentUser.favourites.push(currentHotel);
+            }
+            console.log(currentUser.favourites);
+        }
+
+        removeFromFavourites(currentHotel) {
+
         }
     }
 

@@ -79,6 +79,7 @@ class HotelManager {
 
         let addInFavourites = document.createElement('div');
         addInFavourites.innerHTML = `<i class="fas fa-heart fa-lg"></i>`;
+        addInFavourites.style.cursor = 'pointer';
         addInFavourites.setAttribute('class', 'singleCardAddInFavourites');
 
 
@@ -427,5 +428,9 @@ class HotelManager {
         mostPopularFacilitiesContainer.append(mostPopularFacilitiesHeadingContainer, currentFacilityContainer);
 
         reserveContainer.append(addInFavourites, reserveBtn);
+
+        addInFavourites.addEventListener('click', function () {
+            userService.addToFavourites(currentElement);
+        })
     };
 }
