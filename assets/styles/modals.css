@@ -78,3 +78,13 @@
     align-items: center;
     position: relative;
 } */
+
+.registerAndLoginHeadings {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0 0 7px 0;
+}
+
+#usernameInput, #passwordInput, #usernameInputReg, #passwordInputReg, #repeatPasswordInputReg, #emailInputReg {
+    margin: 3px 0;
+}

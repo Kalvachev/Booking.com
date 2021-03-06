@@ -124,12 +124,12 @@ a {
 
 } */
 
-.createProfileButton, .loginButton, .profileButton {
+.createProfileButton, .loginButton, .profileButton, .logoutButton {
     font-size: 14px;
     border: 1px solid #0071c2;
     background: #fff;
     color: #0071c2;
-    padding: 7px 15px;
+    padding: 16px 15px;
     font-weight: bold;
     margin-right: 10px;
 }
@@ -142,7 +142,7 @@ a {
     background: #104a9b;
 }
 
-.createProfileButton:hover, .loginButton:hover, .profileButton:hover {
+.createProfileButton:hover, .loginButton:hover, .profileButton:hover, .logoutButton:hover {
     background: #d5e6ff;
 }
 
