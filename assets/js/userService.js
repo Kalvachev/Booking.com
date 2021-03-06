@@ -43,7 +43,8 @@ const userService = (function () {
                     } else {
                         user.isLoggedIn = false;
                     }
-                })
+                });
+                localStorage.setItem('users', JSON.stringify(this.users));
             }
             return !!currentUser;
         }

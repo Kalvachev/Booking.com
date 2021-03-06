@@ -51,13 +51,18 @@ LOGIN_BTN_MODAL.addEventListener('click', function (ev) {
     const password = PASSWORD_INPUT.value;
 
     if (userService.login(username, password)) {
+        window.location.hash = `#${username}`;
         MODAL_BG_LOGIN.classList.remove('bg-active');
 
-        USERNAME_INPUT = '';
-        PASSWORD_INPUT = '';
+        USERNAME_INPUT.value = '';
+        PASSWORD_INPUT.value = '';
 
         LOGIN_BTN.style.display = 'none';
         CREATE_PROFILE_BTN.style.display = 'none';
         PROFILE_BUTTON.style.display = 'block';
+    } else {
+        alert('Invalid username or password!');
+        USERNAME_INPUT.value = '';
+        PASSWORD_INPUT.value = '';
     }
 })
