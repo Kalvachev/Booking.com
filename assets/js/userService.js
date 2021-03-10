@@ -71,11 +71,10 @@ const userService = (function () {
             let currentUser = userService.getCurrentUser();
             let isAlreadyLiked = currentUser.favourites.find(hotel => hotel.name === currentHotel.name)
 
-            console.log(currentUser);
             if (!isAlreadyLiked) {
                 currentUser.favourites.push(currentHotel);
             }
-            console.log(currentUser.favourites);
+            localStorage.setItem('users', JSON.stringify(this.users));
         }
 
         removeFromFavourites(currentHotel) {
