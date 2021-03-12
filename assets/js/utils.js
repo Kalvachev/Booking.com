@@ -27,6 +27,23 @@ function oneOrMoreFiltered(filtered, headingText, searchInput) {
     }
 }
 
+function displayHomes() {
+    // console.log(location.hash);
+    const pages = decodeURI(location.hash).substring(1).split('/');
+    // If the second argument is city
+    if (pages.length === 2) {
+        printHotelsByDestination(pages[1], hotelsByDestinationContainer);
+        allHotelsByDestination.style.display = 'block';
+        HOTEL_PAGE_CONTAINER.style.display = 'none';
+    }
+    if (pages.length === 3) {
+        printHotelPage(pages[2]);
+        allHotelsByDestination.style.display = 'none';
+        HOTEL_PAGE_CONTAINER.style.display = 'block';
+    }
+    // If there is a third argument display the Hotel specific page
+}
+
 function addToFavourites(x) {
     if (x.classList.contains("fa-heart")) {
         x.classList.remove("fa-heart");

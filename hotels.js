@@ -529,8 +529,8 @@ const hotels = [
             'Family Rooms', 'Pets Allowed', 'Bar', 'Breakfast'
         ],
         pictures: [
-            'https://cf.bstatic.com/images/hotel/max1280x900/497/49769963.jpg',
             'https://cf.bstatic.com/images/hotel/max1280x900/189/18953010.jpg',
+            'https://cf.bstatic.com/images/hotel/max1280x900/497/49769963.jpg',
             'https://cf.bstatic.com/images/hotel/max1280x900/494/49455715.jpg',
             'https://cf.bstatic.com/images/hotel/max1280x900/494/49458798.jpg',
             'https://cf.bstatic.com/images/hotel/max1280x900/494/49455452.jpg',

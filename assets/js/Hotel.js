@@ -9,6 +9,4 @@ class Hotel {
         this.type = type;
         this.price = price;
     }
-
-    
 }
