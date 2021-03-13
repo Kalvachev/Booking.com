@@ -45,11 +45,11 @@ function displayHomes() {
 }
 
 function changeFavouritesIcon(x) {
-    if (x.classList.contains("fa-heart")) {
-        x.classList.remove("fa-heart");
-        x.classList.add("fa-heart-o");
+    if (x.classList.contains("fas fa-heart")) {
+        x.classList.remove("fas fa-heart");
+        x.classList.add("far fa-heart");
     } else {
-        x.classList.remove("fa-heart-o");
-        x.classList.add("fa-heart");
+        x.classList.remove("far fa-heart");
+        x.classList.add("fas fa-heart");
     }
 }

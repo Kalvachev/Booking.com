@@ -68,4 +68,4 @@ const VERY_GOOD_FILTER = document.getElementById('veryGoodFilter')
 const GOOD_FILTER = document.getElementById('goodFilter')
 
 const FAVOURITES_PAGE = document.getElementById('favouriteHotels');
-const ADD_TO_FAV_BTN = document.querySelector('.singleCardAddInFavourites');
+const ADD_TO_FAV_BTN = document.getElementsByClassName('singleCardAddInFavourites');
