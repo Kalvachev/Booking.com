@@ -57,7 +57,7 @@ function printHotelPage(hotelNamee) {
     reserveContainer.setAttribute('class', 'singleCardReserveContainer');
 
     let addInFavourites = document.createElement('div');
-    addInFavourites.innerHTML = `<i class="fas fa-heart fa-lg"></i>`;
+    addInFavourites.innerHTML = `<i class="fa fa-heart fa-lg"></i>`;
     addInFavourites.style.cursor = 'pointer';
     addInFavourites.setAttribute('class', 'singleCardAddInFavourites');
 

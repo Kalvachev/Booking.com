@@ -63,7 +63,9 @@ function printLikedHomes() {
         likedHomesContainer.append(hotelCard);
 
         hotelCard.addEventListener('click', function () {
-            HOME_PAGE.style.display = 'none';
+            let sliced = String(window.location).split('#');
+            
+            window.location = sliced[0] + '#displayHomes/' + currentElement.destination + '/' + currentElement.name;
             printHotelPage(currentElement.name);
         })
 

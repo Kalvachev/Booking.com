@@ -570,3 +570,11 @@
 #allHotelsByDestinationContainer {
     min-height: 950px;
 }
+
+.singleCardAddInFavourites {
+    color: grey;  
+}
+
+.singleCardAddInFavourites.red {
+    color: red;
+}
