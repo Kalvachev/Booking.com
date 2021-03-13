@@ -121,13 +121,14 @@ function printAllHotels(currentElement, container) {
 
     hotelCard.addEventListener('click', function () {
         // TODO: Just change the URL
-
         const url = location.hash + '/' + currentElement.name;
-
-        console.log(url);
-        // const encodedUrl = encodeURI(url);
-
-
         location.hash = url;
+    })
+
+    hotelCard.addEventListener('click', function () {
+        let sliced = String(window.location).split('#');
+
+        window.location = sliced[0] + '#displayHomes/' + currentElement.destination + '/' + currentElement.name;
+        printHotelPage(currentElement.name);
     })
 }

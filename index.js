@@ -11,7 +11,7 @@
             hotel.price,
             hotel.destination,
             hotel.description,
-            
+
         )
 
         hotelManager.addHotel(currentHotel);
@@ -57,6 +57,7 @@
                 break;
             case 'favourites':
                 showActivePage(FAVOURITES_PAGE);
+                printFavourites();
                 break;
             default:
                 showActivePage(HOME_PAGE);
