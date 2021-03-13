@@ -122,7 +122,8 @@ function printAllHotels(currentElement, container) {
     hotelCard.addEventListener('click', function () {
         // TODO: Just change the URL
         const url = location.hash + '/' + currentElement.name;
-        location.hash = url;
+        const encodedUrl = encodeURI(url);
+        location.hash = encodedUrl;
     })
 
     hotelCard.addEventListener('click', function () {
