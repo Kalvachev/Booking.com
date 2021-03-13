@@ -44,7 +44,7 @@ function displayHomes() {
     // If there is a third argument display the Hotel specific page
 }
 
-function addToFavourites(x) {
+function changeFavouritesIcon(x) {
     if (x.classList.contains("fa-heart")) {
         x.classList.remove("fa-heart");
         x.classList.add("fa-heart-o");

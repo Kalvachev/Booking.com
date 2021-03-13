@@ -416,7 +416,7 @@ function printHotelPage(hotelNamee) {
     } else {
         addInFavourites.addEventListener('click', function () {
             userService.addToFavourites(currentElement);
-            addInFavourites.classList.toggle('red');
+            // addInFavourites.classList.toggle('red');
         })
     }
 };
