@@ -28,6 +28,7 @@
             allHotelsByDestination.style.display = 'none';
             HOTEL_PAGE_CONTAINER.style.display = 'none';
             ERROR_PAGE.style.display = 'none';
+            FAVOURITES_PAGE.style.display = 'none';
 
             page.style.display = 'block';
         }
@@ -53,6 +54,9 @@
                 break;
             case 'errorPage':
                 showActivePage(ERROR_PAGE);
+                break;
+            case 'favourites':
+                showActivePage(FAVOURITES_PAGE);
                 break;
             default:
                 showActivePage(HOME_PAGE);

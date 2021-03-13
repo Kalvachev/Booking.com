@@ -67,3 +67,4 @@ const EXCELLENT_FILTER = document.getElementById('excellentFilter')
 const VERY_GOOD_FILTER = document.getElementById('veryGoodFilter')
 const GOOD_FILTER = document.getElementById('goodFilter')
 
+const FAVOURITES_PAGE = document.getElementById('favouriteHotels');
