@@ -3,18 +3,13 @@ homepageSearchButton.addEventListener('click', function (ev) {
 
     let sliced = String(window.location).split('#');
 
-    // HOME_PAGE.style.display = 'none';
-
-    localStorage.setItem('city', SEARCH_BOX.value);
 
     const validLocations = ['Милано', 'Керамоти', 'Лас Палмас де Гран Канария', 'Рио де Жанейро', 'Пукет', 'Виена', 'Лондон', 'Париж', 'Созопол', 'Атина'];
 
     if (!validLocations.includes(SEARCH_BOX.value)) {
         window.location = sliced[0] + '#errorPage';
     } else {
-        window.location = sliced[0] + '#displayHomes';
-        // Shouldn't show the page more than once
-        // allHotelsByDestination.style.display = 'block' 
+        window.location = sliced[0] + '#displayHomes/' + SEARCH_BOX.value;
         printHotelsByDestination(SEARCH_BOX.value, hotelsByDestinationContainer);
     }
 })

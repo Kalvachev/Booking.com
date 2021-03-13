@@ -1,4 +1,6 @@
-function printHotelPage(currentElement) {
+function printHotelPage(hotelNamee) {
+    const currentElement = hotelManager.getHotel(hotelNamee);
+    
     HOTEL_PAGE_CONTAINER.innerText = '';
     ALL_HOTELS_BY_DESTINATION.style.display = 'none';
     HOTEL_PAGE_CONTAINER.style.display = 'flex';

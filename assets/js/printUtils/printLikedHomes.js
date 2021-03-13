@@ -1,4 +1,6 @@
 function printLikedHomes() {
+    likedHomesContainer.innerHTML = '';
+
     let favouriteHotels = hotels.map(function (el) {
         if (el.rating > 7.5) {
             return el
@@ -62,7 +64,7 @@ function printLikedHomes() {
 
         hotelCard.addEventListener('click', function () {
             HOME_PAGE.style.display = 'none';
-            printHotelPage(currentElement);
+            printHotelPage(currentElement.name);
         })
 
     }

@@ -1,6 +1,4 @@
 (function () {
-    let hotelManager = new HotelManager();
-
     hotels.forEach(hotel => {
         let currentHotel = new Hotel(
             hotel.name,
@@ -11,7 +9,9 @@
             hotel.pictures,
             hotel.type,
             hotel.price,
-            hotel.destination
+            hotel.destination,
+            hotel.description,
+            
         )
 
         hotelManager.addHotel(currentHotel);
@@ -49,7 +49,7 @@
             case 'displayHomes':
                 showActivePage(allHotelsByDestination);
                 printHotelsByDestination('', hotelsByDestinationContainer);
-                // displayHomes();
+                displayHomes();
                 break;
             case 'errorPage':
                 showActivePage(ERROR_PAGE);
