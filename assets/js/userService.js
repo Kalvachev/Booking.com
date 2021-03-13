@@ -80,7 +80,16 @@ const userService = (function () {
         }
 
         removeFromFavourites(currentHotel) {
+            let currentUser = userService.getCurrentUser();
+            let favouriteHotels = currentUser.favourites;
 
+            for (let i = 0; i < favouriteHotels.length; i++) {
+                if (favouriteHotels[i].name === currentHotel.name) {
+                    favouriteHotels.splice(i, 1);
+                    break;
+                }
+            }
+            localStorage.setItem('users', JSON.stringify(this.users));
         }
     }
 

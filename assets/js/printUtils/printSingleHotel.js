@@ -1,6 +1,6 @@
 function printHotelPage(hotelNamee) {
     const currentElement = hotelManager.getHotel(hotelNamee);
-    
+
     HOTEL_PAGE_CONTAINER.innerText = '';
     ALL_HOTELS_BY_DESTINATION.style.display = 'none';
     HOTEL_PAGE_CONTAINER.style.display = 'flex';
@@ -408,7 +408,15 @@ function printHotelPage(hotelNamee) {
 
     reserveContainer.append(addInFavourites, reserveBtn);
 
-    addInFavourites.addEventListener('click', function () {
-        userService.addToFavourites(currentElement);
-    })
+    let isInFavs = userService.getCurrentUser().favourites.some(hotel => hotel.name === currentElement.name);
+    if (isInFavs) {
+        addInFavourites.addEventListener('click', function () {
+            userService.removeFromFavourites(currentElement);
+        })
+    } else {
+        addInFavourites.addEventListener('click', function () {
+            userService.addToFavourites(currentElement);
+            addInFavourites.classList.toggle('red');
+        })
+    }
 };
