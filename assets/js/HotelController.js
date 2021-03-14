@@ -37,9 +37,9 @@ function printHotelsByDestination(searchInput, container) {
     })
 
 
-    function onChange(cb) {
+    function onChange(btn, cb) {
         HOTELS_BY_DESTINATION_CONTAINER.innerHTML = '';
-        if (this.checked) {
+        if (btn.checked) {
             let typeHotel = filtered.filter(cb);
 
             let heading = document.createElement('h1');
@@ -62,516 +62,77 @@ function printHotelsByDestination(searchInput, container) {
         }
     }
 
-    // ---------------------------------
+    // ------------------------------
+
     HOTEL_TYPE_FILTER.addEventListener('change', function () {
-        HOTELS_BY_DESTINATION_CONTAINER.innerHTML = '';
-        if (this.checked) {
-            let typeHotel = filtered.filter(f => f.type === 'Hotel');
-
-            let heading = document.createElement('h1');
-            oneOrMoreFiltered(typeHotel, heading, searchInput);
-            heading.setAttribute('class', 'destinationHeadingText');
-            container.append(heading);
-
-            typeHotel.forEach(currentElement => {
-                printAllHotels(currentElement, HOTELS_BY_DESTINATION_CONTAINER)
-            })
-        } else {
-            let heading = document.createElement('h1');
-            oneOrMoreFiltered(filtered, heading, searchInput);
-            heading.setAttribute('class', 'destinationHeadingText');
-            container.append(heading);
-
-            filtered.forEach(currentElement => {
-                printAllHotels(currentElement, container);
-            })
-        }
-    })
+        onChange(HOTEL_TYPE_FILTER, (f => f.type === 'Hotel'));
+    });
 
     GUEST_HOUSE_FILTER.addEventListener('change', function () {
-        HOTELS_BY_DESTINATION_CONTAINER.innerHTML = '';
-        if (this.checked) {
-            let typeHotel = filtered.filter(f => f.type === 'Guest House');
-
-            let heading = document.createElement('h1');
-            oneOrMoreFiltered(typeHotel, heading, searchInput);
-            heading.setAttribute('class', 'destinationHeadingText');
-            container.append(heading);
-
-            typeHotel.forEach(currentElement => {
-                printAllHotels(currentElement, HOTELS_BY_DESTINATION_CONTAINER)
-            })
-        } else {
-            let heading = document.createElement('h1');
-            oneOrMoreFiltered(filtered, heading, searchInput);
-            heading.setAttribute('class', 'destinationHeadingText');
-            container.append(heading);
-
-            filtered.forEach(currentElement => {
-                printAllHotels(currentElement, container);
-            })
-        }
-    })
+        onChange(GUEST_HOUSE_FILTER, (f => f.type === 'Guest House'));
+    });
 
     POOL_FILTER.addEventListener('change', function () {
-        HOTELS_BY_DESTINATION_CONTAINER.innerHTML = '';
-        if (this.checked) {
-            let typeHotel = filtered.filter(f => f.facilities.includes('Pool' || '2 Pools'));
-
-            let heading = document.createElement('h1');
-            oneOrMoreFiltered(typeHotel, heading, searchInput);
-            heading.setAttribute('class', 'destinationHeadingText');
-            container.append(heading);
-
-            typeHotel.forEach(currentElement => {
-                printAllHotels(currentElement, HOTELS_BY_DESTINATION_CONTAINER)
-            })
-        } else {
-            let heading = document.createElement('h1');
-            oneOrMoreFiltered(filtered, heading, searchInput);
-            heading.setAttribute('class', 'destinationHeadingText');
-            container.append(heading);
-
-            filtered.forEach(currentElement => {
-                printAllHotels(currentElement, container);
-            })
-        }
+        onChange(POOL_FILTER, (f => f.facilities.includes('Pool' || '2 Pools')));
     })
 
     VILLAS_FILTER.addEventListener('change', function () {
-        HOTELS_BY_DESTINATION_CONTAINER.innerHTML = '';
-        if (this.checked) {
-            let typeHotel = filtered.filter(f => f.type === 'Villa');
-
-            let heading = document.createElement('h1');
-            oneOrMoreFiltered(typeHotel, heading, searchInput);
-            heading.setAttribute('class', 'destinationHeadingText');
-            container.append(heading);
-
-            typeHotel.forEach(currentElement => {
-                printAllHotels(currentElement, HOTELS_BY_DESTINATION_CONTAINER)
-            })
-        } else {
-            let heading = document.createElement('h1');
-            oneOrMoreFiltered(filtered, heading, searchInput);
-            heading.setAttribute('class', 'destinationHeadingText');
-            container.append(heading);
-
-            filtered.forEach(currentElement => {
-                printAllHotels(currentElement, container);
-            })
-        }
-    })
+        onChange(VILLAS_FILTER, (f => f.type === 'Villa'));
+    });
 
     SPA_FILTER.addEventListener('change', function () {
-        HOTELS_BY_DESTINATION_CONTAINER.innerHTML = '';
-        if (this.checked) {
-            let typeHotel = filtered.filter(f => f.facilities.includes('Spa Center'));
-
-            let heading = document.createElement('h1');
-            oneOrMoreFiltered(typeHotel, heading, searchInput);
-            heading.setAttribute('class', 'destinationHeadingText');
-            container.append(heading);
-
-            typeHotel.forEach(currentElement => {
-                printAllHotels(currentElement, HOTELS_BY_DESTINATION_CONTAINER)
-            })
-        } else {
-            let heading = document.createElement('h1');
-            oneOrMoreFiltered(filtered, heading, searchInput);
-            heading.setAttribute('class', 'destinationHeadingText');
-            container.append(heading);
-
-            filtered.forEach(currentElement => {
-                printAllHotels(currentElement, container);
-            })
-        }
-    })
+        onChange(SPA_FILTER, (f => f.facilities.includes('Spa Center')));
+    });
 
     ONE_STAR_FILTER.addEventListener('change', function () {
-        HOTELS_BY_DESTINATION_CONTAINER.innerHTML = '';
-        if (this.checked) {
-            let typeHotel = filtered.filter(f => f.stars === 1);
+        onChange(ONE_STAR_FILTER, (f => f.stars === 1));
+    });
 
-            let heading = document.createElement('h1');
-            oneOrMoreFiltered(typeHotel, heading, searchInput);
-            heading.setAttribute('class', 'destinationHeadingText');
-            container.append(heading);
-
-            typeHotel.forEach(currentElement => {
-                printAllHotels(currentElement, HOTELS_BY_DESTINATION_CONTAINER)
-            })
-        } else {
-            let heading = document.createElement('h1');
-            oneOrMoreFiltered(filtered, heading, searchInput);
-            heading.setAttribute('class', 'destinationHeadingText');
-            container.append(heading);
-
-            filtered.forEach(currentElement => {
-                printAllHotels(currentElement, container);
-            })
-        }
-    })
     TWO_STAR_FILTER.addEventListener('change', function () {
-        HOTELS_BY_DESTINATION_CONTAINER.innerHTML = '';
-        if (this.checked) {
-            let typeHotel = filtered.filter(f => f.stars === 2);
+        onChange(TWO_STAR_FILTER, (f => f.stars === 2));
+    });
 
-            let heading = document.createElement('h1');
-            oneOrMoreFiltered(typeHotel, heading, searchInput);
-            heading.setAttribute('class', 'destinationHeadingText');
-            container.append(heading);
-
-            typeHotel.forEach(currentElement => {
-                printAllHotels(currentElement, HOTELS_BY_DESTINATION_CONTAINER)
-            })
-        } else {
-            let heading = document.createElement('h1');
-            oneOrMoreFiltered(filtered, heading, searchInput);
-            heading.setAttribute('class', 'destinationHeadingText');
-            container.append(heading);
-
-            filtered.forEach(currentElement => {
-                printAllHotels(currentElement, container);
-            })
-        }
-    })
     THREE_STAR_FILTER.addEventListener('change', function () {
-        HOTELS_BY_DESTINATION_CONTAINER.innerHTML = '';
-        if (this.checked) {
-            let typeHotel = filtered.filter(f => f.stars === 3);
+        onChange(THREE_STAR_FILTER, (f => f.stars === 3));
+    });
 
-            let heading = document.createElement('h1');
-            oneOrMoreFiltered(typeHotel, heading, searchInput);
-            heading.setAttribute('class', 'destinationHeadingText');
-            container.append(heading);
-
-            typeHotel.forEach(currentElement => {
-                printAllHotels(currentElement, HOTELS_BY_DESTINATION_CONTAINER)
-            })
-        } else {
-            let heading = document.createElement('h1');
-            oneOrMoreFiltered(filtered, heading, searchInput);
-            heading.setAttribute('class', 'destinationHeadingText');
-            container.append(heading);
-
-            filtered.forEach(currentElement => {
-                printAllHotels(currentElement, container);
-            })
-        }
-    })
     FOUR_STAR_FILTER.addEventListener('change', function () {
-        HOTELS_BY_DESTINATION_CONTAINER.innerHTML = '';
-        if (this.checked) {
-            let typeHotel = filtered.filter(f => f.stars === 4);
+        onChange(FOUR_STAR_FILTER, (f => f.stars === 4));
+    });
 
-            let heading = document.createElement('h1');
-            oneOrMoreFiltered(typeHotel, heading, searchInput);
-            heading.setAttribute('class', 'destinationHeadingText');
-            container.append(heading);
-
-            typeHotel.forEach(currentElement => {
-                printAllHotels(currentElement, HOTELS_BY_DESTINATION_CONTAINER)
-            })
-        } else {
-            let heading = document.createElement('h1');
-            oneOrMoreFiltered(filtered, heading, searchInput);
-            heading.setAttribute('class', 'destinationHeadingText');
-            container.append(heading);
-
-            filtered.forEach(currentElement => {
-                printAllHotels(currentElement, container);
-            })
-        }
-    })
     FIVE_STAR_FILTER.addEventListener('change', function () {
-        HOTELS_BY_DESTINATION_CONTAINER.innerHTML = '';
-        if (this.checked) {
-            let typeHotel = filtered.filter(f => f.stars === 5);
+        onChange(FIVE_STAR_FILTER, (f => f.stars === 5));
+    });
 
-            let heading = document.createElement('h1');
-            oneOrMoreFiltered(typeHotel, heading, searchInput);
-            heading.setAttribute('class', 'destinationHeadingText');
-            container.append(heading);
+    PETS_FILTER.addEventListener('change', function name(params) {
+        onChange(PETS_FILTER, (f => f.facilities.includes('Pets Allowed')));
+    });
 
-            typeHotel.forEach(currentElement => {
-                printAllHotels(currentElement, HOTELS_BY_DESTINATION_CONTAINER)
-            })
-        } else {
-            let heading = document.createElement('h1');
-            oneOrMoreFiltered(filtered, heading, searchInput);
-            heading.setAttribute('class', 'destinationHeadingText');
-            container.append(heading);
-
-            filtered.forEach(currentElement => {
-                printAllHotels(currentElement, container);
-            })
-        }
-    })
-    PETS_FILTER.addEventListener('change', function () {
-        HOTELS_BY_DESTINATION_CONTAINER.innerHTML = '';
-        if (this.checked) {
-            let typeHotel = filtered.filter(f => f.facilities.includes('Pets Allowed'));
-
-            let heading = document.createElement('h1');
-            oneOrMoreFiltered(typeHotel, heading, searchInput);
-            heading.setAttribute('class', 'destinationHeadingText');
-            container.append(heading);
-
-            typeHotel.forEach(currentElement => {
-                printAllHotels(currentElement, HOTELS_BY_DESTINATION_CONTAINER)
-            })
-        } else {
-            let heading = document.createElement('h1');
-            oneOrMoreFiltered(filtered, heading, searchInput);
-            heading.setAttribute('class', 'destinationHeadingText');
-            container.append(heading);
-
-            filtered.forEach(currentElement => {
-                printAllHotels(currentElement, container);
-            })
-        }
-    })
     BREAKFAST_FILTER.addEventListener('change', function () {
-        HOTELS_BY_DESTINATION_CONTAINER.innerHTML = '';
-        if (this.checked) {
-            let typeHotel = filtered.filter(f => f.facilities.includes('Breakfast'));
+        onChange(BREAKFAST_FILTER, (f => f.facilities.includes('Breakfast')));
+    });
 
-            let heading = document.createElement('h1');
-            oneOrMoreFiltered(typeHotel, heading, searchInput);
-            heading.setAttribute('class', 'destinationHeadingText');
-            container.append(heading);
-
-            typeHotel.forEach(currentElement => {
-                printAllHotels(currentElement, HOTELS_BY_DESTINATION_CONTAINER)
-            })
-        } else {
-            let heading = document.createElement('h1');
-            oneOrMoreFiltered(filtered, heading, searchInput);
-            heading.setAttribute('class', 'destinationHeadingText');
-            container.append(heading);
-
-            filtered.forEach(currentElement => {
-                printAllHotels(currentElement, container);
-            })
-        }
-    })
     FITNESS_FILTER.addEventListener('change', function () {
-        HOTELS_BY_DESTINATION_CONTAINER.innerHTML = '';
-        if (this.checked) {
-            let typeHotel = filtered.filter(f => f.facilities.includes('Fitness Center'));
-
-            let heading = document.createElement('h1');
-            oneOrMoreFiltered(typeHotel, heading, searchInput);
-            heading.setAttribute('class', 'destinationHeadingText');
-            container.append(heading);
-
-            typeHotel.forEach(currentElement => {
-                printAllHotels(currentElement, HOTELS_BY_DESTINATION_CONTAINER)
-            })
-        } else {
-            let heading = document.createElement('h1');
-            oneOrMoreFiltered(filtered, heading, searchInput);
-            heading.setAttribute('class', 'destinationHeadingText');
-            container.append(heading);
-
-            filtered.forEach(currentElement => {
-                printAllHotels(currentElement, container);
-            })
-        }
-    })
+        onChange(FITNESS_FILTER, (f => f.facilities.includes('Fitness Center')));
+    });
 
     FANTASTIC_FILTER.addEventListener('change', function () {
-        HOTELS_BY_DESTINATION_CONTAINER.innerHTML = '';
-        if (this.checked) {
-            let typeHotel = filtered.filter(f => f.rating >= 9.4);
-
-            let heading = document.createElement('h1');
-            oneOrMoreFiltered(typeHotel, heading, searchInput);
-            heading.setAttribute('class', 'destinationHeadingText');
-            container.append(heading);
-
-            typeHotel.forEach(currentElement => {
-                printAllHotels(currentElement, HOTELS_BY_DESTINATION_CONTAINER)
-            })
-        } else {
-            let heading = document.createElement('h1');
-            oneOrMoreFiltered(filtered, heading, searchInput);
-            heading.setAttribute('class', 'destinationHeadingText');
-            container.append(heading);
-
-            filtered.forEach(currentElement => {
-                printAllHotels(currentElement, container);
-            })
-        }
-    })
+        onChange(FANTASTIC_FILTER, (f => f.rating >= 9.4));
+    });
 
     SUPERB_FILTER.addEventListener('change', function () {
-        HOTELS_BY_DESTINATION_CONTAINER.innerHTML = '';
-        if (this.checked) {
-            let typeHotel = filtered.filter(f => f.rating >= 9);
+        onChange(SUPERB_FILTER, (f => f.rating >= 9));
+    });
 
-            let heading = document.createElement('h1');
-            oneOrMoreFiltered(typeHotel, heading, searchInput);
-            heading.setAttribute('class', 'destinationHeadingText');
-            container.append(heading);
-
-            typeHotel.forEach(currentElement => {
-                printAllHotels(currentElement, HOTELS_BY_DESTINATION_CONTAINER)
-            })
-        } else {
-            let heading = document.createElement('h1');
-            oneOrMoreFiltered(filtered, heading, searchInput);
-            heading.setAttribute('class', 'destinationHeadingText');
-            container.append(heading);
-
-            filtered.forEach(currentElement => {
-                printAllHotels(currentElement, container);
-            })
-        }
-    })
     EXCELLENT_FILTER.addEventListener('change', function () {
-        HOTELS_BY_DESTINATION_CONTAINER.innerHTML = '';
-        if (this.checked) {
-            let typeHotel = filtered.filter(f => f.rating >= 8.7);
+        onChange(EXCELLENT_FILTER, (f => f.rating >= 8.7));
+    });
 
-            let heading = document.createElement('h1');
-            oneOrMoreFiltered(typeHotel, heading, searchInput);
-            heading.setAttribute('class', 'destinationHeadingText');
-            container.append(heading);
-
-            typeHotel.forEach(currentElement => {
-                printAllHotels(currentElement, HOTELS_BY_DESTINATION_CONTAINER)
-            })
-        } else {
-            let heading = document.createElement('h1');
-            oneOrMoreFiltered(filtered, heading, searchInput);
-            heading.setAttribute('class', 'destinationHeadingText');
-            container.append(heading);
-
-            filtered.forEach(currentElement => {
-                printAllHotels(currentElement, container);
-            })
-        }
-    })
     VERY_GOOD_FILTER.addEventListener('change', function () {
-        HOTELS_BY_DESTINATION_CONTAINER.innerHTML = '';
-        if (this.checked) {
-            let typeHotel = filtered.filter(f => f.rating >= 8);
+        onChange(VERY_GOOD_FILTER, (f => f.rating >= 8));
+    });
 
-            let heading = document.createElement('h1');
-            oneOrMoreFiltered(typeHotel, heading, searchInput);
-            heading.setAttribute('class', 'destinationHeadingText');
-            container.append(heading);
-
-            typeHotel.forEach(currentElement => {
-                printAllHotels(currentElement, HOTELS_BY_DESTINATION_CONTAINER)
-            })
-        } else {
-            let heading = document.createElement('h1');
-            oneOrMoreFiltered(filtered, heading, searchInput);
-            heading.setAttribute('class', 'destinationHeadingText');
-            container.append(heading);
-
-            filtered.forEach(currentElement => {
-                printAllHotels(currentElement, container);
-            })
-        }
-    })
     GOOD_FILTER.addEventListener('change', function () {
-        HOTELS_BY_DESTINATION_CONTAINER.innerHTML = '';
-        if (this.checked) {
-            let typeHotel = filtered.filter(f => f.rating >= 7.5);
-
-            let heading = document.createElement('h1');
-            oneOrMoreFiltered(typeHotel, heading, searchInput);
-            heading.setAttribute('class', 'destinationHeadingText');
-            container.append(heading);
-
-            typeHotel.forEach(currentElement => {
-                printAllHotels(currentElement, HOTELS_BY_DESTINATION_CONTAINER)
-            })
-        } else {
-            let heading = document.createElement('h1');
-            oneOrMoreFiltered(filtered, heading, searchInput);
-            heading.setAttribute('class', 'destinationHeadingText');
-            container.append(heading);
-
-            filtered.forEach(currentElement => {
-                printAllHotels(currentElement, container);
-            })
-        }
-    })
-
-    // HOTEL_TYPE_FILTER.addEventListener('change', function () {
-    //     onChange(f => f.type === 'Hotel');
-    // });
-
-    // GUEST_HOUSE_FILTER.addEventListener('change', function () {
-    //     onChange(f => f.type === 'Guest House');
-    // });
-
-    // POOL_FILTER.addEventListener('change', function () {
-    //     onChange(f => f.facilities.includes('Pool' || '2 Pools'));
-    // })
-
-    // VILLAS_FILTER.addEventListener('change', function () {
-    //     onChange(f => f.type === 'Villa');
-    // });
-
-    // SPA_FILTER.addEventListener('change', function () {
-    //     onChange(f => f.facilities.includes('Spa Center'));
-    // });
-
-    // ONE_STAR_FILTER.addEventListener('change', function () {
-    //     onChange(f => f.stars === 1);
-    // });
-
-    // TWO_STAR_FILTER.addEventListener('change', function () {
-    //     onChange(f => f.stars === 2);
-    // });
-
-    // THREE_STAR_FILTER.addEventListener('change', function () {
-    //     onChange(f => f.stars === 3);
-    // });
-
-    // FOUR_STAR_FILTER.addEventListener('change', function () {
-    //     onChange(f => f.stars === 4);
-    // });
-
-    // FIVE_STAR_FILTER.addEventListener('change', function () {
-    //     onChange(f => f.stars === 5);
-    // });
-
-    // PETS_FILTER.addEventListener('change', function name(params) {
-    //     onChange(f => f.facilities.includes('Pets Allowed'));
-    // });
-
-    // BREAKFAST_FILTER.addEventListener('change', function () {
-    //     onChange(f => f.facilities.includes('Breakfast'));
-    // });
-
-    // FITNESS_FILTER.addEventListener('change', function () {
-    //     onChange(f => f.facilities.includes('Fitness Center'));
-    // });
-
-    // FANTASTIC_FILTER.addEventListener('change', function () {
-    //     onChange(f => f.rating >= 9.4);
-    // });
-
-    // SUPERB_FILTER.addEventListener('change', function () {
-    //     onChange(f => f.rating >= 9);
-    // });
-
-    // EXCELLENT_FILTER.addEventListener('change', function () {
-    //     onChange(f => f.rating >= 8.7);
-    // });
-
-    // VERY_GOOD_FILTER.addEventListener('change', function () {
-    //     onChange(f => f.rating >= 8);
-    // });
-
-    // GOOD_FILTER.addEventListener('change', function () {
-    //     onChange(f => f.rating >= 7.5);
-    // });
+        onChange(GOOD_FILTER, (f => f.rating >= 7.5));
+    });
 }
