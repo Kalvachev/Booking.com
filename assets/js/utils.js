@@ -32,13 +32,13 @@ function displayHomes() {
     const pages = decodeURI(location.hash).substring(1).split('/');
     // If the second argument is city
     if (pages.length === 2) {
-        printHotelsByDestination(pages[1], hotelsByDestinationContainer);
-        allHotelsByDestination.style.display = 'block';
+        printHotelsByDestination(pages[1], HOTELS_BY_DESTINATION_CONTAINER);
+        ALL_HOTELS_BY_DESTINATION.style.display = 'block';
         HOTEL_PAGE_CONTAINER.style.display = 'none';
     }
     if (pages.length === 3) {
         printHotelPage(pages[2]);
-        allHotelsByDestination.style.display = 'none';
+        ALL_HOTELS_BY_DESTINATION.style.display = 'none';
         HOTEL_PAGE_CONTAINER.style.display = 'block';
     }
     // If there is a third argument display the Hotel specific page
