@@ -35,7 +35,7 @@ SUBMIT_BTN_REG.addEventListener('click', function (ev) {
     const repeatedPass = REPEAT_PASSWORD_INPUT.value;
     const email = EMAIL_INPUT_REG.value;
 
-    if (username !== '' && username.length >= 7 && password === repeatedPass && email !== '' && password !== '' && password.length >= 7) {
+    if (username !== '' && username.length >= 7 && password === repeatedPass && email !== '' && password !== '' && password.length >= 7 && validateEmail(email)) {
         userService.register(username, password, email);
         MODAL_BG_REGISTER.classList.remove('bg-active');
     } else if (username === '') {
@@ -50,9 +50,9 @@ SUBMIT_BTN_REG.addEventListener('click', function (ev) {
         alert('Password must be at least 7 characters');
     } else if (password !== repeatedPass) {
         alert('Passwords does not match');
-
+    } else if(!validateEmail(email)) {
+        alert('Invalid Email');
     }
-
 });
 
 LOGIN_BTN_MODAL.addEventListener('click', function (ev) {
