@@ -58,3 +58,12 @@ function validateEmail(email) {
     let re = /\S+@\S+\.\S+/;
     return re.test(email);
 }
+
+function emptyInput() {
+    let inputValue = SEARCH_BOX.value;
+    
+    if (inputValue === "") {
+        alert("Enter some destination");
+        return false;
+    };
+}

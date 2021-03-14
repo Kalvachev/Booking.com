@@ -1,16 +1,19 @@
 HOMEPAGE_SEACH_BTN.addEventListener('click', function (ev) {
     ev.preventDefault();
 
-    let sliced = String(window.location).split('#');
+    if (SEARCH_BOX.value) {
+        let sliced = String(window.location).split('#');
 
+        const validLocations = ['Милано', 'Керамоти', 'Лас Палмас де Гран Канария', 'Рио де Жанейро', 'Пукет', 'Виена', 'Лондон', 'Париж', 'Созопол', 'Атина'];
 
-    const validLocations = ['Милано', 'Керамоти', 'Лас Палмас де Гран Канария', 'Рио де Жанейро', 'Пукет', 'Виена', 'Лондон', 'Париж', 'Созопол', 'Атина'];
-
-    if (!validLocations.includes(SEARCH_BOX.value)) {
-        window.location = sliced[0] + '#errorPage';
+        if (!validLocations.includes(SEARCH_BOX.value)) {
+            window.location = sliced[0] + '#errorPage';
+        } else {
+            window.location = sliced[0] + '#displayHomes/' + SEARCH_BOX.value;
+            printHotelsByDestination(SEARCH_BOX.value, HOTELS_BY_DESTINATION_CONTAINER);
+        }
     } else {
-        window.location = sliced[0] + '#displayHomes/' + SEARCH_BOX.value;
-        printHotelsByDestination(SEARCH_BOX.value, HOTELS_BY_DESTINATION_CONTAINER);
+        emptyInput();
     }
 })
 
