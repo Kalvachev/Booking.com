@@ -408,17 +408,19 @@ function printHotelPage(hotelNamee) {
 
     reserveContainer.append(addInFavourites, reserveBtn);
 
-    let isInFavs = userService.getCurrentUser().favourites.some(hotel => hotel.name === currentElement.name);
-    
-    if (isInFavs) {
-        ADD_TO_FAV_BTN[0].addEventListener('click', function () {
-            userService.removeFromFavourites(currentElement);
-            ADD_TO_FAV_BTN[0].classList.toggle('grey');
-        })
-    } else {
-        ADD_TO_FAV_BTN[0].addEventListener('click', function () {
-            userService.addToFavourites(currentElement);
-            ADD_TO_FAV_BTN[0].classList.toggle('red');
-        })
+    if (userService.getCurrentUser()) {
+        let isInFavs = userService.getCurrentUser().favourites.some(hotel => hotel.name === currentElement.name);
+
+        if (isInFavs) {
+            ADD_TO_FAV_BTN[0].addEventListener('click', function () {
+                userService.removeFromFavourites(currentElement);
+                ADD_TO_FAV_BTN[0].classList.toggle('grey');
+            })
+        } else {
+            ADD_TO_FAV_BTN[0].addEventListener('click', function () {
+                userService.addToFavourites(currentElement);
+                ADD_TO_FAV_BTN[0].classList.toggle('red');
+            })
+        }
     }
 };

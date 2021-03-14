@@ -16,9 +16,9 @@ HOMEPAGE_SEACH_BTN.addEventListener('click', function (ev) {
 
 function printHotelsByDestination(searchInput, container) {
 
-    if (!searchInput) {
-        searchInput = localStorage.getItem('city')
-    }
+    // if (!searchInput) {
+    //     searchInput = localStorage.getItem('city')
+    // }
 
     container.innerHTML = '';
     let filtered = hotels.map(el => {
