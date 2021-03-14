@@ -409,7 +409,12 @@ function printHotelPage(hotelNamee) {
     reserveContainer.append(addInFavourites, reserveBtn);
 
     if (userService.getCurrentUser()) {
-        let isInFavs = userService.getCurrentUser().favourites.some(hotel => hotel.name === currentElement.name);
+        let currentUser = userService.getCurrentUser();
+        let isInFavs = currentUser.favourites.some(hotel => hotel.name === currentElement.name);
+
+        if (isInFavs) {
+            ADD_TO_FAV_BTN[0].innerHTML = '<i class="fa fa-heart fa-lg" style="color:red"></i>';
+        }
 
         if (isInFavs) {
             ADD_TO_FAV_BTN[0].addEventListener('click', function () {
