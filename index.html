@@ -526,13 +526,24 @@
 
         <div class='modal-bg' id='modal-bg-login'>
             <div id='loginModal'>
+                <h2 id="loginModalHeading" class="registerAndLoginHeadings">Sign in with</h2>
+
+                <div id="facebookAndGoogleLoginContainer">
+                    <button class="loginBtns loginBtn--facebook">
+                        Sign in with Facebook
+                    </button>
+    
+                    <button class="loginBtns loginBtn--google">
+                        Sign in with Google
+                      </button>
+                </div>
+
                 <form action="">
-                    <h2 id="loginModalHeading" class="registerAndLoginHeadings">Login</h2>
-                    <input type="text" placeholder="Username" id='usernameInput'>
-                    <input type="password" placeholder="Password" id='passwordInput'>
+                    <input type="text" placeholder="Username" id='usernameInput' class="inputRegAndLog">
+                    <input type="password" placeholder="Password" id='passwordInput' class="inputRegAndLog">
                     <div id='loginButtonsContainer'>
                         <button id='loginBtnModal'>Login</button>
-                        <button id='goToRegistrationButton'>Register</button>
+                        <!-- <button id='goToRegistrationButton'>Register</button> -->
                     </div>
                     <span class='modal-close' id='modal-close-login'>X</span>
                 </form>
@@ -541,13 +552,24 @@
 
         <div class='modal-bg' id='modal-bg-register'>
             <div id='registerModal'>
-                <form action="">
-                    <h2 id="registerModalsHeading" class="registerAndLoginHeadings">Register</h2>
-                    <input type="text" placeholder="Username" id='usernameInputReg'>
-                    <input type="password" placeholder="Password" id='passwordInputReg'>
-                    <input type="password" placeholder="Repeat password" id='repeatPasswordInputReg'>
-                    <input type="email" placeholder='Email' id="emailInputReg">
-                    <button id='submitBtnReg'>Submit</button>
+                <h2 id="registerModalsHeading" class="registerAndLoginHeadings">Sign up with</h2>
+
+                <div id="facebookAndGoogleLoginContainer">
+                    <button class="loginBtns loginBtn--facebook">
+                        Sign up with Facebook
+                    </button>
+    
+                    <button class="loginBtns loginBtn--google">
+                        Sign up with Google
+                      </button>
+                </div>
+
+                <form id="loginForm" action="">
+                    <input type="text" placeholder="Username" id='usernameInputReg' class="inputRegAndLog">
+                    <input type="password" placeholder="Password" id='passwordInputReg' class="inputRegAndLog">
+                    <input type="password" placeholder="Repeat password" id='repeatPasswordInputReg' class="inputRegAndLog">
+                    <input type="email" placeholder='Email' id="emailInputReg" class="inputRegAndLog">
+                    <button id='submitBtnReg'>Register</button>
                     <span class='modal-close' id='modal-close-register'>X</span>
                 </form>
             </div>
