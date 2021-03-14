@@ -116,13 +116,8 @@ function printAllHotels(currentElement, container) {
     hotelCard.append(hotelPictureContainer, restInformation);
     container.append(hotelCard);
 
-    // Single Page Show
-    //----------------------------------------------------------
-
     hotelCard.addEventListener('click', function () {
-        // TODO: Just change the URL
         const url = location.hash + '/' + currentElement.name;
-        // const encodedUrl = encodeURI(url);
         location.hash = url;
     })
 

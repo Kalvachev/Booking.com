@@ -61,6 +61,7 @@
                 break;
             default:
                 showActivePage(HOME_PAGE);
+                printLikedHomes();
                 break;
         }
     }
