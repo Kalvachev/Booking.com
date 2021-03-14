@@ -1,4 +1,4 @@
-homepageSearchButton.addEventListener('click', function (ev) {
+HOMEPAGE_SEACH_BTN.addEventListener('click', function (ev) {
     ev.preventDefault();
 
     let sliced = String(window.location).split('#');
@@ -10,7 +10,7 @@ homepageSearchButton.addEventListener('click', function (ev) {
         window.location = sliced[0] + '#errorPage';
     } else {
         window.location = sliced[0] + '#displayHomes/' + SEARCH_BOX.value;
-        printHotelsByDestination(SEARCH_BOX.value, hotelsByDestinationContainer);
+        printHotelsByDestination(SEARCH_BOX.value, HOTELS_BY_DESTINATION_CONTAINER);
     }
 })
 
@@ -38,7 +38,7 @@ function printHotelsByDestination(searchInput, container) {
 
 
     function onChange(cb) {
-        hotelsByDestinationContainer.innerHTML = '';
+        HOTELS_BY_DESTINATION_CONTAINER.innerHTML = '';
         if (this.checked) {
             let typeHotel = filtered.filter(cb);
 
@@ -48,7 +48,7 @@ function printHotelsByDestination(searchInput, container) {
             container.append(heading);
 
             typeHotel.forEach(currentElement => {
-                printAllHotels(currentElement, hotelsByDestinationContainer)
+                printAllHotels(currentElement, HOTELS_BY_DESTINATION_CONTAINER)
             })
         } else {
             let heading = document.createElement('h1');
@@ -64,7 +64,7 @@ function printHotelsByDestination(searchInput, container) {
 
     // ---------------------------------
     HOTEL_TYPE_FILTER.addEventListener('change', function () {
-        hotelsByDestinationContainer.innerHTML = '';
+        HOTELS_BY_DESTINATION_CONTAINER.innerHTML = '';
         if (this.checked) {
             let typeHotel = filtered.filter(f => f.type === 'Hotel');
 
@@ -74,7 +74,7 @@ function printHotelsByDestination(searchInput, container) {
             container.append(heading);
 
             typeHotel.forEach(currentElement => {
-                printAllHotels(currentElement, hotelsByDestinationContainer)
+                printAllHotels(currentElement, HOTELS_BY_DESTINATION_CONTAINER)
             })
         } else {
             let heading = document.createElement('h1');
@@ -89,7 +89,7 @@ function printHotelsByDestination(searchInput, container) {
     })
 
     GUEST_HOUSE_FILTER.addEventListener('change', function () {
-        hotelsByDestinationContainer.innerHTML = '';
+        HOTELS_BY_DESTINATION_CONTAINER.innerHTML = '';
         if (this.checked) {
             let typeHotel = filtered.filter(f => f.type === 'Guest House');
 
@@ -99,7 +99,7 @@ function printHotelsByDestination(searchInput, container) {
             container.append(heading);
 
             typeHotel.forEach(currentElement => {
-                printAllHotels(currentElement, hotelsByDestinationContainer)
+                printAllHotels(currentElement, HOTELS_BY_DESTINATION_CONTAINER)
             })
         } else {
             let heading = document.createElement('h1');
@@ -114,7 +114,7 @@ function printHotelsByDestination(searchInput, container) {
     })
 
     POOL_FILTER.addEventListener('change', function () {
-        hotelsByDestinationContainer.innerHTML = '';
+        HOTELS_BY_DESTINATION_CONTAINER.innerHTML = '';
         if (this.checked) {
             let typeHotel = filtered.filter(f => f.facilities.includes('Pool' || '2 Pools'));
 
@@ -124,7 +124,7 @@ function printHotelsByDestination(searchInput, container) {
             container.append(heading);
 
             typeHotel.forEach(currentElement => {
-                printAllHotels(currentElement, hotelsByDestinationContainer)
+                printAllHotels(currentElement, HOTELS_BY_DESTINATION_CONTAINER)
             })
         } else {
             let heading = document.createElement('h1');
@@ -139,7 +139,7 @@ function printHotelsByDestination(searchInput, container) {
     })
 
     VILLAS_FILTER.addEventListener('change', function () {
-        hotelsByDestinationContainer.innerHTML = '';
+        HOTELS_BY_DESTINATION_CONTAINER.innerHTML = '';
         if (this.checked) {
             let typeHotel = filtered.filter(f => f.type === 'Villa');
 
@@ -149,7 +149,7 @@ function printHotelsByDestination(searchInput, container) {
             container.append(heading);
 
             typeHotel.forEach(currentElement => {
-                printAllHotels(currentElement, hotelsByDestinationContainer)
+                printAllHotels(currentElement, HOTELS_BY_DESTINATION_CONTAINER)
             })
         } else {
             let heading = document.createElement('h1');
@@ -164,7 +164,7 @@ function printHotelsByDestination(searchInput, container) {
     })
 
     SPA_FILTER.addEventListener('change', function () {
-        hotelsByDestinationContainer.innerHTML = '';
+        HOTELS_BY_DESTINATION_CONTAINER.innerHTML = '';
         if (this.checked) {
             let typeHotel = filtered.filter(f => f.facilities.includes('Spa Center'));
 
@@ -174,7 +174,7 @@ function printHotelsByDestination(searchInput, container) {
             container.append(heading);
 
             typeHotel.forEach(currentElement => {
-                printAllHotels(currentElement, hotelsByDestinationContainer)
+                printAllHotels(currentElement, HOTELS_BY_DESTINATION_CONTAINER)
             })
         } else {
             let heading = document.createElement('h1');
@@ -189,7 +189,7 @@ function printHotelsByDestination(searchInput, container) {
     })
 
     ONE_STAR_FILTER.addEventListener('change', function () {
-        hotelsByDestinationContainer.innerHTML = '';
+        HOTELS_BY_DESTINATION_CONTAINER.innerHTML = '';
         if (this.checked) {
             let typeHotel = filtered.filter(f => f.stars === 1);
 
@@ -199,7 +199,7 @@ function printHotelsByDestination(searchInput, container) {
             container.append(heading);
 
             typeHotel.forEach(currentElement => {
-                printAllHotels(currentElement, hotelsByDestinationContainer)
+                printAllHotels(currentElement, HOTELS_BY_DESTINATION_CONTAINER)
             })
         } else {
             let heading = document.createElement('h1');
@@ -213,7 +213,7 @@ function printHotelsByDestination(searchInput, container) {
         }
     })
     TWO_STAR_FILTER.addEventListener('change', function () {
-        hotelsByDestinationContainer.innerHTML = '';
+        HOTELS_BY_DESTINATION_CONTAINER.innerHTML = '';
         if (this.checked) {
             let typeHotel = filtered.filter(f => f.stars === 2);
 
@@ -223,7 +223,7 @@ function printHotelsByDestination(searchInput, container) {
             container.append(heading);
 
             typeHotel.forEach(currentElement => {
-                printAllHotels(currentElement, hotelsByDestinationContainer)
+                printAllHotels(currentElement, HOTELS_BY_DESTINATION_CONTAINER)
             })
         } else {
             let heading = document.createElement('h1');
@@ -237,7 +237,7 @@ function printHotelsByDestination(searchInput, container) {
         }
     })
     THREE_STAR_FILTER.addEventListener('change', function () {
-        hotelsByDestinationContainer.innerHTML = '';
+        HOTELS_BY_DESTINATION_CONTAINER.innerHTML = '';
         if (this.checked) {
             let typeHotel = filtered.filter(f => f.stars === 3);
 
@@ -247,7 +247,7 @@ function printHotelsByDestination(searchInput, container) {
             container.append(heading);
 
             typeHotel.forEach(currentElement => {
-                printAllHotels(currentElement, hotelsByDestinationContainer)
+                printAllHotels(currentElement, HOTELS_BY_DESTINATION_CONTAINER)
             })
         } else {
             let heading = document.createElement('h1');
@@ -261,7 +261,7 @@ function printHotelsByDestination(searchInput, container) {
         }
     })
     FOUR_STAR_FILTER.addEventListener('change', function () {
-        hotelsByDestinationContainer.innerHTML = '';
+        HOTELS_BY_DESTINATION_CONTAINER.innerHTML = '';
         if (this.checked) {
             let typeHotel = filtered.filter(f => f.stars === 4);
 
@@ -271,7 +271,7 @@ function printHotelsByDestination(searchInput, container) {
             container.append(heading);
 
             typeHotel.forEach(currentElement => {
-                printAllHotels(currentElement, hotelsByDestinationContainer)
+                printAllHotels(currentElement, HOTELS_BY_DESTINATION_CONTAINER)
             })
         } else {
             let heading = document.createElement('h1');
@@ -285,7 +285,7 @@ function printHotelsByDestination(searchInput, container) {
         }
     })
     FIVE_STAR_FILTER.addEventListener('change', function () {
-        hotelsByDestinationContainer.innerHTML = '';
+        HOTELS_BY_DESTINATION_CONTAINER.innerHTML = '';
         if (this.checked) {
             let typeHotel = filtered.filter(f => f.stars === 5);
 
@@ -295,7 +295,7 @@ function printHotelsByDestination(searchInput, container) {
             container.append(heading);
 
             typeHotel.forEach(currentElement => {
-                printAllHotels(currentElement, hotelsByDestinationContainer)
+                printAllHotels(currentElement, HOTELS_BY_DESTINATION_CONTAINER)
             })
         } else {
             let heading = document.createElement('h1');
@@ -309,7 +309,7 @@ function printHotelsByDestination(searchInput, container) {
         }
     })
     PETS_FILTER.addEventListener('change', function () {
-        hotelsByDestinationContainer.innerHTML = '';
+        HOTELS_BY_DESTINATION_CONTAINER.innerHTML = '';
         if (this.checked) {
             let typeHotel = filtered.filter(f => f.facilities.includes('Pets Allowed'));
 
@@ -319,7 +319,7 @@ function printHotelsByDestination(searchInput, container) {
             container.append(heading);
 
             typeHotel.forEach(currentElement => {
-                printAllHotels(currentElement, hotelsByDestinationContainer)
+                printAllHotels(currentElement, HOTELS_BY_DESTINATION_CONTAINER)
             })
         } else {
             let heading = document.createElement('h1');
@@ -333,7 +333,7 @@ function printHotelsByDestination(searchInput, container) {
         }
     })
     BREAKFAST_FILTER.addEventListener('change', function () {
-        hotelsByDestinationContainer.innerHTML = '';
+        HOTELS_BY_DESTINATION_CONTAINER.innerHTML = '';
         if (this.checked) {
             let typeHotel = filtered.filter(f => f.facilities.includes('Breakfast'));
 
@@ -343,7 +343,7 @@ function printHotelsByDestination(searchInput, container) {
             container.append(heading);
 
             typeHotel.forEach(currentElement => {
-                printAllHotels(currentElement, hotelsByDestinationContainer)
+                printAllHotels(currentElement, HOTELS_BY_DESTINATION_CONTAINER)
             })
         } else {
             let heading = document.createElement('h1');
@@ -357,7 +357,7 @@ function printHotelsByDestination(searchInput, container) {
         }
     })
     FITNESS_FILTER.addEventListener('change', function () {
-        hotelsByDestinationContainer.innerHTML = '';
+        HOTELS_BY_DESTINATION_CONTAINER.innerHTML = '';
         if (this.checked) {
             let typeHotel = filtered.filter(f => f.facilities.includes('Fitness Center'));
 
@@ -367,7 +367,7 @@ function printHotelsByDestination(searchInput, container) {
             container.append(heading);
 
             typeHotel.forEach(currentElement => {
-                printAllHotels(currentElement, hotelsByDestinationContainer)
+                printAllHotels(currentElement, HOTELS_BY_DESTINATION_CONTAINER)
             })
         } else {
             let heading = document.createElement('h1');
@@ -382,7 +382,7 @@ function printHotelsByDestination(searchInput, container) {
     })
 
     FANTASTIC_FILTER.addEventListener('change', function () {
-        hotelsByDestinationContainer.innerHTML = '';
+        HOTELS_BY_DESTINATION_CONTAINER.innerHTML = '';
         if (this.checked) {
             let typeHotel = filtered.filter(f => f.rating >= 9.4);
 
@@ -392,7 +392,7 @@ function printHotelsByDestination(searchInput, container) {
             container.append(heading);
 
             typeHotel.forEach(currentElement => {
-                printAllHotels(currentElement, hotelsByDestinationContainer)
+                printAllHotels(currentElement, HOTELS_BY_DESTINATION_CONTAINER)
             })
         } else {
             let heading = document.createElement('h1');
@@ -407,7 +407,7 @@ function printHotelsByDestination(searchInput, container) {
     })
 
     SUPERB_FILTER.addEventListener('change', function () {
-        hotelsByDestinationContainer.innerHTML = '';
+        HOTELS_BY_DESTINATION_CONTAINER.innerHTML = '';
         if (this.checked) {
             let typeHotel = filtered.filter(f => f.rating >= 9);
 
@@ -417,7 +417,7 @@ function printHotelsByDestination(searchInput, container) {
             container.append(heading);
 
             typeHotel.forEach(currentElement => {
-                printAllHotels(currentElement, hotelsByDestinationContainer)
+                printAllHotels(currentElement, HOTELS_BY_DESTINATION_CONTAINER)
             })
         } else {
             let heading = document.createElement('h1');
@@ -431,7 +431,7 @@ function printHotelsByDestination(searchInput, container) {
         }
     })
     EXCELLENT_FILTER.addEventListener('change', function () {
-        hotelsByDestinationContainer.innerHTML = '';
+        HOTELS_BY_DESTINATION_CONTAINER.innerHTML = '';
         if (this.checked) {
             let typeHotel = filtered.filter(f => f.rating >= 8.7);
 
@@ -441,7 +441,7 @@ function printHotelsByDestination(searchInput, container) {
             container.append(heading);
 
             typeHotel.forEach(currentElement => {
-                printAllHotels(currentElement, hotelsByDestinationContainer)
+                printAllHotels(currentElement, HOTELS_BY_DESTINATION_CONTAINER)
             })
         } else {
             let heading = document.createElement('h1');
@@ -455,7 +455,7 @@ function printHotelsByDestination(searchInput, container) {
         }
     })
     VERY_GOOD_FILTER.addEventListener('change', function () {
-        hotelsByDestinationContainer.innerHTML = '';
+        HOTELS_BY_DESTINATION_CONTAINER.innerHTML = '';
         if (this.checked) {
             let typeHotel = filtered.filter(f => f.rating >= 8);
 
@@ -465,7 +465,7 @@ function printHotelsByDestination(searchInput, container) {
             container.append(heading);
 
             typeHotel.forEach(currentElement => {
-                printAllHotels(currentElement, hotelsByDestinationContainer)
+                printAllHotels(currentElement, HOTELS_BY_DESTINATION_CONTAINER)
             })
         } else {
             let heading = document.createElement('h1');
@@ -479,7 +479,7 @@ function printHotelsByDestination(searchInput, container) {
         }
     })
     GOOD_FILTER.addEventListener('change', function () {
-        hotelsByDestinationContainer.innerHTML = '';
+        HOTELS_BY_DESTINATION_CONTAINER.innerHTML = '';
         if (this.checked) {
             let typeHotel = filtered.filter(f => f.rating >= 7.5);
 
@@ -489,7 +489,7 @@ function printHotelsByDestination(searchInput, container) {
             container.append(heading);
 
             typeHotel.forEach(currentElement => {
-                printAllHotels(currentElement, hotelsByDestinationContainer)
+                printAllHotels(currentElement, HOTELS_BY_DESTINATION_CONTAINER)
             })
         } else {
             let heading = document.createElement('h1');

@@ -3,15 +3,15 @@ const RENT_CAR_PAGE = document.getElementById('rentCarContainer');
 const ATTRACTIONS_PAGE = document.getElementById('attractionsContainer');
 const TAXI_PAGE = document.getElementById('taxisContainer');
 
-const likedHomes = document.getElementById('likedHomes');
-const likedHomesContainer = document.getElementById('likedHomesContainer');
+const LIKED_HOMES = document.getElementById('likedHomes');
+const LIKED_HOMES_CONTAINER = document.getElementById('likedHomesContainer');
 
-const allHotelsByDestination = document.getElementById('allHotelsByDestination');
-const hotelsByDestinationContainer = document.getElementById('hotelsByDestinationContainer');
+const ALL_HOTELS_BY_DESTINATION = document.getElementById('allHotelsByDestination');
+const HOTELS_BY_DESTINATION_CONTAINER = document.getElementById('hotelsByDestinationContainer');
 
-const homepageSearchButton = document.getElementById('homepageSearchButton');
+const HOMEPAGE_SEACH_BTN = document.getElementById('homepageSearchButton');
 const SEARCH_BOX = document.getElementById('search-box');
-const currentHotelContainer = document.getElementById('currentHotelContainer');
+const CURRENT_HOTEL_CONTAINER = document.getElementById('currentHotelContainer');
 
 const ERROR_PAGE = document.getElementById('errorPageContainer');
 
@@ -41,7 +41,6 @@ REPEAT_PASSWORD_INPUT = document.getElementById('repeatPasswordInputReg');
 EMAIL_INPUT_REG = document.getElementById('emailInputReg');
 
 const HOTEL_PAGE_CONTAINER = document.getElementById('hotelPageContainer');
-const ALL_HOTELS_BY_DESTINATION = document.getElementById('allHotelsByDestination')
 
 const SHOW_CURRENT_PAGE = document.getElementById('showCurrentHotel');
 

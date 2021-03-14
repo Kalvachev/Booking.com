@@ -1,5 +1,5 @@
 function printLikedHomes() {
-    likedHomesContainer.innerHTML = '';
+    LIKED_HOMES_CONTAINER.innerHTML = '';
 
     let favouriteHotels = hotels.map(function (el) {
         if (el.rating > 7.5) {
@@ -60,11 +60,11 @@ function printLikedHomes() {
         hotelRatingsContainer.append(hotelRating, hotelRatingWord);
 
         hotelCard.append(hotelPictureContainer, hotelNameAndDestination, hotelPriceContainer, hotelRatingsContainer);
-        likedHomesContainer.append(hotelCard);
+        LIKED_HOMES_CONTAINER.append(hotelCard);
 
         hotelCard.addEventListener('click', function () {
             let sliced = String(window.location).split('#');
-            
+
             window.location = sliced[0] + '#displayHomes/' + currentElement.destination + '/' + currentElement.name;
             printHotelPage(currentElement.name);
         })
