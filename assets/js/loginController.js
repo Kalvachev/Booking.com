@@ -50,7 +50,7 @@ SUBMIT_BTN_REG.addEventListener('click', function (ev) {
         alert('Password must be at least 7 characters');
     } else if (password !== repeatedPass) {
         alert('Passwords does not match');
-    } else if(!validateEmail(email)) {
+    } else if (!validateEmail(email)) {
         alert('Invalid Email');
     }
 });
