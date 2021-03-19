@@ -1,13 +1,16 @@
 function printLikedHomes() {
     LIKED_HOMES_CONTAINER.innerHTML = '';
+    
+    let randomHotelsOnHomePageNumber = 4;
+    let minimumGoodRating = 7.5;
 
     let favouriteHotels = hotels.map(function (el) {
-        if (el.rating > 7.5) {
+        if (el.rating > minimumGoodRating) {
             return el
         }
     }).filter(el => el !== undefined);
 
-    for (let i = 0; i < 4; i++) {
+    for (let i = 0; i < randomHotelsOnHomePageNumber; i++) {
         let randomNumber = Math.floor(Math.random() * favouriteHotels.length);
         let currentElement = favouriteHotels[randomNumber];
 
